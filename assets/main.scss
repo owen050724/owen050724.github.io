@@ -1,0 +1,149 @@
+﻿---
+---
+
+@import "minima";
+
+:root {
+  --ink: #14213d;
+  --ink-soft: #355070;
+  --paper: #f7f7f2;
+  --card: #ffffff;
+  --line: #d8dde6;
+  --accent: #ca6702;
+  --accent-soft: #ffe8cc;
+}
+
+body {
+  font-family: "Segoe UI", "Noto Sans KR", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 10%, #fff4e6 0, transparent 42%),
+    radial-gradient(circle at 90% 0, #e9f1ff 0, transparent 36%),
+    var(--paper);
+}
+
+.page-content {
+  padding-top: 2.5rem;
+}
+
+.wrapper {
+  max-width: 920px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #ffffff 0%, #fdf2df 100%);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  margin-bottom: 0.4rem;
+}
+
+.hero h1 {
+  margin-bottom: 0.35rem;
+  font-size: clamp(1.8rem, 3.8vw, 2.7rem);
+  line-height: 1.12;
+}
+
+.hero h1 span {
+  font-weight: 450;
+  color: var(--ink-soft);
+}
+
+.lead {
+  margin: 0.25rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.sublead {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1.25rem 1.35rem;
+  margin: 0 0 0.9rem;
+  box-shadow: 0 8px 22px rgba(20, 33, 61, 0.05);
+}
+
+.panel h2 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+}
+
+.entry + .entry {
+  margin-top: 1rem;
+  padding-top: 0.9rem;
+  border-top: 1px dashed var(--line);
+}
+
+.entry h3 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.entry h3 span {
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+.entry p,
+.entry ul,
+.panel ul,
+.objective p {
+  margin-bottom: 0;
+}
+
+.tag-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+}
+
+.tag-list li {
+  background: var(--accent-soft);
+  border: 1px solid #f0c792;
+  border-radius: 999px;
+  padding: 0.22rem 0.72rem;
+  font-weight: 600;
+  font-size: 0.86rem;
+}
+
+.site-header {
+  border-top: 6px solid var(--accent);
+  border-bottom-color: var(--line);
+  background: #fff;
+}
+
+.site-title,
+.site-title:visited {
+  color: var(--ink);
+  font-weight: 800;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 1.4rem;
+  }
+
+  .panel {
+    padding: 1rem;
+  }
+}
