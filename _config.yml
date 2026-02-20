@@ -1,0 +1,6 @@
+﻿title: Owen's GitHub Pages
+description: Jekyll 테마로 만든 첫 GitHub Pages
+lang: ko-KR
+theme: minima
+plugins:
+  - jekyll-feed
