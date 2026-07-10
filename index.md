@@ -46,9 +46,9 @@ title: Yeonoh Park
     </nav>
   </header>
 
-  <section class="notice reveal">
+<section class="notice reveal">
   <strong>Responsible disclosure portfolio</strong>
-  <span>76 submitted reports across OSS and BBP programs. Details for unresolved reports are withheld until vendor publication or disclosure permission.</span>
+  <span>One vendor-fixed CVE assignment, supported by 75 additional responsible disclosure reports across OSS and BBP programs.</span>
 </section>
 
   <section class="intro-grid reveal">
@@ -114,17 +114,21 @@ title: Yeonoh Park
 
   <div class="report-group">
     <h3>Responsible Disclosure Activity</h3>
-    <p>Submitted work grouped without exposing private report IDs, endpoints, or unfixed vulnerability details.</p>
+    <p>Outcome-first summary of 76 submitted reports, without exposing private report IDs, endpoints, or unfixed vulnerability details.</p>
   </div>
 
   <div class="public-summary-grid">
     <div>
-      <strong>Period</strong>
-      <span>March-July 2026</span>
+      <strong>Vendor-fixed CVE</strong>
+      <span>1 · CVE-2026-59210</span>
     </div>
     <div>
-      <strong>Submitted reports</strong>
-      <span>76</span>
+      <strong>Additional reports</strong>
+      <span>75 responsible disclosure submissions</span>
+    </div>
+    <div>
+      <strong>Total submitted</strong>
+      <span>76 reports · March-July 2026</span>
     </div>
     <div>
       <strong>Programs</strong>
