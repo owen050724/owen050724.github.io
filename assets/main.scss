@@ -563,10 +563,7 @@ li {
     animation: none;
   }
 
-  .portfolio-page.is-loading .reveal,
   .portfolio-page.is-ready .reveal {
-    opacity: 1;
-    transform: none;
-    transition: none;
+    transition-duration: 0.2s;
   }
 }

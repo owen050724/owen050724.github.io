@@ -375,4 +375,4 @@ p, li { color: var(--text); }
   .intro-grid > div + div, .content-grid > div + div { margin-top: 1rem; }
   .hero h1 { font-size: 2.2rem; } }
 @media (prefers-reduced-motion: reduce) { .typing-active .typed-name::after, .typing-done .typed-english::after { animation: none; }
-  .portfolio-page.is-loading .reveal, .portfolio-page.is-ready .reveal { opacity: 1; transform: none; transition: none; } }
+  .portfolio-page.is-ready .reveal { transition-duration: 0.2s; } }

@@ -236,11 +236,6 @@ title: Yeonoh Park
       });
     };
 
-    if (prefersReducedMotion) {
-      revealAll();
-      return;
-    }
-
     typedNames.forEach((name) => {
       name.textContent = "";
     });
@@ -257,13 +252,13 @@ title: Yeonoh Park
         index += 1;
 
         if (index < text.length) {
-          window.setTimeout(typeNext, 150);
+          window.setTimeout(typeNext, prefersReducedMotion ? 60 : 150);
           return;
         }
 
         name.classList.remove("is-typing");
         name.classList.add("is-typed");
-        window.setTimeout(done, 260);
+        window.setTimeout(done, prefersReducedMotion ? 100 : 260);
       };
 
       typeNext();
@@ -273,13 +268,13 @@ title: Yeonoh Park
       if (index >= typedNames.length) {
         page.classList.remove("typing-active");
         page.classList.add("typing-done");
-        window.setTimeout(revealAll, 280);
+        window.setTimeout(revealAll, prefersReducedMotion ? 120 : 280);
         return;
       }
 
       typeName(typedNames[index], () => typeSequence(index + 1));
     };
 
-    window.setTimeout(() => typeSequence(), 450);
+    window.setTimeout(() => typeSequence(), prefersReducedMotion ? 120 : 450);
   })();
 </script>
