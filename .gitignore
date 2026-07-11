@@ -1,3 +1,5 @@
 /.bundle/
 /_site/
 /vendor/
+/.serve-8725.sh
+/.jekyll-8725*.log

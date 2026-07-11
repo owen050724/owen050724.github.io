@@ -324,6 +324,43 @@ li {
   font-weight: 700;
 }
 
+.accepted-report-private {
+  border-color: rgba(110, 168, 254, 0.5);
+  background: rgba(13, 110, 253, 0.1);
+}
+
+.accepted-report-private .accepted-report-code {
+  color: #b6d4fe;
+}
+
+.outcome-status {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.55rem;
+  margin: 0.85rem 0 0;
+}
+
+.outcome-status div {
+  padding: 0.55rem 0.65rem;
+  border: 1px solid rgba(117, 183, 152, 0.3);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.outcome-status dt {
+  color: var(--muted);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.outcome-status dd {
+  margin: 0.16rem 0 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+
 .public-summary-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -356,6 +393,39 @@ li {
 
 .public-note p {
   margin: 0;
+}
+
+.method-section {
+  margin-top: 1.4rem;
+}
+
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.method-grid article {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--panel-soft);
+}
+
+.method-grid article > span {
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.method-grid h3 {
+  margin: 0.35rem 0 0.4rem;
+}
+
+.method-grid p {
+  margin: 0;
+  color: var(--muted);
 }
 
 .report-group-closed {
@@ -451,8 +521,25 @@ li {
 @media (max-width: 760px) {
   .hero,
   .intro-grid,
-  .content-grid {
+  .content-grid,
+  .method-grid {
     display: block;
+  }
+
+  .method-grid article + article {
+    margin-top: 0.9rem;
+  }
+
+  .outcome-status {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .accepted-report {
+    display: block;
+  }
+
+  .accepted-report > .severity {
+    margin-top: 0.8rem;
   }
 
   .profile-links {

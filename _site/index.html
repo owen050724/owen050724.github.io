@@ -77,9 +77,9 @@
     </nav>
   </header>
 
-  <section class="notice reveal">
+<section class="notice reveal">
   <strong>Responsible disclosure portfolio</strong>
-  <span>76 submitted reports across OSS and BBP programs. Details for unresolved reports are withheld until vendor publication or disclosure permission.</span>
+  <span>One vendor-fixed CVE assignment, supported by 75 additional responsible disclosure reports across OSS and BBP programs.</span>
 </section>
 
   <section class="intro-grid reveal">
@@ -130,32 +130,55 @@
   </div>
 
   <div class="report-group">
-    <h3>CVE / Accepted Reports</h3>
-    <p>Vendor-accepted work is listed here only when public disclosure is safe.</p>
+    <h3>Selected Outcomes</h3>
+    <p>Only disclosure-safe status information is shown. Technical details remain private until coordinated publication.</p>
   </div>
 
     <div class="accepted-report">
       <div>
-        <p class="accepted-report-code">CVE-2026-59210 · Dify · Accepted / Fixed · Reserved</p>
-        <h3>Accepted workspace authorization report</h3>
-        <p>Reported 2026. 5. 26. · Fixed by vendor · Public advisory details withheld until publication.</p>
+        <p class="accepted-report-code">CVE-2026-59210 · Dify</p>
+        <h3>Vendor-fixed authorization boundary vulnerability</h3>
+        <p>Reported May 26, 2026. Accepted and remediated by the vendor; advisory publication is pending.</p>
+        <dl class="outcome-status">
+          <div><dt>Vendor</dt><dd>Accepted</dd></div>
+          <div><dt>Remediation</dt><dd>Fixed</dd></div>
+          <div><dt>CVE</dt><dd>Reserved</dd></div>
+          <div><dt>Disclosure</dt><dd>Advisory pending</dd></div>
+        </dl>
       </div>
       <span class="severity medium">Medium / 6.3</span>
     </div>
 
+    <div class="accepted-report accepted-report-private">
+      <div>
+        <p class="accepted-report-code">Coordinated disclosure · Details withheld</p>
+        <h3>Additional vendor-accepted security report</h3>
+        <p>Validated against a local, self-hosted environment and accepted for remediation. Product and technical details remain private during the patch window.</p>
+      </div>
+      <span class="severity medium">Medium</span>
+    </div>
+
   <div class="report-group">
     <h3>Responsible Disclosure Activity</h3>
-    <p>Submitted work grouped without exposing private report IDs, endpoints, or unfixed vulnerability details.</p>
+    <p>Outcome-first summary of 76 submitted reports, without exposing private report IDs, endpoints, or unfixed vulnerability details.</p>
   </div>
 
   <div class="public-summary-grid">
     <div>
-      <strong>Period</strong>
-      <span>March-July 2026</span>
+      <strong>Vendor-fixed CVE</strong>
+      <span>1 · CVE-2026-59210</span>
     </div>
     <div>
-      <strong>Submitted reports</strong>
-      <span>76</span>
+      <strong>Additional reports</strong>
+      <span>75 responsible disclosure submissions</span>
+    </div>
+    <div>
+      <strong>Total submitted</strong>
+      <span>76 reports · March-July 2026</span>
+    </div>
+    <div>
+      <strong>Research coverage</strong>
+      <span>19 open-source product and bug bounty workspaces</span>
     </div>
     <div>
       <strong>Programs</strong>
@@ -175,6 +198,35 @@
     </p>
   </div>
 </section>
+
+  <section class="method-section reveal">
+    <div class="section-heading">
+      <h2>Research Method</h2>
+      <p>A high-level view of an evidence-first process. Operational heuristics and target-specific techniques are intentionally omitted.</p>
+    </div>
+    <div class="method-grid">
+      <article>
+        <span>01</span>
+        <h3>Boundary Modeling</h3>
+        <p>Define the identities, capabilities, data domains, and trust transitions that shape the system's expected security properties.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h3>Authority-Aware Analysis</h3>
+        <p>Follow how identity and scope propagate across components, focusing on places where authority may be weakened or reinterpreted.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h3>Evidence and Falsification</h3>
+        <p>Use bounded local validation and competing explanations to distinguish a real boundary failure from expected behavior or an artifact.</p>
+      </article>
+      <article>
+        <span>04</span>
+        <h3>Conservative Triage</h3>
+        <p>Separate technical impact from reportability, account for prior work, document limitations, and coordinate disclosure responsibly.</p>
+      </article>
+    </div>
+  </section>
 
   <section class="closing reveal">
     <h2>Objective</h2>
