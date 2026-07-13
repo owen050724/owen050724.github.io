@@ -376,6 +376,10 @@ li {
   padding: 0.95rem;
 }
 
+.public-summary-grid > div:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 .public-summary-grid strong {
   display: block;
   margin-bottom: 0.3rem;

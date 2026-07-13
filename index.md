@@ -120,21 +120,13 @@ title: Yeonoh Park
 
     <div class="accepted-report accepted-report-private">
       <div>
-        <p class="accepted-report-code">Coordinated disclosure · Details withheld</p>
-        <h3>Additional vendor-accepted security report</h3>
-        <p>Validated against a local, self-hosted environment and accepted for remediation. Product and technical details remain private during the patch window.</p>
-      </div>
-      <span class="severity medium">Medium</span>
-    </div>
-
-    <div class="accepted-report accepted-report-private">
-      <div>
-        <p class="accepted-report-code">Coordinated disclosure · Details withheld</p>
+        <p class="accepted-report-code">Coordinated disclosure · 3 reports · Details withheld</p>
         <h3>Additional vendor-accepted security reports</h3>
-        <p>Two findings, conservatively assessed as High and Medium, were validated in local, self-hosted environments and accepted for remediation. Product and technical details remain private during the patch window.</p>
+        <p>Three findings were validated in local, self-hosted environments and accepted for remediation. Product and technical details remain private during their coordinated patch and publication processes.</p>
       </div>
-      <div class="severity-stack" aria-label="Severity: High 7.1 and Medium 5.7">
+      <div class="severity-stack" aria-label="Severity: High 7.1, Medium 6.1, and Medium 5.7">
         <span class="severity high">High / 7.1</span>
+        <span class="severity medium">Medium / 6.1</span>
         <span class="severity medium">Medium / 5.7</span>
       </div>
     </div>
