@@ -48,7 +48,7 @@ title: Yeonoh Park
 
 <section class="notice reveal">
   <strong>Responsible disclosure portfolio</strong>
-  <span>One vendor-fixed CVE assignment, supported by 75 additional responsible disclosure reports across OSS and BBP programs.</span>
+  <span>79 submitted reports across OSS and BBP programs, including one vendor-fixed CVE and three additional vendor-accepted findings.</span>
 </section>
 
   <section class="intro-grid reveal">
@@ -127,9 +127,21 @@ title: Yeonoh Park
       <span class="severity medium">Medium</span>
     </div>
 
+    <div class="accepted-report accepted-report-private">
+      <div>
+        <p class="accepted-report-code">Coordinated disclosure · Details withheld</p>
+        <h3>Additional vendor-accepted security reports</h3>
+        <p>Two findings, conservatively assessed as High and Medium, were validated in local, self-hosted environments and accepted for remediation. Product and technical details remain private during the patch window.</p>
+      </div>
+      <div class="severity-stack" aria-label="Severity: High 7.1 and Medium 5.7">
+        <span class="severity high">High / 7.1</span>
+        <span class="severity medium">Medium / 5.7</span>
+      </div>
+    </div>
+
   <div class="report-group">
     <h3>Responsible Disclosure Activity</h3>
-    <p>Outcome-first summary of 76 submitted reports, without exposing private report IDs, endpoints, or unfixed vulnerability details.</p>
+    <p>Outcome-first summary of 79 submitted reports, without exposing private report IDs, endpoints, or unfixed vulnerability details.</p>
   </div>
 
   <div class="public-summary-grid">
@@ -139,11 +151,15 @@ title: Yeonoh Park
     </div>
     <div>
       <strong>Additional reports</strong>
-      <span>75 responsible disclosure submissions</span>
+      <span>78 responsible disclosure submissions</span>
     </div>
     <div>
       <strong>Total submitted</strong>
-      <span>76 reports · March-July 2026</span>
+      <span>79 reports · March-July 2026</span>
+    </div>
+    <div>
+      <strong>Vendor-accepted findings</strong>
+      <span>3 additional reports beyond the CVE-assigned finding</span>
     </div>
     <div>
       <strong>Research coverage</strong>

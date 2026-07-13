@@ -502,6 +502,13 @@ li {
   font-weight: 750;
 }
 
+.severity-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-items: flex-end;
+}
+
 .severity.low {
   color: var(--low);
 }
@@ -538,8 +545,13 @@ li {
     display: block;
   }
 
-  .accepted-report > .severity {
+  .accepted-report > .severity,
+  .accepted-report > .severity-stack {
     margin-top: 0.8rem;
+  }
+
+  .severity-stack {
+    align-items: flex-start;
   }
 
   .profile-links {
