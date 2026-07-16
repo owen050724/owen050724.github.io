@@ -83,6 +83,8 @@ title: Yeonoh Park
     </div>
     <div>
       <h2>Awards and Honors</h2>
+      <h3>2026</h3>
+      <p>Gold Prize · 2026 Korea Digital Contents Society Summer Conference and Undergraduate Paper Competition · “Analysis of Privilege Transfer Vulnerabilities in Messenger-Based Local AI Agents”</p>
       <h3>2024</h3>
       <p>12th K-Hackathon Finalist · MATLAB Student AI Contest Finalist</p>
       <h3>2023</h3>
