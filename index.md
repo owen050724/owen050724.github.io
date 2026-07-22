@@ -48,7 +48,7 @@ title: Yeonoh Park
 
 <section class="notice reveal">
   <strong>Responsible disclosure portfolio</strong>
-  <span>82 submitted reports across OSS and BBP programs, including one vendor-fixed CVE and three additional vendor-accepted findings.</span>
+  <span>82 submitted reports across OSS and BBP programs, including one vendor-fixed CVE and four additional vendor-accepted findings.</span>
 </section>
 
   <section class="intro-grid reveal">
@@ -122,14 +122,15 @@ title: Yeonoh Park
 
     <div class="accepted-report accepted-report-private">
       <div>
-        <p class="accepted-report-code">Coordinated disclosure · 3 reports · Details withheld</p>
+        <p class="accepted-report-code">Coordinated disclosure · 4 reports · Details withheld</p>
         <h3>Additional vendor-accepted security reports</h3>
-        <p>Three findings were validated in local, self-hosted environments and accepted for remediation. Product and technical details remain private during their coordinated patch and publication processes.</p>
+        <p>Four findings were validated in local, self-hosted environments and accepted by their vendors. Product and technical details remain private during their coordinated remediation and publication processes.</p>
       </div>
-      <div class="severity-stack" aria-label="Severity: High 7.1, Medium 6.1, and Medium 5.7">
+      <div class="severity-stack" aria-label="Severity: High 7.1, Medium 6.1, Medium 5.7, and Medium 5.3">
         <span class="severity high">High / 7.1</span>
         <span class="severity medium">Medium / 6.1</span>
         <span class="severity medium">Medium / 5.7</span>
+        <span class="severity medium">Medium / 5.3</span>
       </div>
     </div>
 
@@ -153,11 +154,11 @@ title: Yeonoh Park
     </div>
     <div>
       <strong>Vendor-accepted findings</strong>
-      <span>3 additional reports beyond the CVE-assigned finding</span>
+      <span>4 additional reports beyond the CVE-assigned finding</span>
     </div>
     <div>
       <strong>Research coverage</strong>
-      <span>36 open-source product and bug bounty workspaces</span>
+      <span>37 open-source product and bug bounty workspaces</span>
     </div>
     <div>
       <strong>Programs</strong>
