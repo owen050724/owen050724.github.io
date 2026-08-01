@@ -48,7 +48,7 @@ title: Yeonoh Park
 
 <section class="notice reveal">
   <strong>Responsible disclosure portfolio</strong>
-  <span>83 submitted reports across OSS and BBP programs, including one vendor-fixed CVE and four additional vendor-accepted findings.</span>
+  <span>89 submitted reports across OSS and BBP programs, including one vendor-fixed CVE and four additional vendor-accepted findings.</span>
 </section>
 
   <section class="intro-grid reveal">
@@ -136,7 +136,7 @@ title: Yeonoh Park
 
   <div class="report-group">
     <h3>Responsible Disclosure Activity</h3>
-    <p>Outcome-first summary of 83 submitted reports, without exposing private report IDs, endpoints, or unfixed vulnerability details.</p>
+    <p>Outcome-first summary of 89 submitted reports, without exposing private report IDs, endpoints, or unfixed vulnerability details.</p>
   </div>
 
   <div class="public-summary-grid">
@@ -146,11 +146,11 @@ title: Yeonoh Park
     </div>
     <div>
       <strong>Additional reports</strong>
-      <span>82 responsible disclosure submissions</span>
+      <span>88 responsible disclosure submissions</span>
     </div>
     <div>
       <strong>Total submitted</strong>
-      <span>83 reports · March-July 2026</span>
+      <span>89 reports · March-July 2026</span>
     </div>
     <div>
       <strong>Vendor-accepted findings</strong>
