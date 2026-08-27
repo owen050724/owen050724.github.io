@@ -1,6 +1,7 @@
-title: Portfolio
-description: Portfolio and academic profile of Yeonoh Park
-lang: ko-KR
+title: Yeonoh Park
+tagline: Security Researcher
+description: Security researcher and Computer Engineering student at SeoulTech focusing on vulnerability research, system security, and cryptography.
+lang: en
 theme: minima
 plugins:
   - jekyll-feed

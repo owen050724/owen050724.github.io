@@ -1,9 +1,8 @@
 ---
 layout: default
-title: Yeonoh Park
 ---
 
-<main class="portfolio-page is-loading">
+<div class="portfolio-page is-loading">
   <header class="hero">
     <div>
       <p class="eyebrow reveal">Security Research · Cryptography · Computer Systems</p>
@@ -46,64 +45,64 @@ title: Yeonoh Park
     </nav>
   </header>
 
-<section class="notice reveal">
-  <strong>Responsible disclosure portfolio</strong>
-  <span>92 submitted reports across OSS and BBP programs, including 10 vendor-confirmed outcomes: five Selected Outcomes and five status-only outcomes.</span>
-</section>
-
-  <section class="intro-grid reveal">
-    <div>
-      <h2>Information</h2>
-      <ul>
-        <li>Dept. of Computer Engineering, Seoul National University of Science and Technology</li>
-        <li>Cryptography Information Security Laboratory, Undergraduate Researcher</li>
-        <li>TCP (Computer Science and Information Technology Club), Leader</li>
-        <li>STCE (SeoulTech Crypto Engine), Member</li>
-      </ul>
+  <section class="highlights-section reveal" aria-labelledby="highlights-title">
+    <div class="section-heading">
+      <h2 id="highlights-title">Highlights</h2>
+      <p>Outcome-focused snapshot of vulnerability research and academic work.</p>
     </div>
-    <div>
-      <h2>Research Interests</h2>
-      <ul>
-        <li>Cryptography</li>
-        <li>System Security</li>
-        <li>Computer Systems</li>
-        <li>Vulnerability Research and Responsible Disclosure</li>
-      </ul>
+    <div class="highlights-grid">
+      <div>
+        <strong>3 CVE identifiers</strong>
+        <span>Dify and Apache DolphinScheduler</span>
+      </div>
+      <div>
+        <strong>1 GHSA</strong>
+        <span>Published ToolJet advisory</span>
+      </div>
+      <div>
+        <strong>10 vendor-confirmed findings</strong>
+        <span>Five selected and five additional status-only outcomes</span>
+      </div>
+      <div>
+        <strong>40 products / workspaces</strong>
+        <span>Open-source and bug bounty research coverage</span>
+      </div>
+      <div>
+        <strong>1 conference paper award</strong>
+        <span>Gold Prize · Undergraduate Paper Competition</span>
+      </div>
     </div>
-  </section>
-
-  <section class="content-grid reveal">
-    <div>
-      <h2>Education</h2>
-      <h3>Seoul National University of Science and Technology</h3>
-      <p>2024-Present · B.S. in Computer Engineering</p>
-      <h3>Busan Science High School</h3>
-      <p>2021-2024 · JBC Broadcasting Team Leader · BIT Computer Science and IT Club</p>
-      <h3>Annam Elementary School / Anrak Middle School</h3>
-    </div>
-    <div>
-      <h2>Awards and Honors</h2>
-      <h3>2026</h3>
-      <p>Gold Prize · 2026 Korea Digital Contents Society Summer Conference and Undergraduate Paper Competition · “Analysis of Privilege Transfer Vulnerabilities in Messenger-Based Local AI Agents”</p>
-      <h3>2024</h3>
-      <p>12th K-Hackathon Finalist · MATLAB Student AI Contest Finalist</p>
-      <h3>2023</h3>
-      <p>Busan SW/AI Education Hackathon Grand Prize · Busan Science Exhibition Encouragement Prize</p>
-      <h3>2022</h3>
-      <p>Busan Future Scientist Award Grand Prize · National High School Club SW/AI Contest Encouragement Prize · Busan Science Exhibition Encouragement Prize</p>
+    <div class="notice">
+      <strong>Research activity</strong>
+      <span>92 responsible disclosure reports submitted across OSS and bug bounty programs from March 22 to August 13, 2026.</span>
     </div>
   </section>
 
-  <section class="reports-section reveal">
-  <div class="section-heading">
-    <h2>Vulnerability Research</h2>
-    <p>Public-safe summary of responsible disclosure work, including approved status-level updates for active coordination.</p>
-  </div>
+  <section class="publication-section reveal" aria-labelledby="publications-title">
+    <div class="section-heading">
+      <h2 id="publications-title">Research &amp; Publications</h2>
+      <p>Academic work connecting local AI agent security with practical authorization-boundary analysis.</p>
+    </div>
+    <article class="publication-card">
+      <div>
+        <p class="publication-kicker">Conference paper · July 1–3, 2026</p>
+        <h3>Analysis of Privilege Transfer Vulnerabilities in Messenger-Based Local AI Agents</h3>
+        <p class="publication-title-original" lang="ko">메신저 기반 로컬 AI 에이전트의 권한 전이 취약점 분석</p>
+        <p class="publication-byline"><span lang="ko">박연오 · 최도현 · 김역 · 이창훈 · 손기욱</span> · Seoul National University of Science and Technology</p>
+        <p>2026 Summer Conference of the Korea Digital Contents Society · Undergraduate Paper Competition</p>
+      </div>
+      <div class="publication-outcome">
+        <span class="award-badge">Gold Prize</span>
+        <a href="https://dcs.or.kr/conference/summer2026/notice/article/1114" target="_blank" rel="noopener noreferrer">Official award announcement <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>
+  </section>
 
-  <div class="report-group">
-    <h3>Selected Outcomes</h3>
-    <p>Individually identified outcomes are already public or were previously disclosed here. All other active coordination remains aggregate-only.</p>
-  </div>
+  <section class="reports-section reveal" aria-labelledby="selected-research-title">
+    <div class="section-heading">
+      <h2 id="selected-research-title">Selected Vulnerability Research</h2>
+      <p>Five representative outcomes with public or approved status-level details. Active technical coordination remains aggregate-only.</p>
+    </div>
 
     <div class="accepted-report">
       <div>
@@ -182,6 +181,14 @@ title: Yeonoh Park
       <span class="severity medium">Medium / 4.3</span>
     </div>
 
+  </section>
+
+  <section class="activity-section reveal" aria-labelledby="activity-title">
+    <div class="section-heading">
+      <h2 id="activity-title">Responsible Disclosure Activity</h2>
+      <p>Submission and outcome counts describe the same 92 historical reports. Vendor-confirmed outcomes are a subset of the total, not additional reports.</p>
+    </div>
+
   <div class="report-group">
     <h3>Other Coordinated Outcomes</h3>
     <p>Remaining unpublished outcomes stay anonymous until coordinated publication or explicit disclosure approval.</p>
@@ -201,11 +208,6 @@ title: Yeonoh Park
         <span class="severity">1 vendor rating pending</span>
       </div>
     </div>
-
-  <div class="report-group">
-    <h3>Responsible Disclosure Activity</h3>
-    <p>Submission and outcome counts describe the same 92 historical reports. Vendor-confirmed outcomes are a subset of the total, not additional reports.</p>
-  </div>
 
   <div class="public-summary-grid">
     <div>
@@ -288,14 +290,47 @@ title: Yeonoh Park
     </div>
   </section>
 
-  <section class="closing reveal">
-    <h2>Objective</h2>
-    <p>
-      To build strong foundations in cryptography and system security and grow into a security
-      professional capable of connecting research with real-world impact.
-    </p>
+  <section class="background-section reveal" aria-labelledby="background-title">
+    <div class="section-heading">
+      <h2 id="background-title">Education &amp; Honors</h2>
+      <p>Academic background, research affiliations, and selected recognition.</p>
+    </div>
+    <div class="background-grid">
+      <div>
+        <h3>Education</h3>
+        <h4>Seoul National University of Science and Technology</h4>
+        <p>B.S. in Computer Engineering · 2024–Present</p>
+        <h4>Busan Science High School</h4>
+        <p>2021–2024</p>
+      </div>
+      <div>
+        <h3>Affiliations &amp; Interests</h3>
+        <ul>
+          <li>Cryptography Information Security Laboratory · Undergraduate Researcher</li>
+          <li>TCP (Computer Science and Information Technology Club) · Leader</li>
+          <li>STCE (SeoulTech Crypto Engine) · Member</li>
+        </ul>
+        <p class="interest-line">Cryptography · System Security · Computer Systems · Vulnerability Research</p>
+      </div>
+      <div>
+        <h3>Awards and Honors</h3>
+        <h4>2026</h4>
+        <p><a href="https://dcs.or.kr/conference/summer2026/notice/article/1114" target="_blank" rel="noopener noreferrer">Gold Prize</a> · 2026 Summer Conference of the Korea Digital Contents Society · Undergraduate Paper Competition</p>
+        <h4>2024</h4>
+        <p>12th K-Hackathon Finalist · MATLAB Student AI Contest Finalist</p>
+        <h4>2023</h4>
+        <p>Busan SW/AI Education Hackathon Grand Prize · Busan Science Exhibition Encouragement Prize</p>
+        <h4>2022</h4>
+        <p>Busan Future Scientist Award Grand Prize · National High School Club SW/AI Contest Encouragement Prize · Busan Science Exhibition Encouragement Prize</p>
+      </div>
+    </div>
   </section>
-</main>
+
+  <section class="contact-section reveal" aria-labelledby="contact-title">
+    <h2 id="contact-title">Contact</h2>
+    <p>For research collaboration or security-related inquiries, contact me at <a href="mailto:24101209@seoultech.ac.kr">24101209@seoultech.ac.kr</a>.</p>
+  </section>
+</div>
 
 <noscript>
   <style>
@@ -318,6 +353,19 @@ title: Yeonoh Park
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     if (!page || typedNames.length === 0) return;
+
+    if (prefersReducedMotion) {
+      typedNames.forEach((name) => {
+        name.textContent = name.dataset.text || name.textContent;
+      });
+      page.classList.remove("is-loading");
+      page.classList.add("is-ready");
+      revealItems.forEach((item) => {
+        item.style.transitionDelay = "0ms";
+        item.classList.add("is-visible");
+      });
+      return;
+    }
 
     const revealAll = () => {
       page.classList.add("is-ready");
@@ -343,13 +391,13 @@ title: Yeonoh Park
         index += 1;
 
         if (index < text.length) {
-          window.setTimeout(typeNext, prefersReducedMotion ? 60 : 150);
+          window.setTimeout(typeNext, 150);
           return;
         }
 
         name.classList.remove("is-typing");
         name.classList.add("is-typed");
-        window.setTimeout(done, prefersReducedMotion ? 100 : 260);
+        window.setTimeout(done, 260);
       };
 
       typeNext();
@@ -359,13 +407,13 @@ title: Yeonoh Park
       if (index >= typedNames.length) {
         page.classList.remove("typing-active");
         page.classList.add("typing-done");
-        window.setTimeout(revealAll, prefersReducedMotion ? 120 : 280);
+        window.setTimeout(revealAll, 280);
         return;
       }
 
       typeName(typedNames[index], () => typeSequence(index + 1));
     };
 
-    window.setTimeout(() => typeSequence(), prefersReducedMotion ? 120 : 450);
+    window.setTimeout(() => typeSequence(), 450);
   })();
 </script>
