@@ -1,391 +1,90 @@
 ---
 layout: default
+description: Security researcher and Computer Engineering student at SeoulTech focusing on vulnerability research, system security, and cryptography.
 ---
 
-<div class="portfolio-page is-loading">
-  <header class="hero">
-    <div>
-      <p class="eyebrow reveal">Security Research · Cryptography · Computer Systems</p>
-      <h1>
-        <span class="typed-name typed-korean" data-text="박연오">박연오</span>
-        <span class="typed-name typed-english" data-text="Yeonoh Park">Yeonoh Park</span>
-      </h1>
-      <p class="lead reveal">
-        SeoulTech Computer Engineering student and undergraduate researcher at the Cryptography
-        Information Security Laboratory. I focus on cryptography, system security, and practical
-        vulnerability research.
-      </p>
+<div class="home-page">
+  <header class="home-hero">
+    <p class="eyebrow">Security Research · Cryptography · Computer Systems</p>
+    <h1 aria-label="박연오, Yeonoh Park">
+      <span class="typed-name typed-korean" data-text="박연오">박연오</span>
+      <span class="typed-name typed-english" data-text="Yeonoh Park">Yeonoh Park</span>
+    </h1>
+    <p class="hero-lead">
+      SeoulTech Computer Engineering student and undergraduate researcher at the Cryptography
+      Information Security Laboratory, focusing on vulnerability research, system security, and
+      cryptography.
+    </p>
+    <div class="hero-actions" aria-label="Explore this website">
+      <a href="{{ '/vulnerabilities/' | relative_url }}">Vulnerability research <span aria-hidden="true">→</span></a>
+      <a href="{{ '/publications/' | relative_url }}">Publications <span aria-hidden="true">→</span></a>
     </div>
-    <nav class="profile-links reveal" aria-label="Profile links">
-      <a href="https://github.com/owen050724" target="_blank" rel="noopener noreferrer" aria-label="GitHub: owen050724">
-        <svg viewBox="0 0 16 16" aria-hidden="true">
-          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z" />
-        </svg>
-      </a>
-      <a href="mailto:24101209@seoultech.ac.kr" aria-label="Email: 24101209@seoultech.ac.kr">
-        <svg viewBox="0 0 16 16" aria-hidden="true">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.22l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.38-4.71 2.83L15 11.1V5.38Zm-.03 6.88-5.64-3.47L8 9.58l-1.33-.79-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .97-.74ZM1 11.1l4.71-2.89L1 5.38v5.72Z" />
-        </svg>
-      </a>
-      <a href="https://discord.com/users/495616210835079178" target="_blank" rel="noopener noreferrer" aria-label="Discord: 연어">
-        <svg viewBox="0 0 16 16" aria-hidden="true">
-          <path d="M13.55 2.91a13.2 13.2 0 0 0-3.26-1.01.05.05 0 0 0-.05.02c-.14.25-.3.58-.41.83a12.2 12.2 0 0 0-3.66 0 8 8 0 0 0-.41-.83.05.05 0 0 0-.05-.02c-1.13.19-2.22.53-3.26 1.01a.04.04 0 0 0-.02.02C.36 6.02-.21 9.05.07 12.03q0 .02.02.04a13.3 13.3 0 0 0 4 2.02.05.05 0 0 0 .05-.02q.46-.63.82-1.33a.05.05 0 0 0-.03-.07 9 9 0 0 1-1.25-.59.05.05 0 0 1-.01-.09q.13-.1.25-.2a.05.05 0 0 1 .05 0c2.62 1.2 5.45 1.2 8.04 0a.05.05 0 0 1 .05 0q.12.1.25.2a.05.05 0 0 1 0 .08 8 8 0 0 1-1.25.6.05.05 0 0 0-.03.07c.24.47.52.91.82 1.33a.05.05 0 0 0 .06.02 13.2 13.2 0 0 0 4-2.02.05.05 0 0 0 .02-.04c.33-3.45-.56-6.45-2.37-9.1a.03.03 0 0 0-.02-.02ZM5.35 10.21c-.79 0-1.44-.72-1.44-1.61s.64-1.61 1.44-1.61c.81 0 1.45.73 1.44 1.61 0 .89-.64 1.61-1.44 1.61Zm5.31 0c-.79 0-1.44-.72-1.44-1.61s.64-1.61 1.44-1.61c.81 0 1.45.73 1.44 1.61 0 .89-.63 1.61-1.44 1.61Z" />
-        </svg>
-      </a>
-      <a href="https://www.instagram.com/dus_oh24/" target="_blank" rel="noopener noreferrer" aria-label="Instagram: dus_oh24">
-        <svg viewBox="0 0 16 16" aria-hidden="true">
-          <path d="M8 0C5.83 0 5.56.01 4.7.05c-.85.04-1.43.17-1.94.37a3.9 3.9 0 0 0-1.42.92A3.9 3.9 0 0 0 .42 2.76C.22 3.27.09 3.85.05 4.7.01 5.56 0 5.83 0 8s.01 2.44.05 3.3c.04.85.17 1.43.37 1.94.2.53.48.97.92 1.42.44.44.89.72 1.42.92.51.2 1.09.33 1.94.37.86.04 1.13.05 3.3.05s2.44-.01 3.3-.05c.85-.04 1.43-.17 1.94-.37a3.9 3.9 0 0 0 1.42-.92c.44-.45.72-.89.92-1.42.2-.51.33-1.09.37-1.94.04-.86.05-1.13.05-3.3s-.01-2.44-.05-3.3c-.04-.85-.17-1.43-.37-1.94a3.9 3.9 0 0 0-.92-1.42A3.9 3.9 0 0 0 13.24.42c-.51-.2-1.09-.33-1.94-.37C10.44.01 10.17 0 8 0Zm-.72 1.44H8c2.14 0 2.39.01 3.23.05.78.03 1.2.17 1.49.27.37.15.64.32.92.6.28.28.45.55.6.92.11.28.24.71.27 1.49.04.84.05 1.1.05 3.23s-.01 2.39-.05 3.23c-.03.78-.17 1.2-.27 1.49-.15.37-.32.64-.6.92-.28.28-.55.45-.92.6-.28.11-.7.24-1.49.27-.84.04-1.1.05-3.23.05s-2.39-.01-3.23-.05c-.78-.03-1.2-.17-1.49-.27a2.5 2.5 0 0 1-.92-.6 2.5 2.5 0 0 1-.6-.92c-.11-.28-.24-.7-.27-1.49-.04-.84-.05-1.1-.05-3.23s.01-2.39.05-3.23c.03-.78.17-1.2.27-1.49.15-.37.32-.64.6-.92s.55-.45.92-.6c.28-.11.71-.24 1.49-.27.74-.04 1.02-.05 2.51-.05Zm4.99 1.33a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92ZM8 3.89a4.11 4.11 0 1 0 0 8.22 4.11 4.11 0 0 0 0-8.22Zm0 1.44a2.67 2.67 0 1 1 0 5.34 2.67 2.67 0 0 1 0-5.34Z" />
-        </svg>
-      </a>
-      <a href="https://www.linkedin.com/in/yeonohpark/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn: Yeonoh Park">
-        <svg viewBox="0 0 16 16" aria-hidden="true">
-          <path d="M0 1.15C0 .52.53 0 1.18 0h13.64C15.47 0 16 .52 16 1.15v13.7c0 .63-.53 1.15-1.18 1.15H1.18C.53 16 0 15.48 0 14.85V1.15Zm4.94 12.24V6.17H2.54v7.22h2.4ZM3.74 5.18c.84 0 1.36-.55 1.36-1.25-.02-.71-.52-1.25-1.34-1.25s-1.36.54-1.36 1.25c0 .7.52 1.25 1.32 1.25h.02Zm4.9 8.21V9.36c0-.22.02-.43.08-.59.17-.43.56-.88 1.22-.88.86 0 1.2.66 1.2 1.62v3.88h2.4V9.23c0-2.23-1.19-3.27-2.78-3.27-1.28 0-1.86.7-2.18 1.2h.02v-1H6.2c.03.68 0 7.23 0 7.23h2.4Z" />
-        </svg>
-      </a>
-    </nav>
   </header>
 
-  <section class="highlights-section reveal" aria-labelledby="highlights-title">
+  <section class="home-section" aria-labelledby="outcomes-title">
     <div class="section-heading">
-      <h2 id="highlights-title">Highlights</h2>
-      <p>Outcome-focused snapshot of vulnerability research and academic work.</p>
+      <h2 id="outcomes-title">Key Outcomes</h2>
+      <p>A compact view of verified research and academic outcomes.</p>
     </div>
-    <div class="highlights-grid">
+    <dl class="metric-strip">
       <div>
-        <strong>3 CVEs</strong>
-        <span>Dify and Apache DolphinScheduler</span>
-      </div>
-      <div>
-        <strong>1 GHSA</strong>
-        <span>Published ToolJet advisory</span>
+        <dt>CVEs</dt>
+        <dd>3</dd>
       </div>
       <div>
-        <strong>10 confirmed findings</strong>
-        <span>Vendor-confirmed · five selected and five status-only</span>
+        <dt>GHSA</dt>
+        <dd>1</dd>
       </div>
       <div>
-        <strong>40 products / workspaces</strong>
-        <span>Open-source and bug bounty research coverage</span>
+        <dt>Vendor-confirmed findings</dt>
+        <dd>10</dd>
       </div>
       <div>
-        <strong>1 paper award</strong>
-        <span>Gold Prize · Undergraduate Paper Competition</span>
-      </div>
-    </div>
-    <div class="notice">
-      <strong>Research activity</strong>
-      <span>92 responsible disclosure reports submitted across OSS and bug bounty programs from March 22 to August 13, 2026.</span>
-    </div>
-  </section>
-
-  <section class="publication-section reveal" aria-labelledby="publications-title">
-    <div class="section-heading">
-      <h2 id="publications-title">Research &amp; Publications</h2>
-      <p>Academic work connecting local AI agent security with practical authorization-boundary analysis.</p>
-    </div>
-    <article class="publication-card">
-      <div>
-        <p class="publication-kicker">Conference paper · July 1–3, 2026</p>
-        <h3>Analysis of Privilege Transfer Vulnerabilities in Messenger-Based Local AI Agents</h3>
-        <p class="publication-title-original" lang="ko">메신저 기반 로컬 AI 에이전트의 권한 전이 취약점 분석</p>
-        <p class="publication-byline"><span lang="ko">박연오 · 최도현 · 김역 · 이창훈 · 손기욱</span> · Seoul National University of Science and Technology</p>
-        <p>2026 Summer Conference of the Korea Digital Contents Society · Undergraduate Paper Competition</p>
-      </div>
-      <div class="publication-outcome">
-        <span class="award-badge">Gold Prize</span>
-        <a class="certificate-link" href="{{ '/assets/documents/2026-kdcs-gold-prize-certificate.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">View award certificate (PDF) <span aria-hidden="true">↗</span></a>
-      </div>
-    </article>
-  </section>
-
-  <section class="reports-section reveal" aria-labelledby="selected-research-title">
-    <div class="section-heading">
-      <h2 id="selected-research-title">Selected Vulnerability Research</h2>
-      <p>Five representative outcomes with public or approved status-level details. Active technical coordination remains aggregate-only.</p>
-    </div>
-
-    <div class="accepted-report">
-      <div>
-        <p class="accepted-report-code">CVE-2026-59210 · Dify</p>
-        <h3>Vendor-confirmed authorization boundary vulnerability</h3>
-        <p>Reported May 26, 2026. Accepted with a vendor-confirmed code fix; fixed-release metadata and advisory publication remain pending.</p>
-        <dl class="outcome-status">
-          <div><dt>Vendor</dt><dd>Accepted</dd></div>
-          <div><dt>Remediation</dt><dd>Fix recorded</dd></div>
-          <div><dt>CVE</dt><dd>Reserved</dd></div>
-          <div><dt>Disclosure</dt><dd>Advisory pending</dd></div>
-        </dl>
-      </div>
-      <span class="severity medium">Medium / 6.3</span>
-    </div>
-
-    <div class="accepted-report">
-      <div>
-        <p class="accepted-report-code">CVE-2026-57590 · Apache DolphinScheduler</p>
-        <h3>Vendor-confirmed authorization boundary vulnerability</h3>
-        <p>Reported June 29, 2026. Vendor-confirmed with reporter credit; remediation details, fixed-release metadata, and advisory publication remain pending.</p>
-        <dl class="outcome-status">
-          <div><dt>Vendor</dt><dd>Confirmed</dd></div>
-          <div><dt>Remediation</dt><dd>Pending</dd></div>
-          <div><dt>CVE</dt><dd>Reserved</dd></div>
-          <div><dt>Disclosure</dt><dd>Advisory pending</dd></div>
-        </dl>
-      </div>
-      <span class="severity">Severity pending</span>
-    </div>
-
-    <div class="accepted-report">
-      <div>
-        <p class="accepted-report-code">CVE-2026-66082 · Apache DolphinScheduler</p>
-        <h3>Vendor-confirmed authorization boundary vulnerability</h3>
-        <p>Reported June 29, 2026. Vendor-confirmed with reporter credit; remediation details, fixed-release metadata, and advisory publication remain pending.</p>
-        <dl class="outcome-status">
-          <div><dt>Vendor</dt><dd>Confirmed</dd></div>
-          <div><dt>Remediation</dt><dd>Pending</dd></div>
-          <div><dt>CVE</dt><dd>Reserved</dd></div>
-          <div><dt>Disclosure</dt><dd>Advisory pending</dd></div>
-        </dl>
-      </div>
-      <span class="severity">Severity pending</span>
-    </div>
-
-    <div class="accepted-report">
-      <div>
-        <p class="accepted-report-code">GHSA-2jhv-482p-4php · ToolJet</p>
-        <h3>
-          <a href="https://github.com/ToolJet/ToolJet/security/advisories/GHSA-2jhv-482p-4php" target="_blank" rel="noopener noreferrer">Vendor-confirmed authorization boundary vulnerability</a>
-        </h3>
-        <p>Reported June 30, 2026. Accepted and published August 7 with Finder credit; the advisory currently has no CVE assignment.</p>
-        <dl class="outcome-status">
-          <div><dt>Vendor</dt><dd>Accepted</dd></div>
-          <div><dt>Remediation</dt><dd>Metadata under review</dd></div>
-          <div><dt>CVE</dt><dd>Not assigned</dd></div>
-          <div><dt>Disclosure</dt><dd>Published</dd></div>
-        </dl>
-      </div>
-      <span class="severity medium">Medium / 6.8</span>
-    </div>
-
-    <div class="accepted-report">
-      <div>
-        <p class="accepted-report-code">CVE pending · Grafana · Bounty $656</p>
-        <h3>Vendor-accepted authorization boundary vulnerability</h3>
-        <p>Reported March 22, 2026. Accepted August 26 with a vendor-final Medium 4.3 rating and a $656 bounty; CVE, remediation, and advisory coordination remain pending.</p>
-        <dl class="outcome-status">
-          <div><dt>Vendor</dt><dd>Accepted</dd></div>
-          <div><dt>Remediation</dt><dd>Pending</dd></div>
-          <div><dt>CVE</dt><dd>Pending</dd></div>
-          <div><dt>Disclosure</dt><dd>Advisory pending</dd></div>
-        </dl>
-      </div>
-      <span class="severity medium">Medium / 4.3</span>
-    </div>
-
-  </section>
-
-  <section class="activity-section reveal" aria-labelledby="activity-title">
-    <div class="section-heading">
-      <h2 id="activity-title">Responsible Disclosure Activity</h2>
-      <p>Status-level context for coordinated work that is not individually identified above.</p>
-    </div>
-
-    <div class="report-group">
-      <h3>Other Coordinated Outcomes</h3>
-      <p>Remaining unpublished outcomes stay anonymous until coordinated publication or explicit disclosure approval.</p>
-    </div>
-
-    <div class="accepted-report accepted-report-private">
-      <div>
-        <p class="accepted-report-code">Coordinated disclosure · 5 reports · Details withheld</p>
-        <h3>Additional vendor-confirmed security reports</h3>
-        <p>Five reports were validated in local, self-hosted environments and accepted or otherwise confirmed by their vendors. Three have numeric reported or vendor-confirmed scores, one has a vendor-rated Moderate severity without a numeric score, and one awaits final vendor severity. Product and technical details remain private during coordinated remediation and publication.</p>
-      </div>
-      <div class="severity-stack" aria-label="Reported or vendor severity: High 7.1, Medium 6.1, Medium 5.7, Moderate without a numeric score, and one rating pending">
-        <span class="severity high">High / 7.1</span>
-        <span class="severity medium">Medium / 6.1</span>
-        <span class="severity medium">Medium / 5.7</span>
-        <span class="severity medium">Moderate / Score not published</span>
-        <span class="severity">1 vendor rating pending</span>
-      </div>
-    </div>
-
-    <dl class="activity-details">
-      <div>
-        <dt>Programs</dt>
-        <dd>OSS projects, GitHub Security Advisories, ASF Security, Jenkins Security Jira, Intigriti, HackerOne, and Wordfence</dd>
+        <dt>Products / workspaces</dt>
+        <dd>40</dd>
       </div>
       <div>
-        <dt>Research focus</dt>
-        <dd>Authorization boundaries, tenant isolation, credential handling, workflow execution, and plugin and API surfaces</dd>
+        <dt>Conference paper award</dt>
+        <dd>1</dd>
       </div>
     </dl>
-
-    <div class="public-note">
-      <h3>Disclosure Policy</h3>
-      <p>
-        Unpublished coordinated cases are limited to status-level summaries explicitly selected for disclosure.
-        Technical titles, report IDs, proof-of-concept details, affected endpoints, and exploit chains are withheld until the vendor publishes an advisory or explicitly permits disclosure.
-      </p>
-    </div>
+    <p class="metric-note">
+      92 responsible disclosure reports submitted across OSS and bug bounty programs from
+      March 22 to August 13, 2026. Outcomes are prioritized over submission volume.
+    </p>
   </section>
 
-  <section class="method-section reveal">
+  <section class="home-section" aria-labelledby="selected-work-title">
     <div class="section-heading">
-      <h2>Research Method</h2>
-      <p>A high-level view of an evidence-first process. Operational heuristics and target-specific techniques are intentionally omitted.</p>
+      <h2 id="selected-work-title">Selected Work</h2>
+      <p>Representative security and academic research. Detailed records live on their dedicated pages.</p>
     </div>
-    <div class="method-grid">
-      <article>
-        <span>01</span>
-        <h3>Boundary Modeling</h3>
-        <p>Define the identities, capabilities, data domains, and trust transitions that shape the system's expected security properties.</p>
+    <div class="work-list">
+      <article class="work-item">
+        <p class="item-kicker">CVE-2026-59210 · Dify</p>
+        <h3>Vendor-confirmed authorization boundary vulnerability</h3>
+        <p>Accepted with a vendor-confirmed code fix · Medium 6.3 · CVE reserved · Advisory pending</p>
       </article>
-      <article>
-        <span>02</span>
-        <h3>Authority-Aware Analysis</h3>
-        <p>Follow how identity and scope propagate across components, focusing on places where authority may be weakened or reinterpreted.</p>
+      <article class="work-item">
+        <p class="item-kicker">CVE-2026-57590 / CVE-2026-66082 · Apache DolphinScheduler</p>
+        <h3>Two separately confirmed authorization boundary findings</h3>
+        <p>Vendor confirmed with reporter credit · Severity, remediation, and advisory details pending</p>
       </article>
-      <article>
-        <span>03</span>
-        <h3>Evidence and Falsification</h3>
-        <p>Use bounded local validation and competing explanations to distinguish a real boundary failure from expected behavior or an artifact.</p>
-      </article>
-      <article>
-        <span>04</span>
-        <h3>Conservative Triage</h3>
-        <p>Separate technical impact from reportability, account for prior work, document limitations, and coordinate disclosure responsibly.</p>
+      <article class="work-item">
+        <p class="item-kicker">Conference paper · 2026</p>
+        <h3>Analysis of Privilege Transfer Vulnerabilities in Messenger-Based Local AI Agents</h3>
+        <p>Gold Prize · Korea Digital Contents Society Undergraduate Paper Competition</p>
       </article>
     </div>
+    <nav class="section-links" aria-label="Selected work links">
+      <a href="{{ '/vulnerabilities/' | relative_url }}">View vulnerability research <span aria-hidden="true">→</span></a>
+      <a href="{{ '/publications/' | relative_url }}">View publications <span aria-hidden="true">→</span></a>
+    </nav>
   </section>
 
-  <section class="background-section reveal" aria-labelledby="background-title">
-    <div class="section-heading">
-      <h2 id="background-title">Education &amp; Honors</h2>
-      <p>Academic background, research affiliations, and selected recognition.</p>
-    </div>
-    <div class="background-grid">
-      <div>
-        <h3>Education</h3>
-        <h4>Seoul National University of Science and Technology</h4>
-        <p>B.S. in Computer Engineering · 2024–Present</p>
-        <h4>Busan Science High School</h4>
-        <p>2021–2024</p>
-      </div>
-      <div>
-        <h3>Affiliations &amp; Interests</h3>
-        <ul>
-          <li>Cryptography Information Security Laboratory · Undergraduate Researcher</li>
-          <li>TCP (Computer Science and Information Technology Club) · Leader</li>
-          <li>STCE (SeoulTech Crypto Engine) · Member</li>
-        </ul>
-        <p class="interest-line">Cryptography · System Security · Computer Systems · Vulnerability Research</p>
-      </div>
-      <div>
-        <h3>Awards and Honors</h3>
-        <h4>2026</h4>
-        <p>Gold Prize · 2026 Summer Conference of the Korea Digital Contents Society · Undergraduate Paper Competition</p>
-        <h4>2024</h4>
-        <p>12th K-Hackathon Finalist · MATLAB Student AI Contest Finalist</p>
-        <h4>2023</h4>
-        <p>Busan SW/AI Education Hackathon Grand Prize · Busan Science Exhibition Encouragement Prize</p>
-        <h4>2022</h4>
-        <p>Busan Future Scientist Award Grand Prize · National High School Club SW/AI Contest Encouragement Prize · Busan Science Exhibition Encouragement Prize</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact-section reveal" aria-labelledby="contact-title">
-    <h2 id="contact-title">Contact</h2>
-    <p>For research collaboration or security-related inquiries, contact me at <a href="mailto:24101209@seoultech.ac.kr">24101209@seoultech.ac.kr</a>.</p>
+  <section class="background-line" aria-label="Current academic background">
+    <span>SeoulTech</span>
+    <span>Cryptography Information Security Laboratory</span>
+    <span>Computer Engineering</span>
   </section>
 </div>
-
-<noscript>
-  <style>
-    .portfolio-page.is-loading .reveal {
-      opacity: 1;
-      transform: none;
-    }
-
-    .portfolio-page.is-loading .typed-name {
-      color: inherit;
-    }
-  </style>
-</noscript>
-
-<script>
-  (() => {
-    const page = document.querySelector(".portfolio-page");
-    const typedNames = Array.from(document.querySelectorAll(".typed-name"));
-    const revealItems = Array.from(document.querySelectorAll(".reveal"));
-    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-    if (!page || typedNames.length === 0) return;
-
-    if (prefersReducedMotion) {
-      typedNames.forEach((name) => {
-        name.textContent = name.dataset.text || name.textContent;
-      });
-      page.classList.remove("is-loading");
-      page.classList.add("is-ready");
-      revealItems.forEach((item) => {
-        item.style.transitionDelay = "0ms";
-        item.classList.add("is-visible");
-      });
-      return;
-    }
-
-    let hasRevealed = false;
-
-    const revealAll = () => {
-      if (hasRevealed) return;
-      hasRevealed = true;
-      page.classList.add("is-ready");
-      revealItems.forEach((item) => {
-        item.style.transitionDelay = "0ms";
-        item.classList.add("is-visible");
-      });
-    };
-
-    typedNames.forEach((name) => {
-      name.textContent = "";
-    });
-    page.classList.add("typing-active");
-
-    const typeName = (name, done) => {
-      const text = name.dataset.text || name.textContent;
-      let index = 0;
-
-      name.classList.add("is-typing");
-
-      const typeNext = () => {
-        name.textContent = text.slice(0, index + 1);
-        index += 1;
-
-        if (index < text.length) {
-          window.setTimeout(typeNext, 150);
-          return;
-        }
-
-        name.classList.remove("is-typing");
-        name.classList.add("is-typed");
-        window.setTimeout(done, 260);
-      };
-
-      typeNext();
-    };
-
-    const typeSequence = (index = 0) => {
-      if (index >= typedNames.length) {
-        page.classList.remove("typing-active");
-        page.classList.add("typing-done");
-        return;
-      }
-
-      typeName(typedNames[index], () => typeSequence(index + 1));
-    };
-
-    window.setTimeout(revealAll, 520);
-    window.setTimeout(() => typeSequence(), 450);
-  })();
-</script>

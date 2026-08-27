@@ -1,0 +1,31 @@
+<aside class="site-sidebar" id="site-sidebar" aria-label="Site navigation">
+  <div class="sidebar-heading">
+    <a class="sidebar-identity" href="{{ '/' | relative_url }}">
+      <strong>Yeonoh Park</strong>
+      <span>Security Researcher</span>
+    </a>
+    <button class="nav-close" type="button" data-nav-close>
+      <span aria-hidden="true">×</span>
+      <span class="visually-hidden">Close navigation</span>
+    </button>
+  </div>
+
+  <nav class="sidebar-nav" aria-label="Primary">
+    <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="is-active" aria-current="page"{% endif %}>Home</a>
+    <a href="{{ '/vulnerabilities/' | relative_url }}"{% if page.url == '/vulnerabilities/' %} class="is-active" aria-current="page"{% endif %}>Vulnerability Research</a>
+    <a href="{{ '/publications/' | relative_url }}"{% if page.url == '/publications/' %} class="is-active" aria-current="page"{% endif %}>Publications</a>
+    <a href="{{ '/research/' | relative_url }}"{% if page.url == '/research/' %} class="is-active" aria-current="page"{% endif %}>Research</a>
+    <a href="{{ '/honors/' | relative_url }}"{% if page.url == '/honors/' %} class="is-active" aria-current="page"{% endif %}>Honors</a>
+    <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} class="is-active" aria-current="page"{% endif %}>About</a>
+    <a href="{{ '/contact/' | relative_url }}"{% if page.url == '/contact/' %} class="is-active" aria-current="page"{% endif %}>Contact</a>
+    <a class="external-link" href="https://github.com/owen050724" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+  </nav>
+
+  <div class="sidebar-footer">
+    <p>SeoulTech · CIS Lab</p>
+    <div class="sidebar-contact" aria-label="Professional profiles">
+      <a href="mailto:24101209@seoultech.ac.kr">Email</a>
+      <a href="https://www.linkedin.com/in/yeonohpark/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </div>
+</aside>
