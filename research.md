@@ -9,7 +9,7 @@ permalink: /research/
   <header class="detail-header">
     <p class="eyebrow">Interests and methodology</p>
     <h1>Research</h1>
-    <p>I study how identity, authority, and trust move across software boundaries, combining systems thinking with careful empirical validation.</p>
+    <p>My current security research examines how identity, authority, and trust move across software boundaries, alongside broader interests in cryptography and computer systems.</p>
   </header>
 
   <section class="detail-section" aria-labelledby="research-interests">

@@ -27,6 +27,8 @@ This repository is the source for Yeonoh Park's public academic security researc
 
 When adding or changing a route, update the shared sidebar once instead of copying navigation into pages. Preserve each page's explicit permalink and active-page `aria-current` behavior.
 
+Homepage Selected Work entries deep-link to stable detail anchors. Preserve the CVE/GHSA record IDs in `vulnerabilities.md` and the `messenger-based-local-ai-agent-security` publication ID, or update every inbound link in the same change.
+
 ## Public vulnerability facts
 
 Treat `vulnerabilities.md` as the current public source of truth. At this handoff, the public summary is:
@@ -45,7 +47,7 @@ The ten outcomes are five identified representative findings plus five anonymous
 - ToolJet, GHSA-2jhv-482p-4php: Accepted and published; Finder credit; Medium 6.8; no CVE assigned.
 - Grafana via Intigriti: Accepted; vendor-final Medium 4.3; $656 bounty; CVE, remediation, and advisory coordination pending.
 
-For the five anonymous coordinated outcomes, expose only the aggregate ratings already published: High 7.1, Medium 6.1, Medium 5.7, Moderate without a numeric score, and one vendor rating pending. In timelines, keep report dates distinct from later status changes by retaining wording such as `Report submitted · Current status: …`.
+For the five anonymous coordinated outcomes, expose only the aggregate ratings already published: High 7.1, Medium 6.1, Medium 5.7, Moderate without a numeric score, and one vendor rating pending. In the timeline, keep each date's event type explicit: Grafana is an acceptance date, ToolJet is an advisory publication date, and the Dify/DolphinScheduler dates are report submission dates. Keep current status in the separate detail text.
 
 If any metric changes, audit every occurrence across the homepage and vulnerability page so totals remain consistent.
 

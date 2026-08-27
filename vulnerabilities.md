@@ -50,7 +50,7 @@ permalink: /vulnerabilities/
     </header>
 
     <div class="vulnerability-record-list">
-      <article class="vulnerability-record">
+      <article class="vulnerability-record" id="cve-2026-59210">
         <header class="vulnerability-record-header">
           <p class="vulnerability-identifier">CVE-2026-59210 · Dify</p>
           <h3>Vendor-confirmed authorization boundary vulnerability</h3>
@@ -68,7 +68,7 @@ permalink: /vulnerabilities/
         </dl>
       </article>
 
-      <article class="vulnerability-record">
+      <article class="vulnerability-record" id="cve-2026-57590">
         <header class="vulnerability-record-header">
           <p class="vulnerability-identifier">CVE-2026-57590 · Apache DolphinScheduler</p>
           <h3>Vendor-confirmed authorization boundary vulnerability</h3>
@@ -86,7 +86,7 @@ permalink: /vulnerabilities/
         </dl>
       </article>
 
-      <article class="vulnerability-record">
+      <article class="vulnerability-record" id="cve-2026-66082">
         <header class="vulnerability-record-header">
           <p class="vulnerability-identifier">CVE-2026-66082 · Apache DolphinScheduler</p>
           <h3>Vendor-confirmed authorization boundary vulnerability</h3>
@@ -104,7 +104,7 @@ permalink: /vulnerabilities/
         </dl>
       </article>
 
-      <article class="vulnerability-record">
+      <article class="vulnerability-record" id="ghsa-2jhv-482p-4php">
         <header class="vulnerability-record-header">
           <p class="vulnerability-identifier">GHSA-2jhv-482p-4php · ToolJet</p>
           <h3>
@@ -126,7 +126,7 @@ permalink: /vulnerabilities/
         </dl>
       </article>
 
-      <article class="vulnerability-record">
+      <article class="vulnerability-record" id="grafana">
         <header class="vulnerability-record-header">
           <p class="vulnerability-identifier">CVE pending · Grafana</p>
           <h3>Vendor-accepted authorization boundary vulnerability</h3>
@@ -175,38 +175,53 @@ permalink: /vulnerabilities/
     </header>
     <ol class="timeline-list">
       <li class="timeline-entry">
-        <time datetime="2026-08-26">August 26</time>
+        <div class="timeline-date">
+          <time datetime="2026-08-26">August 26</time>
+          <span>Accepted</span>
+        </div>
         <div>
           <h3>Grafana</h3>
-          <p>CVE pending · Accepted · Medium 4.3 · $656 bounty</p>
+          <p>CVE pending · Medium 4.3 · $656 bounty</p>
         </div>
       </li>
       <li class="timeline-entry">
-        <time datetime="2026-08-07">August 7</time>
+        <div class="timeline-date">
+          <time datetime="2026-08-07">August 7</time>
+          <span>Advisory published</span>
+        </div>
         <div>
           <h3>ToolJet</h3>
-          <p>GHSA-2jhv-482p-4php · Published · Medium 6.8</p>
+          <p>GHSA-2jhv-482p-4php · Medium 6.8</p>
         </div>
       </li>
       <li class="timeline-entry">
-        <time datetime="2026-06-29">June 29</time>
+        <div class="timeline-date">
+          <time datetime="2026-06-29">June 29</time>
+          <span>Report submitted</span>
+        </div>
         <div>
           <h3>Apache DolphinScheduler</h3>
-          <p>CVE-2026-57590 · Report submitted · Current status: Vendor confirmed</p>
+          <p>CVE-2026-57590 · Current status: Vendor confirmed</p>
         </div>
       </li>
       <li class="timeline-entry">
-        <time datetime="2026-06-29">June 29</time>
+        <div class="timeline-date">
+          <time datetime="2026-06-29">June 29</time>
+          <span>Report submitted</span>
+        </div>
         <div>
           <h3>Apache DolphinScheduler</h3>
-          <p>CVE-2026-66082 · Report submitted · Current status: Vendor confirmed</p>
+          <p>CVE-2026-66082 · Current status: Vendor confirmed</p>
         </div>
       </li>
       <li class="timeline-entry">
-        <time datetime="2026-05-26">May 26</time>
+        <div class="timeline-date">
+          <time datetime="2026-05-26">May 26</time>
+          <span>Report submitted</span>
+        </div>
         <div>
           <h3>Dify</h3>
-          <p>CVE-2026-59210 · Report submitted · Current status: Accepted · Fix recorded</p>
+          <p>CVE-2026-59210 · Current status: Accepted · Fix recorded</p>
         </div>
       </li>
     </ol>

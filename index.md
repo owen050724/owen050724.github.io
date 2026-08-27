@@ -36,7 +36,7 @@ description: Security researcher and Computer Engineering student at SeoulTech f
         <dd>1</dd>
       </div>
       <div>
-        <dt>Vendor-confirmed findings</dt>
+        <dt>Vendor-confirmed outcomes</dt>
         <dd>10</dd>
       </div>
       <div>
@@ -50,7 +50,7 @@ description: Security researcher and Computer Engineering student at SeoulTech f
     </dl>
     <p class="metric-note">
       92 responsible disclosure reports submitted across OSS and bug bounty programs from
-      March 22 to August 13, 2026. Outcomes are prioritized over submission volume.
+      March 22 to August 13, 2026.
     </p>
   </section>
 
@@ -61,18 +61,21 @@ description: Security researcher and Computer Engineering student at SeoulTech f
     </div>
     <div class="work-list">
       <article class="work-item">
-        <p class="item-kicker">CVE-2026-59210 · Dify</p>
-        <h3>Vendor-confirmed authorization boundary vulnerability</h3>
+        <p class="item-kicker"><a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-59210">CVE-2026-59210</a> · Dify</p>
+        <h3><a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-59210">Vendor-confirmed authorization boundary vulnerability</a></h3>
         <p>Accepted with a vendor-confirmed code fix · Medium 6.3 · CVE reserved · Advisory pending</p>
       </article>
       <article class="work-item">
-        <p class="item-kicker">CVE-2026-57590 / CVE-2026-66082 · Apache DolphinScheduler</p>
-        <h3>Two separately confirmed authorization boundary findings</h3>
+        <p class="item-kicker">
+          <a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-57590">CVE-2026-57590</a> /
+          <a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-66082">CVE-2026-66082</a> · Apache DolphinScheduler
+        </p>
+        <h3><a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-57590">Two separately confirmed authorization boundary findings</a></h3>
         <p>Vendor confirmed with reporter credit · Severity, remediation, and advisory details pending</p>
       </article>
       <article class="work-item">
         <p class="item-kicker">Conference paper · 2026</p>
-        <h3>Analysis of Privilege Transfer Vulnerabilities in Messenger-Based Local AI Agents</h3>
+        <h3><a href="{{ '/publications/' | relative_url }}#messenger-based-local-ai-agent-security">Analysis of Privilege Transfer Vulnerabilities in Messenger-Based Local AI Agents</a></h3>
         <p>Gold Prize · Korea Digital Contents Society Undergraduate Paper Competition</p>
       </article>
     </div>
