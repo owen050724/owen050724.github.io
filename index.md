@@ -52,7 +52,7 @@ layout: default
     </div>
     <div class="highlights-grid">
       <div>
-        <strong>3 CVE identifiers</strong>
+        <strong>3 CVEs</strong>
         <span>Dify and Apache DolphinScheduler</span>
       </div>
       <div>
@@ -60,15 +60,15 @@ layout: default
         <span>Published ToolJet advisory</span>
       </div>
       <div>
-        <strong>10 vendor-confirmed findings</strong>
-        <span>Five selected and five additional status-only outcomes</span>
+        <strong>10 confirmed findings</strong>
+        <span>Vendor-confirmed · five selected and five status-only</span>
       </div>
       <div>
         <strong>40 products / workspaces</strong>
         <span>Open-source and bug bounty research coverage</span>
       </div>
       <div>
-        <strong>1 conference paper award</strong>
+        <strong>1 paper award</strong>
         <span>Gold Prize · Undergraduate Paper Competition</span>
       </div>
     </div>
@@ -93,7 +93,7 @@ layout: default
       </div>
       <div class="publication-outcome">
         <span class="award-badge">Gold Prize</span>
-        <a href="https://dcs.or.kr/conference/summer2026/notice/article/1114" target="_blank" rel="noopener noreferrer">Official award announcement <span aria-hidden="true">↗</span></a>
+        <a class="certificate-link" href="{{ '/assets/documents/2026-kdcs-gold-prize-certificate.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">View award certificate (PDF) <span aria-hidden="true">↗</span></a>
       </div>
     </article>
   </section>
@@ -186,13 +186,13 @@ layout: default
   <section class="activity-section reveal" aria-labelledby="activity-title">
     <div class="section-heading">
       <h2 id="activity-title">Responsible Disclosure Activity</h2>
-      <p>Submission and outcome counts describe the same 92 historical reports. Vendor-confirmed outcomes are a subset of the total, not additional reports.</p>
+      <p>Status-level context for coordinated work that is not individually identified above.</p>
     </div>
 
-  <div class="report-group">
-    <h3>Other Coordinated Outcomes</h3>
-    <p>Remaining unpublished outcomes stay anonymous until coordinated publication or explicit disclosure approval.</p>
-  </div>
+    <div class="report-group">
+      <h3>Other Coordinated Outcomes</h3>
+      <p>Remaining unpublished outcomes stay anonymous until coordinated publication or explicit disclosure approval.</p>
+    </div>
 
     <div class="accepted-report accepted-report-private">
       <div>
@@ -209,57 +209,25 @@ layout: default
       </div>
     </div>
 
-  <div class="public-summary-grid">
-    <div>
-      <strong>Total submitted</strong>
-      <span>92 reports · March 22–August 13, 2026</span>
-    </div>
-    <div>
-      <strong>Selected Outcomes</strong>
-      <span>5 of 92 · individually identified above</span>
-    </div>
-    <div>
-      <strong>Reports outside Selected Outcomes</strong>
-      <span>87 of 92 · five status-only outcomes and 82 other submissions</span>
-    </div>
-    <div>
-      <strong>Vendor-confirmed outcomes</strong>
-      <span>10 of 92 · five selected and five status-only outcomes</span>
-    </div>
-    <div>
-      <strong>CVE identifiers</strong>
-      <span>3 of 10 · one Dify and two DolphinScheduler reports</span>
-    </div>
-    <div>
-      <strong>Publicly published advisory</strong>
-      <span>1 of 10 · ToolJet · GHSA-2jhv-482p-4php</span>
-    </div>
-    <div>
-      <strong>Confirmed bounty award</strong>
-      <span>1 of 10 · Grafana · $656</span>
-    </div>
-    <div>
-      <strong>Research coverage</strong>
-      <span>40 open-source product and bug bounty workspaces</span>
-    </div>
-    <div>
-      <strong>Programs</strong>
-      <span>OSS projects, GitHub Security Advisories, ASF Security, Jenkins Security Jira, Intigriti, HackerOne, Wordfence</span>
-    </div>
-    <div>
-      <strong>Research focus</strong>
-      <span>Authorization boundaries, tenant isolation, credential handling, workflow execution, plugin and API surfaces</span>
-    </div>
-  </div>
+    <dl class="activity-details">
+      <div>
+        <dt>Programs</dt>
+        <dd>OSS projects, GitHub Security Advisories, ASF Security, Jenkins Security Jira, Intigriti, HackerOne, and Wordfence</dd>
+      </div>
+      <div>
+        <dt>Research focus</dt>
+        <dd>Authorization boundaries, tenant isolation, credential handling, workflow execution, and plugin and API surfaces</dd>
+      </div>
+    </dl>
 
-  <div class="public-note">
-    <h3>Disclosure Policy</h3>
-    <p>
-      Unpublished coordinated cases are limited to status-level summaries explicitly selected for disclosure.
-      Technical titles, report IDs, proof-of-concept details, affected endpoints, and exploit chains are withheld until the vendor publishes an advisory or explicitly permits disclosure.
-    </p>
-  </div>
-</section>
+    <div class="public-note">
+      <h3>Disclosure Policy</h3>
+      <p>
+        Unpublished coordinated cases are limited to status-level summaries explicitly selected for disclosure.
+        Technical titles, report IDs, proof-of-concept details, affected endpoints, and exploit chains are withheld until the vendor publishes an advisory or explicitly permits disclosure.
+      </p>
+    </div>
+  </section>
 
   <section class="method-section reveal">
     <div class="section-heading">
@@ -315,7 +283,7 @@ layout: default
       <div>
         <h3>Awards and Honors</h3>
         <h4>2026</h4>
-        <p><a href="https://dcs.or.kr/conference/summer2026/notice/article/1114" target="_blank" rel="noopener noreferrer">Gold Prize</a> · 2026 Summer Conference of the Korea Digital Contents Society · Undergraduate Paper Competition</p>
+        <p>Gold Prize · 2026 Summer Conference of the Korea Digital Contents Society · Undergraduate Paper Competition</p>
         <h4>2024</h4>
         <p>12th K-Hackathon Finalist · MATLAB Student AI Contest Finalist</p>
         <h4>2023</h4>
@@ -367,10 +335,14 @@ layout: default
       return;
     }
 
+    let hasRevealed = false;
+
     const revealAll = () => {
+      if (hasRevealed) return;
+      hasRevealed = true;
       page.classList.add("is-ready");
-      revealItems.forEach((item, index) => {
-        item.style.transitionDelay = `${index * 120}ms`;
+      revealItems.forEach((item) => {
+        item.style.transitionDelay = "0ms";
         item.classList.add("is-visible");
       });
     };
@@ -407,13 +379,13 @@ layout: default
       if (index >= typedNames.length) {
         page.classList.remove("typing-active");
         page.classList.add("typing-done");
-        window.setTimeout(revealAll, 280);
         return;
       }
 
       typeName(typedNames[index], () => typeSequence(index + 1));
     };
 
+    window.setTimeout(revealAll, 520);
     window.setTimeout(() => typeSequence(), 450);
   })();
 </script>
