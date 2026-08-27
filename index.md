@@ -48,7 +48,7 @@ title: Yeonoh Park
 
 <section class="notice reveal">
   <strong>Responsible disclosure portfolio</strong>
-  <span>92 submitted reports across OSS and BBP programs, including one vendor-fixed CVE and four additional vendor-accepted findings.</span>
+  <span>92 submitted reports across OSS and BBP programs, including 10 vendor-confirmed outcomes: five Selected Outcomes and five status-only outcomes.</span>
 </section>
 
   <section class="intro-grid reveal">
@@ -97,72 +97,152 @@ title: Yeonoh Park
   <section class="reports-section reveal">
   <div class="section-heading">
     <h2>Vulnerability Research</h2>
-    <p>Public-safe summary of responsible disclosure work. Unresolved reports are summarized only at aggregate level.</p>
+    <p>Public-safe summary of responsible disclosure work, including approved status-level updates for active coordination.</p>
   </div>
 
   <div class="report-group">
     <h3>Selected Outcomes</h3>
-    <p>Only disclosure-safe status information is shown. Technical details remain private until coordinated publication.</p>
+    <p>Individually identified outcomes are already public or were previously disclosed here. All other active coordination remains aggregate-only.</p>
   </div>
 
     <div class="accepted-report">
       <div>
         <p class="accepted-report-code">CVE-2026-59210 · Dify</p>
-        <h3>Vendor-fixed authorization boundary vulnerability</h3>
-        <p>Reported May 26, 2026. Accepted and remediated by the vendor; advisory publication is pending.</p>
+        <h3>Vendor-confirmed authorization boundary vulnerability</h3>
+        <p>Reported May 26, 2026. Accepted with a vendor-confirmed code fix; fixed-release metadata and advisory publication remain pending.</p>
         <dl class="outcome-status">
           <div><dt>Vendor</dt><dd>Accepted</dd></div>
-          <div><dt>Remediation</dt><dd>Fixed</dd></div>
+          <div><dt>Remediation</dt><dd>Fix recorded</dd></div>
           <div><dt>CVE</dt><dd>Reserved</dd></div>
           <div><dt>Disclosure</dt><dd>Advisory pending</dd></div>
         </dl>
       </div>
-      <span class="severity medium">Medium / 6.3</span>
+      <span class="severity medium">Proposed Medium / 6.3</span>
     </div>
+
+    <div class="accepted-report">
+      <div>
+        <p class="accepted-report-code">CVE-2026-57590 · Apache DolphinScheduler</p>
+        <h3>Vendor-confirmed authorization boundary vulnerability</h3>
+        <p>Reported June 29, 2026. Vendor-confirmed with reporter credit; remediation details, fixed-release metadata, and advisory publication remain pending.</p>
+        <dl class="outcome-status">
+          <div><dt>Vendor</dt><dd>Confirmed</dd></div>
+          <div><dt>Remediation</dt><dd>Pending</dd></div>
+          <div><dt>CVE</dt><dd>Reserved</dd></div>
+          <div><dt>Disclosure</dt><dd>Advisory pending</dd></div>
+        </dl>
+      </div>
+      <span class="severity">Severity pending</span>
+    </div>
+
+    <div class="accepted-report">
+      <div>
+        <p class="accepted-report-code">CVE-2026-66082 · Apache DolphinScheduler</p>
+        <h3>Vendor-confirmed authorization boundary vulnerability</h3>
+        <p>Reported June 29, 2026. Vendor-confirmed with reporter credit; remediation details, fixed-release metadata, and advisory publication remain pending.</p>
+        <dl class="outcome-status">
+          <div><dt>Vendor</dt><dd>Confirmed</dd></div>
+          <div><dt>Remediation</dt><dd>Pending</dd></div>
+          <div><dt>CVE</dt><dd>Reserved</dd></div>
+          <div><dt>Disclosure</dt><dd>Advisory pending</dd></div>
+        </dl>
+      </div>
+      <span class="severity">Severity pending</span>
+    </div>
+
+    <div class="accepted-report">
+      <div>
+        <p class="accepted-report-code">GHSA-2jhv-482p-4php · ToolJet</p>
+        <h3>
+          <a href="https://github.com/ToolJet/ToolJet/security/advisories/GHSA-2jhv-482p-4php" target="_blank" rel="noopener noreferrer">Vendor-confirmed authorization boundary vulnerability</a>
+        </h3>
+        <p>Reported June 30, 2026. Accepted and published August 7 with Finder credit; the advisory currently has no CVE assignment.</p>
+        <dl class="outcome-status">
+          <div><dt>Vendor</dt><dd>Accepted</dd></div>
+          <div><dt>Remediation</dt><dd>Metadata under review</dd></div>
+          <div><dt>CVE</dt><dd>Not assigned</dd></div>
+          <div><dt>Disclosure</dt><dd>Published</dd></div>
+        </dl>
+      </div>
+      <span class="severity medium">Medium / 6.8</span>
+    </div>
+
+    <div class="accepted-report">
+      <div>
+        <p class="accepted-report-code">CVE pending · Grafana · Bounty $656</p>
+        <h3>Vendor-accepted authorization boundary vulnerability</h3>
+        <p>Reported March 22, 2026. Accepted August 26 with a vendor-final Medium 4.3 rating and a $656 bounty; CVE, remediation, and advisory coordination remain pending.</p>
+        <dl class="outcome-status">
+          <div><dt>Vendor</dt><dd>Accepted</dd></div>
+          <div><dt>Remediation</dt><dd>Pending</dd></div>
+          <div><dt>CVE</dt><dd>Pending</dd></div>
+          <div><dt>Disclosure</dt><dd>Advisory pending</dd></div>
+        </dl>
+      </div>
+      <span class="severity medium">Medium / 4.3</span>
+    </div>
+
+  <div class="report-group">
+    <h3>Other Coordinated Outcomes</h3>
+    <p>Remaining unpublished outcomes stay anonymous until coordinated publication or explicit disclosure approval.</p>
+  </div>
 
     <div class="accepted-report accepted-report-private">
       <div>
-        <p class="accepted-report-code">Coordinated disclosure · 4 reports · Details withheld</p>
-        <h3>Additional vendor-accepted security reports</h3>
-        <p>Four findings were validated in local, self-hosted environments and accepted by their vendors. Product and technical details remain private during their coordinated remediation and publication processes.</p>
+        <p class="accepted-report-code">Coordinated disclosure · 5 reports · Details withheld</p>
+        <h3>Additional vendor-confirmed security reports</h3>
+        <p>Five reports were validated in local, self-hosted environments and accepted or otherwise confirmed by their vendors. Three have numeric reported or vendor-confirmed scores, one has a vendor-rated Moderate severity without a numeric score, and one awaits final vendor severity. Product and technical details remain private during coordinated remediation and publication.</p>
       </div>
-      <div class="severity-stack" aria-label="Severity: High 7.1, Medium 6.1, Medium 5.7, and Medium 5.3">
+      <div class="severity-stack" aria-label="Reported or vendor severity: High 7.1, Medium 6.1, Medium 5.7, Moderate without a numeric score, and one rating pending">
         <span class="severity high">High / 7.1</span>
         <span class="severity medium">Medium / 6.1</span>
         <span class="severity medium">Medium / 5.7</span>
-        <span class="severity medium">Medium / 5.3</span>
+        <span class="severity medium">Moderate / Score not published</span>
+        <span class="severity">1 vendor rating pending</span>
       </div>
     </div>
 
   <div class="report-group">
     <h3>Responsible Disclosure Activity</h3>
-    <p>Outcome-first summary of 92 submitted reports, without exposing private report IDs, endpoints, or unfixed vulnerability details.</p>
+    <p>Submission and outcome counts describe the same 92 historical reports. Vendor-confirmed outcomes are a subset of the total, not additional reports.</p>
   </div>
 
   <div class="public-summary-grid">
     <div>
-      <strong>Vendor-fixed CVE</strong>
-      <span>1 · CVE-2026-59210</span>
-    </div>
-    <div>
-      <strong>Additional reports</strong>
-      <span>91 responsible disclosure submissions</span>
-    </div>
-    <div>
       <strong>Total submitted</strong>
-      <span>92 reports · March-August 2026</span>
+      <span>92 reports · March 22–August 13, 2026</span>
     </div>
     <div>
-      <strong>Vendor-accepted findings</strong>
-      <span>4 additional reports beyond the CVE-assigned finding</span>
+      <strong>Selected Outcomes</strong>
+      <span>5 of 92 · individually identified above</span>
+    </div>
+    <div>
+      <strong>Reports outside Selected Outcomes</strong>
+      <span>87 of 92 · five status-only outcomes and 82 other submissions</span>
+    </div>
+    <div>
+      <strong>Vendor-confirmed outcomes</strong>
+      <span>10 of 92 · five selected and five status-only outcomes</span>
+    </div>
+    <div>
+      <strong>CVE identifiers</strong>
+      <span>3 of 10 · one Dify and two DolphinScheduler reports</span>
+    </div>
+    <div>
+      <strong>Publicly published advisory</strong>
+      <span>1 of 10 · ToolJet · GHSA-2jhv-482p-4php</span>
+    </div>
+    <div>
+      <strong>Confirmed bounty award</strong>
+      <span>1 of 10 · Grafana · $656</span>
     </div>
     <div>
       <strong>Research coverage</strong>
-      <span>38 open-source product and bug bounty workspaces</span>
+      <span>40 open-source product and bug bounty workspaces</span>
     </div>
     <div>
       <strong>Programs</strong>
-      <span>OSS projects, GitHub Security Advisories, ASF Security, Intigriti, HackerOne</span>
+      <span>OSS projects, GitHub Security Advisories, ASF Security, Jenkins Security Jira, Intigriti, HackerOne, Wordfence</span>
     </div>
     <div>
       <strong>Research focus</strong>
@@ -173,7 +253,7 @@ title: Yeonoh Park
   <div class="public-note">
     <h3>Disclosure Policy</h3>
     <p>
-      Pending, triage-stage, fixed-but-unpublished, and private duplicate reports are not described publicly.
+      Unpublished coordinated cases are limited to status-level summaries explicitly selected for disclosure.
       Technical titles, report IDs, proof-of-concept details, affected endpoints, and exploit chains are withheld until the vendor publishes an advisory or explicitly permits disclosure.
     </p>
   </div>
