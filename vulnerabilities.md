@@ -136,7 +136,6 @@ permalink: /vulnerabilities/
           and a $656 bounty; CVE, remediation, and advisory coordination remain pending.
         </p>
         <dl class="vulnerability-metadata">
-          <div><dt>Program</dt><dd>Intigriti</dd></div>
           <div><dt>Vendor</dt><dd>Accepted</dd></div>
           <div><dt>Remediation</dt><dd>Pending</dd></div>
           <div><dt>CVE</dt><dd>Pending</dd></div>

@@ -18,7 +18,7 @@ permalink: /publications/
     <article class="publication-entry" id="messenger-based-local-ai-agent-security">
       <h3>Analysis of Privilege Transfer Vulnerabilities in Messenger-Based Local AI Agents</h3>
       <p class="entry-original-title" lang="ko">메신저 기반 로컬 AI 에이전트의 권한 전이 취약점 분석</p>
-      <p class="entry-authors" lang="ko">박연오 · 최도현 · 김역 · 이창훈 · 손기욱</p>
+      <p class="entry-authors" lang="ko">박연오 · 최도현 · 김역 · 이창훈 · 손기욱†</p>
       <dl class="entry-metadata">
         <div>
           <dt>Affiliation</dt>
