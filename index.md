@@ -117,7 +117,7 @@ title: Yeonoh Park
           <div><dt>Disclosure</dt><dd>Advisory pending</dd></div>
         </dl>
       </div>
-      <span class="severity medium">Proposed Medium / 6.3</span>
+      <span class="severity medium">Medium / 6.3</span>
     </div>
 
     <div class="accepted-report">
