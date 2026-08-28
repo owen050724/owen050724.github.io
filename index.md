@@ -37,7 +37,7 @@ description: Security researcher and Computer Engineering student at SeoulTech f
       </div>
       <div>
         <dt>Vendor-confirmed outcomes</dt>
-        <dd>10</dd>
+        <dd>11</dd>
       </div>
       <div>
         <dt>Products / workspaces</dt>

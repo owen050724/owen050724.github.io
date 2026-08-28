@@ -25,7 +25,7 @@ permalink: /vulnerabilities/
       </div>
       <div class="summary-metric">
         <dt>Vendor-confirmed outcomes</dt>
-        <dd>10</dd>
+        <dd>11</dd>
       </div>
       <div class="summary-metric">
         <dt>CVE identifiers</dt>
@@ -144,6 +144,26 @@ permalink: /vulnerabilities/
           <div><dt>Bounty</dt><dd>$656</dd></div>
         </dl>
       </article>
+
+      <article class="vulnerability-record" id="authentik">
+        <header class="vulnerability-record-header">
+          <p class="vulnerability-identifier">CVE pending · authentik</p>
+          <h3>Vendor-validated security report</h3>
+        </header>
+        <p>
+          Reported July 29, 2026. On August 28, the maintainer confirmed the report valid and
+          consolidated the original report into a canonical draft advisory. Patched releases are
+          identified and reporter credit was accepted; fix verification, CVE assignment for the
+          canonical advisory, advisory publication, and public attribution remain pending.
+        </p>
+        <dl class="vulnerability-metadata">
+          <div><dt>Vendor</dt><dd>Validated</dd></div>
+          <div><dt>Remediation</dt><dd>Patched releases identified</dd></div>
+          <div><dt>CVE</dt><dd>Pending</dd></div>
+          <div><dt>Disclosure</dt><dd>Advisory pending</dd></div>
+          <div><dt>Severity</dt><dd>High · 8.8 / 10</dd></div>
+        </dl>
+      </article>
     </div>
   </section>
 
@@ -173,6 +193,16 @@ permalink: /vulnerabilities/
       <p>Selected safely identifiable milestones from 2026, shown in reverse chronological order.</p>
     </header>
     <ol class="timeline-list">
+      <li class="timeline-entry">
+        <div class="timeline-date">
+          <time datetime="2026-08-28">August 28</time>
+          <span>Vendor validated</span>
+        </div>
+        <div>
+          <h3>authentik</h3>
+          <p>Canonical advisory CVE pending · Original report consolidated</p>
+        </div>
+      </li>
       <li class="timeline-entry">
         <div class="timeline-date">
           <time datetime="2026-08-26">August 26</time>
