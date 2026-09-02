@@ -29,7 +29,7 @@ description: Security researcher and Computer Engineering student at SeoulTech f
     <dl class="metric-strip">
       <div>
         <dt>CVEs</dt>
-        <dd>3</dd>
+        <dd>4</dd>
       </div>
       <div>
         <dt>GHSA</dt>
@@ -37,7 +37,7 @@ description: Security researcher and Computer Engineering student at SeoulTech f
       </div>
       <div>
         <dt>Vendor-confirmed outcomes</dt>
-        <dd>11</dd>
+        <dd>12</dd>
       </div>
       <div>
         <dt>Products / workspaces</dt>

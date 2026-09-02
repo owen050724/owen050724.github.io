@@ -25,11 +25,11 @@ permalink: /vulnerabilities/
       </div>
       <div class="summary-metric">
         <dt>Vendor-confirmed outcomes</dt>
-        <dd>11</dd>
+        <dd>12</dd>
       </div>
       <div class="summary-metric">
         <dt>CVE identifiers</dt>
-        <dd>3</dd>
+        <dd>4</dd>
       </div>
       <div class="summary-metric">
         <dt>GitHub Security Advisory</dt>
@@ -161,7 +161,27 @@ permalink: /vulnerabilities/
           <div><dt>Remediation</dt><dd>Patched releases identified</dd></div>
           <div><dt>CVE</dt><dd>Pending</dd></div>
           <div><dt>Disclosure</dt><dd>Advisory pending</dd></div>
-          <div><dt>Severity</dt><dd>High · 8.8 / 10</dd></div>
+          <div><dt>Severity</dt><dd>High · 8.8 / 10 (draft)</dd></div>
+        </dl>
+      </article>
+
+      <article class="vulnerability-record" id="cve-2026-84677">
+        <header class="vulnerability-record-header">
+          <p class="vulnerability-identifier">CVE-2026-84677 · Jenkins</p>
+          <h3>Vendor-confirmed security vulnerability</h3>
+        </header>
+        <p>
+          Reported August 12, 2026. By September 2, Jenkins had confirmed the report, marked
+          remediation as Fix Prepared, reserved CVE-2026-84677, and recorded reporter credit.
+          The issue remains unresolved; patch merge, fixed-release metadata, advisory publication,
+          and final severity remain pending.
+        </p>
+        <dl class="vulnerability-metadata">
+          <div><dt>Vendor</dt><dd>Confirmed</dd></div>
+          <div><dt>Remediation</dt><dd>Fix prepared</dd></div>
+          <div><dt>CVE</dt><dd>Reserved</dd></div>
+          <div><dt>Disclosure</dt><dd>Advisory pending</dd></div>
+          <div><dt>Severity</dt><dd>Pending</dd></div>
         </dl>
       </article>
     </div>
@@ -193,6 +213,16 @@ permalink: /vulnerabilities/
       <p>Selected safely identifiable milestones from 2026, shown in reverse chronological order.</p>
     </header>
     <ol class="timeline-list">
+      <li class="timeline-entry">
+        <div class="timeline-date">
+          <time datetime="2026-09-02">September 2</time>
+          <span>CVE reservation observed</span>
+        </div>
+        <div>
+          <h3>Jenkins</h3>
+          <p>CVE-2026-84677 · Fix prepared · Advisory pending</p>
+        </div>
+      </li>
       <li class="timeline-entry">
         <div class="timeline-date">
           <time datetime="2026-08-28">August 28</time>

@@ -34,21 +34,22 @@ Homepage Selected Work entries deep-link to stable detail anchors. Preserve the 
 Treat `vulnerabilities.md` as the current public source of truth. At this handoff, the public summary is:
 
 - 92 submitted reports between March 22 and August 13, 2026
-- 11 vendor-confirmed outcomes
-- 3 CVE identifiers
+- 12 vendor-confirmed outcomes
+- 4 CVE identifiers
 - 1 GitHub Security Advisory
 - 40 researched products/workspaces
 - 1 conference paper award on the homepage outcome strip
 
-The eleven outcomes are six identified representative outcomes plus five anonymous coordinated outcomes. Current representative wording must remain conservative:
+The twelve outcomes are seven identified representative outcomes plus five anonymous coordinated outcomes. Current representative wording must remain conservative:
 
 - Dify, CVE-2026-59210: Accepted; fix recorded; CVE reserved; advisory/fixed-release metadata pending; Medium 6.3.
 - Apache DolphinScheduler, CVE-2026-57590 and CVE-2026-66082: Vendor confirmed with reporter credit; CVEs reserved; severity, remediation, and advisory details pending.
 - ToolJet, GHSA-2jhv-482p-4php: Accepted and published; Finder credit; Medium 6.8; no CVE assigned.
 - Grafana via Intigriti: Accepted; vendor-final Medium 4.3; $656 bounty; CVE, remediation, and advisory coordination pending.
 - authentik: Vendor validated on August 28 after a July 29 report; consolidated into a canonical draft advisory; patched releases identified but not independently verified; reporter credit accepted with public attribution pending; the canonical draft severity is displayed publicly as High 8.8/10 and must remain labeled draft/non-final; advisory publication and CVE assignment remain pending. Do not expose the private advisory identifiers, technical title, or affected versions.
+- Jenkins, CVE-2026-84677: Vendor confirmed; remediation marked Fix Prepared; CVE reserved; reporter credit recorded; patch merge, fixed-release metadata, advisory publication, and final severity pending. Do not expose private ticket identifiers, the technical title, patch details, or affected versions.
 
-For the five anonymous coordinated outcomes, expose only the aggregate ratings already published: High 7.1, Medium 6.1, Medium 5.7, Moderate without a numeric score, and one vendor rating pending. In the timeline, keep each date's event type explicit: authentik is a vendor-validation date, Grafana is an acceptance date, ToolJet is an advisory-publication date, and the Dify/DolphinScheduler dates are report-submission dates. Keep current status in the separate detail text.
+For the five anonymous coordinated outcomes, expose only the aggregate ratings already published: High 7.1, Medium 6.1, Medium 5.7, Moderate without a numeric score, and one vendor rating pending. In the timeline, keep each date's event type explicit: Jenkins is a September 2 observation of CVE reservation, authentik is a vendor-validation date, Grafana is an acceptance date, ToolJet is an advisory-publication date, and the Dify/DolphinScheduler dates are report-submission dates. Keep current status in the separate detail text.
 
 If any metric changes, audit every occurrence across the homepage and vulnerability page so totals remain consistent.
 
