@@ -29,15 +29,11 @@ description: Security researcher and Computer Engineering student at SeoulTech f
     <dl class="metric-strip">
       <div>
         <dt>CVEs</dt>
-        <dd>4</dd>
-      </div>
-      <div>
-        <dt>GHSA</dt>
-        <dd>1</dd>
+        <dd>5</dd>
       </div>
       <div>
         <dt>Vendor-confirmed outcomes</dt>
-        <dd>12</dd>
+        <dd>13</dd>
       </div>
       <div>
         <dt>Products / workspaces</dt>
@@ -61,9 +57,9 @@ description: Security researcher and Computer Engineering student at SeoulTech f
     </div>
     <div class="work-list">
       <article class="work-item">
-        <p class="item-kicker"><a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-59210">CVE-2026-59210</a> · Dify</p>
-        <h3><a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-59210">Vendor-confirmed authorization boundary vulnerability</a></h3>
-        <p>Accepted with a vendor-confirmed code fix · Medium 6.3 · CVE reserved · Advisory pending</p>
+        <p class="item-kicker"><a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-84677">CVE-2026-84677</a> · Jenkins</p>
+        <h3><a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-84677">Stored XSS vulnerability in update-center2</a></h3>
+        <p>Published · Fixed in 3.18.4 · Medium 5.4 · Reporter credit</p>
       </article>
       <article class="work-item">
         <p class="item-kicker">

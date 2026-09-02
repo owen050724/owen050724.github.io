@@ -402,7 +402,7 @@ code {
 .metric-strip,
 .vulnerability-summary-list {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   margin: 0;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -529,7 +529,8 @@ code {
 }
 
 .publication-entry[id],
-.vulnerability-record[id] {
+.vulnerability-record[id],
+.vulnerability-record-header[id] {
   scroll-margin-top: 1.5rem;
 }
 
@@ -962,7 +963,8 @@ code {
   }
 
   .publication-entry[id],
-  .vulnerability-record[id] {
+  .vulnerability-record[id],
+  .vulnerability-record-header[id] {
     scroll-margin-top: 4.75rem;
   }
 }

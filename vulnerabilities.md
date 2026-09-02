@@ -25,15 +25,11 @@ permalink: /vulnerabilities/
       </div>
       <div class="summary-metric">
         <dt>Vendor-confirmed outcomes</dt>
-        <dd>12</dd>
+        <dd>13</dd>
       </div>
       <div class="summary-metric">
         <dt>CVE identifiers</dt>
-        <dd>4</dd>
-      </div>
-      <div class="summary-metric">
-        <dt>GitHub Security Advisory</dt>
-        <dd>1</dd>
+        <dd>5</dd>
       </div>
       <div class="summary-metric">
         <dt>Products / workspaces</dt>
@@ -56,12 +52,13 @@ permalink: /vulnerabilities/
           <h3>Vendor-confirmed authorization boundary vulnerability</h3>
         </header>
         <p>
-          Reported May 26, 2026. Accepted with a vendor-confirmed code fix; fixed-release metadata
-          and advisory publication remain pending.
+          Reported May 26, 2026. Accepted with a vendor-confirmed code fix. On September 2,
+          release-lineage review and focused regression testing confirmed that the fix shipped in
+          1.16.0 and remains in 1.17.0; advisory and CVE publication remain pending.
         </p>
         <dl class="vulnerability-metadata">
           <div><dt>Vendor</dt><dd>Accepted</dd></div>
-          <div><dt>Remediation</dt><dd>Fix recorded</dd></div>
+          <div><dt>Remediation</dt><dd>Shipped since 1.16.0</dd></div>
           <div><dt>CVE</dt><dd>Reserved</dd></div>
           <div><dt>Disclosure</dt><dd>Advisory pending</dd></div>
           <div><dt>Severity</dt><dd>Medium / 6.3</dd></div>
@@ -105,24 +102,48 @@ permalink: /vulnerabilities/
       </article>
 
       <article class="vulnerability-record" id="ghsa-2jhv-482p-4php">
-        <header class="vulnerability-record-header">
-          <p class="vulnerability-identifier">GHSA-2jhv-482p-4php · ToolJet</p>
+        <header class="vulnerability-record-header" id="cve-2026-82872">
+          <p class="vulnerability-identifier">CVE-2026-82872 · ToolJet</p>
           <h3>
-            <a href="https://github.com/ToolJet/ToolJet/security/advisories/GHSA-2jhv-482p-4php" target="_blank" rel="noopener noreferrer">
+            <a href="https://nvd.nist.gov/vuln/detail/cve-2026-82872" target="_blank" rel="noopener noreferrer">
               Vendor-confirmed authorization boundary vulnerability
             </a>
           </h3>
         </header>
         <p>
-          Reported June 30, 2026. Accepted and published August 7, 2026, with Finder credit; the
-          advisory currently has no CVE assignment.
+          Reported June 30, 2026. Accepted and published August 7 with Finder credit. ToolJet
+          shipped the source-verified remediation in
+          <a href="https://github.com/ToolJet/ToolJet/releases/tag/v3.20.207-lts" target="_blank" rel="noopener noreferrer">v3.20.207-lts</a>
+          on August 4; the preceding v3.20.206-lts lacks the organization-binding guard added in
+          that release. Patched-release runtime verification has not been repeated. VulnCheck
+          published CVE-2026-82872 on August 31, preserving Finder credit and rating it High 7.1
+          under CVSS 4.0; the vendor advisory's original Moderate 6.8 rating remains public.
         </p>
         <dl class="vulnerability-metadata">
           <div><dt>Vendor</dt><dd>Accepted</dd></div>
-          <div><dt>Remediation</dt><dd>Metadata under review</dd></div>
-          <div><dt>CVE</dt><dd>Not assigned</dd></div>
+          <div><dt>Remediation</dt><dd>Released in v3.20.207-lts</dd></div>
+          <div><dt>CVE</dt><dd>Published</dd></div>
           <div><dt>Disclosure</dt><dd>Published</dd></div>
-          <div><dt>Severity</dt><dd>Medium / 6.8</dd></div>
+          <div><dt>Severity</dt><dd>High / 7.1 (CVSS 4.0)</dd></div>
+        </dl>
+      </article>
+
+      <article class="vulnerability-record" id="tooljet-accepted-outcome">
+        <header class="vulnerability-record-header">
+          <p class="vulnerability-identifier">CVE pending · ToolJet</p>
+          <h3>Vendor-accepted security report</h3>
+        </header>
+        <p>
+          Reported June 30, 2026. Accepted September 2, 2026, with reporter credit. The advisory
+          remains private; remediation, fixed-release metadata, CVE assignment, public severity,
+          and advisory publication remain pending.
+        </p>
+        <dl class="vulnerability-metadata">
+          <div><dt>Vendor</dt><dd>Accepted</dd></div>
+          <div><dt>Remediation</dt><dd>Pending</dd></div>
+          <div><dt>CVE</dt><dd>Pending</dd></div>
+          <div><dt>Disclosure</dt><dd>Advisory pending</dd></div>
+          <div><dt>Severity</dt><dd>Pending publication</dd></div>
         </dl>
       </article>
 
@@ -168,20 +189,25 @@ permalink: /vulnerabilities/
       <article class="vulnerability-record" id="cve-2026-84677">
         <header class="vulnerability-record-header">
           <p class="vulnerability-identifier">CVE-2026-84677 · Jenkins</p>
-          <h3>Vendor-confirmed security vulnerability</h3>
+          <h3>
+            <a href="https://www.jenkins.io/security/advisory/2026-09-02/" target="_blank" rel="noopener noreferrer">
+              Stored XSS vulnerability in update-center2
+            </a>
+          </h3>
         </header>
         <p>
-          Reported August 12, 2026. By September 2, Jenkins had confirmed the report, marked
-          remediation as Fix Prepared, reserved CVE-2026-84677, and recorded reporter credit.
-          The issue remains unresolved; patch merge, fixed-release metadata, advisory publication,
-          and final severity remain pending.
+          Reported August 12, 2026. Jenkins published CVE-2026-84677 in its September 2 security
+          advisory. The issue affects update-center2 3.18.3 and earlier; version 3.18.4 escapes the
+          plugin-provided values when rendering plugin download index pages. Jenkins rates the
+          vulnerability Medium 5.4 and credits Yeonoh Park, SeoulTech CIS Lab (@owen050724), as
+          the reporter.
         </p>
         <dl class="vulnerability-metadata">
           <div><dt>Vendor</dt><dd>Confirmed</dd></div>
-          <div><dt>Remediation</dt><dd>Fix prepared</dd></div>
-          <div><dt>CVE</dt><dd>Reserved</dd></div>
-          <div><dt>Disclosure</dt><dd>Advisory pending</dd></div>
-          <div><dt>Severity</dt><dd>Pending</dd></div>
+          <div><dt>Remediation</dt><dd>Released in 3.18.4</dd></div>
+          <div><dt>CVE</dt><dd>Published</dd></div>
+          <div><dt>Disclosure</dt><dd>Published</dd></div>
+          <div><dt>Severity</dt><dd>Medium / 5.4</dd></div>
         </dl>
       </article>
     </div>
@@ -216,11 +242,41 @@ permalink: /vulnerabilities/
       <li class="timeline-entry">
         <div class="timeline-date">
           <time datetime="2026-09-02">September 2</time>
-          <span>CVE reservation observed</span>
+          <span>Advisory published</span>
         </div>
         <div>
           <h3>Jenkins</h3>
-          <p>CVE-2026-84677 · Fix prepared · Advisory pending</p>
+          <p>CVE-2026-84677 · Released in 3.18.4 · Medium 5.4</p>
+        </div>
+      </li>
+      <li class="timeline-entry">
+        <div class="timeline-date">
+          <time datetime="2026-09-02">September 2</time>
+          <span>Vendor accepted</span>
+        </div>
+        <div>
+          <h3>ToolJet</h3>
+          <p>CVE, remediation, and advisory publication pending</p>
+        </div>
+      </li>
+      <li class="timeline-entry">
+        <div class="timeline-date">
+          <time datetime="2026-09-02">September 2</time>
+          <span>Fix release verified</span>
+        </div>
+        <div>
+          <h3>Dify</h3>
+          <p>CVE-2026-59210 · Shipped since 1.16.0 · Advisory pending</p>
+        </div>
+      </li>
+      <li class="timeline-entry">
+        <div class="timeline-date">
+          <time datetime="2026-08-31">August 31</time>
+          <span>CVE published</span>
+        </div>
+        <div>
+          <h3>ToolJet</h3>
+          <p>CVE-2026-82872 · High 7.1 (CVSS 4.0) · Finder credit</p>
         </div>
       </li>
       <li class="timeline-entry">
@@ -250,7 +306,17 @@ permalink: /vulnerabilities/
         </div>
         <div>
           <h3>ToolJet</h3>
-          <p>GHSA-2jhv-482p-4php · Medium 6.8</p>
+          <p>GHSA-2jhv-482p-4php · Moderate 6.8</p>
+        </div>
+      </li>
+      <li class="timeline-entry">
+        <div class="timeline-date">
+          <time datetime="2026-08-04">August 4</time>
+          <span>Fix released</span>
+        </div>
+        <div>
+          <h3>ToolJet</h3>
+          <p>v3.20.207-lts · Remediation source-verified</p>
         </div>
       </li>
       <li class="timeline-entry">
@@ -280,7 +346,7 @@ permalink: /vulnerabilities/
         </div>
         <div>
           <h3>Dify</h3>
-          <p>CVE-2026-59210 · Current status: Accepted · Fix recorded</p>
+          <p>CVE-2026-59210 · Current status: Accepted · Shipped since 1.16.0</p>
         </div>
       </li>
     </ol>
