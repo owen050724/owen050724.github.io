@@ -534,7 +534,8 @@ code {
 
 .publication-entry[id],
 .vulnerability-record[id],
-.vulnerability-record-header[id] {
+.vulnerability-record-header[id],
+.vulnerability-identifier[id] {
   scroll-margin-top: 1.5rem;
 }
 
@@ -602,37 +603,6 @@ code {
   content: "·";
   margin: 0 0.75rem;
   color: var(--accent);
-}
-
-.process-list {
-  counter-reset: research-step;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid var(--border);
-  list-style: none;
-}
-
-.process-list li {
-  counter-increment: research-step;
-  display: grid;
-  grid-template-columns: 3rem minmax(0, 1fr);
-  gap: 0 1rem;
-  padding: 1.25rem 0;
-  border-bottom: 1px solid var(--border-soft);
-}
-
-.process-list li::before {
-  content: "0" counter(research-step);
-  grid-row: 1 / span 2;
-  color: var(--accent);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 0.82rem;
-  font-weight: 700;
-}
-
-.process-list p {
-  margin: 0.38rem 0 0;
-  color: var(--muted);
 }
 
 .honors-year {
@@ -751,6 +721,11 @@ code {
   color: var(--heading);
   font-size: 0.86rem;
   font-weight: 690;
+}
+
+.vulnerability-record > .record-source-note {
+  max-width: var(--reading-width);
+  font-size: 0.88rem;
 }
 
 .aggregate-severity-list {
@@ -1065,11 +1040,6 @@ code {
   .contact-list li {
     grid-template-columns: minmax(0, 1fr);
     gap: 0.15rem;
-  }
-
-  .process-list li {
-    grid-template-columns: 2.35rem minmax(0, 1fr);
-    gap: 0 0.65rem;
   }
 
   .honors-year {

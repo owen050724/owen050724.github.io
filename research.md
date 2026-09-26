@@ -9,13 +9,12 @@ permalink: /research/
   <header class="detail-header">
     <p class="eyebrow">Interests and methodology</p>
     <h1>Research</h1>
-    <p>My current security research examines how identity, authority, and trust move across software boundaries, alongside broader interests in cryptography and computer systems.</p>
+    <p>I study authorization failures in software systems, especially when requests cross workspace or project boundaries.</p>
   </header>
 
   <section class="detail-section" aria-labelledby="research-interests">
     <h2 id="research-interests">Research Interests</h2>
     <ul class="interest-list">
-      <li>Cryptography</li>
       <li>System Security</li>
       <li>Computer Systems</li>
       <li>Vulnerability Research</li>
@@ -26,26 +25,8 @@ permalink: /research/
   <section class="detail-section" aria-labelledby="research-method">
     <header class="section-intro">
       <h2 id="research-method">Research Method</h2>
-      <p>An evidence-first process for evaluating security boundaries. Operational heuristics and target-specific techniques are intentionally omitted.</p>
+      <p>I compare the authority an application checks with the resource an operation actually affects.</p>
     </header>
-
-    <ol class="process-list">
-      <li>
-        <h3>Boundary Modeling</h3>
-        <p>Define the identities, capabilities, data domains, and trust transitions that shape the system's expected security properties.</p>
-      </li>
-      <li>
-        <h3>Authority-Aware Analysis</h3>
-        <p>Follow how identity and scope propagate across components, focusing on places where authority may be weakened or reinterpreted.</p>
-      </li>
-      <li>
-        <h3>Evidence and Falsification</h3>
-        <p>Use bounded local validation and competing explanations to distinguish a real boundary failure from expected behavior or an artifact.</p>
-      </li>
-      <li>
-        <h3>Conservative Triage</h3>
-        <p>Separate technical impact from reportability, account for prior work, document limitations, and coordinate disclosure responsibly.</p>
-      </li>
-    </ol>
+    <p>In the published <a href="{{ '/vulnerabilities/' | relative_url }}#ghsa-2jhv-482p-4php">ToolJet finding</a>, the role check covered the current workspace but not the target workspace. In <a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-57590">Apache DolphinScheduler</a>, Task Group APIs did not check access to the associated project. I validate the cross-boundary effect, document only demonstrated impact, and keep unpublished reports at disclosure-safe status level.</p>
   </section>
 </article>

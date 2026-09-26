@@ -1,19 +1,18 @@
 ---
 layout: default
-description: Security researcher and Computer Engineering student at SeoulTech focusing on vulnerability research, system security, and cryptography.
+description: Security researcher and Computer Engineering student at SeoulTech focusing on vulnerability research and system security.
 ---
 
 <div class="home-page">
   <header class="home-hero">
-    <p class="eyebrow">Security Research · Cryptography · Computer Systems</p>
+    <p class="eyebrow">Vulnerability Research · System Security · Computer Systems</p>
     <h1 aria-label="박연오, Yeonoh Park">
       <span class="typed-name typed-korean" data-text="박연오">박연오</span>
       <span class="typed-name typed-english" data-text="Yeonoh Park">Yeonoh Park</span>
     </h1>
     <p class="hero-lead">
       SeoulTech Computer Engineering student and undergraduate researcher at the Cryptography
-      Information Security Laboratory, focusing on vulnerability research, system security, and
-      cryptography.
+      Information Security Laboratory, focusing on vulnerability research and system security.
     </p>
     <div class="hero-actions" aria-label="Explore this website">
       <a href="{{ '/vulnerabilities/' | relative_url }}">Vulnerability research <span aria-hidden="true">→</span></a>
@@ -28,7 +27,7 @@ description: Security researcher and Computer Engineering student at SeoulTech f
     </div>
     <dl class="metric-strip">
       <div>
-        <dt>CVE identifiers</dt>
+        <dt>Findings with CVE IDs</dt>
         <dd>6</dd>
       </div>
       <div>
@@ -58,7 +57,7 @@ description: Security researcher and Computer Engineering student at SeoulTech f
           <a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-57590">CVE-2026-57590</a> · Apache DolphinScheduler
         </p>
         <h3><a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-57590">Missing project authorization in Task Group APIs</a></h3>
-        <p>Published · CISA-ADP: High 8.1(CVSS 3.1). Separate finding: <a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-66082">CVE-2026-66082</a> (vendor-confirmed; advisory pending).</p>
+        <p>Published · Apache: Low (no numeric score) · CISA-ADP: High 8.1 (CVSS 3.1). Separate finding: <a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-66082">CVE-2026-66082</a> (vendor-confirmed; advisory pending).</p>
       </article>
       <article class="work-item">
         <p class="item-kicker">Conference paper · 2026</p>

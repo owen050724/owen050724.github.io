@@ -9,7 +9,7 @@ permalink: /about/
   <header class="detail-header">
     <p class="eyebrow">Background</p>
     <h1>About</h1>
-    <p>I am a Computer Engineering student at SeoulTech and an undergraduate security researcher focused on vulnerability research, system security, and cryptography.</p>
+    <p>I am a Computer Engineering student at SeoulTech and an undergraduate security researcher focused on vulnerability research and system security.</p>
   </header>
 
   <section class="detail-section" aria-labelledby="education">
@@ -37,7 +37,7 @@ permalink: /about/
 
   <section class="detail-section" aria-labelledby="about-interests">
     <h2 id="about-interests">Research Interests</h2>
-    <p>Cryptography · System Security · Computer Systems · Vulnerability Research · Responsible Disclosure</p>
+    <p>System Security · Computer Systems · Vulnerability Research · Responsible Disclosure</p>
     <p><a href="{{ '/research/' | relative_url }}">Read about my research approach <span aria-hidden="true">→</span></a></p>
   </section>
 </article>

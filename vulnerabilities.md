@@ -28,7 +28,7 @@ permalink: /vulnerabilities/
         <dd>14</dd>
       </div>
       <div class="summary-metric">
-        <dt>CVE identifiers</dt>
+        <dt>Findings with CVE IDs</dt>
         <dd>6</dd>
       </div>
       <div class="summary-metric">
@@ -36,7 +36,7 @@ permalink: /vulnerabilities/
         <dd>40</dd>
       </div>
     </dl>
-    <p class="summary-period">Report activity recorded from March 22 through September 2, 2026.</p>
+    <p class="summary-period">Report activity recorded from March 22 through September 2, 2026. The 14 outcomes comprise eight identified cases and six additional vendor-confirmed cases under coordinated disclosure. Each finding is counted once, regardless of CVE assignment, cross-referenced identifiers, or timeline milestones.</p>
   </section>
 
   <section class="selected-vulnerabilities" aria-labelledby="selected-vulnerabilities-title">
@@ -80,7 +80,7 @@ permalink: /vulnerabilities/
           <div><dt>Remediation</dt><dd>Vendor lists 3.4.3; verification unresolved</dd></div>
           <div><dt>CVE</dt><dd>Published</dd></div>
           <div><dt>Disclosure</dt><dd>Published</dd></div>
-          <div><dt>Severity</dt><dd>CISA-ADP: High 8.1(CVSS 3.1)</dd></div>
+          <div><dt>Severity</dt><dd>Apache: Low (no numeric score) · CISA-ADP: High 8.1 (CVSS 3.1)</dd></div>
           <div><dt>Public credit</dt><dd>Yeonoh Park (Finder)</dd></div>
         </dl>
         <nav class="entry-links" aria-label="Public records for CVE-2026-57590">
@@ -110,7 +110,7 @@ permalink: /vulnerabilities/
 
       <article class="vulnerability-record" id="ghsa-2jhv-482p-4php">
         <header class="vulnerability-record-header" id="cve-2026-82872">
-          <p class="vulnerability-identifier">CVE-2026-82872 · ToolJet</p>
+          <p class="vulnerability-identifier" id="cve-2026-73068">CVE-2026-73068 (listed by ToolJet GHSA) · ToolJet</p>
           <h3>Cross-workspace ToolJet DB authorization bypass</h3>
         </header>
         <p>
@@ -121,15 +121,16 @@ permalink: /vulnerabilities/
         <dl class="vulnerability-metadata">
           <div><dt>Vendor</dt><dd>Accepted</dd></div>
           <div><dt>Remediation</dt><dd>Source-verified in v3.20.207-lts</dd></div>
-          <div><dt>CVE</dt><dd>Published</dd></div>
+          <div><dt>CVE</dt><dd>GHSA lists 73068</dd></div>
           <div><dt>Disclosure</dt><dd>Published</dd></div>
-          <div><dt>Severity</dt><dd>High / 7.1 (CVSS 4.0)</dd></div>
-          <div><dt>Public credit</dt><dd>@owen050724 (Finder)</dd></div>
+          <div><dt>Severity</dt><dd>ToolJet GHSA: Moderate 6.8 (CVSS 3.1)</dd></div>
+          <div><dt>Report credit</dt><dd>@owen050724 (Finder, GHSA-2jhv-482p-4php)</dd></div>
         </dl>
-        <nav class="entry-links" aria-label="Public records for CVE-2026-82872">
-          <a href="https://nvd.nist.gov/vuln/detail/cve-2026-82872" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
-          <a href="https://www.cve.org/CVERecord?id=CVE-2026-82872" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
-          <a href="https://github.com/ToolJet/ToolJet/security/advisories/GHSA-2jhv-482p-4php" target="_blank" rel="noopener noreferrer">Vendor advisory <span aria-hidden="true">↗</span></a>
+        <p class="record-source-note">ToolJet's GHSA lists CVE-2026-73068, but that CVE record cites a different ToolJet advisory. A separate <a href="https://www.cve.org/CVERecord?id=CVE-2026-82872" target="_blank" rel="noopener noreferrer">VulnCheck CNA record, CVE-2026-82872 <span aria-hidden="true">↗</span></a>, cites this GHSA. This report is counted once.</p>
+        <nav class="entry-links" aria-label="Public records for the ToolJet report">
+          <a href="https://nvd.nist.gov/vuln/detail/cve-2026-73068" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2026-73068" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/ToolJet/ToolJet/security/advisories/GHSA-2jhv-482p-4php" target="_blank" rel="noopener noreferrer">Report (GHSA-2jhv-482p-4php) <span aria-hidden="true">↗</span></a>
         </nav>
       </article>
 
@@ -256,7 +257,7 @@ permalink: /vulnerabilities/
         </div>
         <div>
           <h3>Apache DolphinScheduler</h3>
-          <p>CVE-2026-57590 · CISA-ADP: High 8.1(CVSS 3.1) · Remediation verification unresolved</p>
+          <p>CVE-2026-57590 · Remediation verification unresolved</p>
         </div>
       </li>
       <li class="timeline-entry">
@@ -306,7 +307,7 @@ permalink: /vulnerabilities/
         </div>
         <div>
           <h3>ToolJet</h3>
-          <p>CVE-2026-82872 · High 7.1 (CVSS 4.0) · Finder credit</p>
+          <p>CVE-2026-82872 · VulnCheck CNA record citing the ToolJet report</p>
         </div>
       </li>
       <li class="timeline-entry">
@@ -356,7 +357,7 @@ permalink: /vulnerabilities/
         </div>
         <div>
           <h3>Apache DolphinScheduler</h3>
-          <p>CVE-2026-57590 · Current status: Published · CISA-ADP: High 8.1(CVSS 3.1)</p>
+          <p>CVE-2026-57590 · Current status: Published</p>
         </div>
       </li>
       <li class="timeline-entry">
