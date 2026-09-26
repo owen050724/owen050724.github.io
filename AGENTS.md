@@ -72,6 +72,7 @@ If a separate local `Vuln-analysis` repository is available, it is a read-only f
 - The 2022 Busan Future Scientist Award links to its official Hall of Fame record at `https://www.fobst.org/kor/Ability/Ability0403.php?years=2022&idx=15305`.
 - Preserve GitHub, LinkedIn, email, ToolJet NVD, authentik advisory, DolphinScheduler CVE/NVD, Discord, and Instagram links. Keep Discord and Instagram secondary to professional contact channels.
 - On the vulnerability page, keep record titles as text. For each published CVE, place links in the `entry-links` row below its metadata in this order: NVD, CVE, then Vendor advisory when public. Do not add fix-release links or links to reserved or private records.
+- For published vulnerability records, use the paragraph for a short public-advisory-backed explanation of the cause and impact. Keep chronology in the timeline and status, remediation, severity, and public credit in metadata. Keep unpublished records at approved status level only.
 - External links opened in a new tab must use `target="_blank" rel="noopener noreferrer"`.
 - Use Liquid `relative_url` for internal routes and assets. Encode `&` as `&amp;` in HTML query strings.
 - Do not invent a direct paper PDF or proceedings item URL. The current conference page is a proceedings/program-book landing page.

@@ -68,13 +68,12 @@ permalink: /vulnerabilities/
       <article class="vulnerability-record" id="cve-2026-57590">
         <header class="vulnerability-record-header">
           <p class="vulnerability-identifier">CVE-2026-57590 · Apache DolphinScheduler</p>
-          <h3>Vendor-confirmed authorization boundary vulnerability</h3>
+          <h3>Missing project authorization in Task Group APIs</h3>
         </header>
         <p>
-          Reported June 29, 2026. Apache published the security advisory on September 24 with
-          Yeonoh Park credited as a finder.
-          Apache lists 3.4.3 as the fixed release; independent remediation verification remains
-          unresolved.
+          DolphinScheduler's Task Group APIs did not properly verify whether an authenticated user
+          could access the project associated with a target Task Group. This could allow unauthorized
+          operations across project boundaries.
         </p>
         <dl class="vulnerability-metadata">
           <div><dt>Vendor</dt><dd>Confirmed</dd></div>
@@ -82,6 +81,7 @@ permalink: /vulnerabilities/
           <div><dt>CVE</dt><dd>Published</dd></div>
           <div><dt>Disclosure</dt><dd>Published</dd></div>
           <div><dt>Severity</dt><dd>CISA-ADP: High 8.1(CVSS 3.1)</dd></div>
+          <div><dt>Public credit</dt><dd>Yeonoh Park (Finder)</dd></div>
         </dl>
         <nav class="entry-links" aria-label="Public records for CVE-2026-57590">
           <a href="https://nvd.nist.gov/vuln/detail/cve-2026-57590" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
@@ -111,22 +111,20 @@ permalink: /vulnerabilities/
       <article class="vulnerability-record" id="ghsa-2jhv-482p-4php">
         <header class="vulnerability-record-header" id="cve-2026-82872">
           <p class="vulnerability-identifier">CVE-2026-82872 · ToolJet</p>
-          <h3>Vendor-confirmed authorization boundary vulnerability</h3>
+          <h3>Cross-workspace ToolJet DB authorization bypass</h3>
         </header>
         <p>
-          Reported June 30, 2026. Accepted and published August 7 with Finder credit. ToolJet
-          shipped the source-verified remediation in v3.20.207-lts on August 4; the preceding
-          v3.20.206-lts lacks the organization-binding guard added in that release. Patched-release
-          runtime verification has not been repeated. VulnCheck
-          published CVE-2026-82872 on August 31, preserving Finder credit and rating it High 7.1
-          under CVSS 4.0; the vendor advisory's original Moderate 6.8 rating remains public.
+          ToolJet DB checked the caller's role in their current workspace but did not verify that
+          table-management requests targeted that same workspace. A workspace admin could create
+          or delete tables, and view table metadata, in another workspace.
         </p>
         <dl class="vulnerability-metadata">
           <div><dt>Vendor</dt><dd>Accepted</dd></div>
-          <div><dt>Remediation</dt><dd>Released in v3.20.207-lts</dd></div>
+          <div><dt>Remediation</dt><dd>Source-verified in v3.20.207-lts</dd></div>
           <div><dt>CVE</dt><dd>Published</dd></div>
           <div><dt>Disclosure</dt><dd>Published</dd></div>
           <div><dt>Severity</dt><dd>High / 7.1 (CVSS 4.0)</dd></div>
+          <div><dt>Public credit</dt><dd>@owen050724 (Finder)</dd></div>
         </dl>
         <nav class="entry-links" aria-label="Public records for CVE-2026-82872">
           <a href="https://nvd.nist.gov/vuln/detail/cve-2026-82872" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
@@ -179,11 +177,9 @@ permalink: /vulnerabilities/
           <h3>Privilege escalation via delegated group and user management</h3>
         </header>
         <p>
-          Reported July 29, 2026. On August 28, the maintainer confirmed the report valid and
-          consolidated it into a canonical advisory. The advisory was published September 9 as
-          CVE-2026-94609 with High 8.8 severity and public Reporter credit for @owen050724.
-          The vendor lists 2026.2.7, 2026.5.7, and 2026.8.2 as patched releases; independent
-          patched-release verification has not been recorded.
+          An account with delegated permission to manage a single group or user could grant
+          superuser status to any account or assign an existing role to a group without the required
+          permissions. The issue affects deployments that delegate these tasks to non-administrators.
         </p>
         <dl class="vulnerability-metadata">
           <div><dt>Vendor</dt><dd>Validated</dd></div>
@@ -191,6 +187,7 @@ permalink: /vulnerabilities/
           <div><dt>CVE</dt><dd>Published</dd></div>
           <div><dt>Disclosure</dt><dd>Published</dd></div>
           <div><dt>Severity</dt><dd>High / 8.8 (CVSS 3.1)</dd></div>
+          <div><dt>Public credit</dt><dd>@owen050724 (Reporter)</dd></div>
         </dl>
         <nav class="entry-links" aria-label="Public records for CVE-2026-94609">
           <a href="https://nvd.nist.gov/vuln/detail/cve-2026-94609" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
@@ -205,11 +202,9 @@ permalink: /vulnerabilities/
           <h3>Stored XSS vulnerability in update-center2</h3>
         </header>
         <p>
-          Reported August 12, 2026. Jenkins published CVE-2026-84677 in its September 2 security
-          advisory. The issue affects update-center2 3.18.3 and earlier; version 3.18.4 escapes the
-          plugin-provided values when rendering plugin download index pages. Jenkins rates the
-          vulnerability Medium 5.4 and credits Yeonoh Park, SeoulTech CIS Lab (@owen050724), as
-          the reporter.
+          update-center2 did not escape plugin-supplied names, descriptions, or version metadata
+          when rendering plugin download index pages. An attacker able to provide a plugin for
+          hosting could inject script into those pages.
         </p>
         <dl class="vulnerability-metadata">
           <div><dt>Vendor</dt><dd>Confirmed</dd></div>
@@ -217,6 +212,7 @@ permalink: /vulnerabilities/
           <div><dt>CVE</dt><dd>Published</dd></div>
           <div><dt>Disclosure</dt><dd>Published</dd></div>
           <div><dt>Severity</dt><dd>Medium / 5.4</dd></div>
+          <div><dt>Public credit</dt><dd>Yeonoh Park, SeoulTech CIS Lab (@owen050724) · Reporter</dd></div>
         </dl>
         <nav class="entry-links" aria-label="Public records for CVE-2026-84677">
           <a href="https://nvd.nist.gov/vuln/detail/cve-2026-84677" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
