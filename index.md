@@ -29,11 +29,11 @@ description: Security researcher and Computer Engineering student at SeoulTech f
     <dl class="metric-strip">
       <div>
         <dt>CVEs</dt>
-        <dd>5</dd>
+        <dd>6</dd>
       </div>
       <div>
         <dt>Vendor-confirmed outcomes</dt>
-        <dd>13</dd>
+        <dd>14</dd>
       </div>
       <div>
         <dt>Products / workspaces</dt>
@@ -45,8 +45,8 @@ description: Security researcher and Computer Engineering student at SeoulTech f
       </div>
     </dl>
     <p class="metric-note">
-      92 responsible disclosure reports submitted across OSS and bug bounty programs from
-      March 22 to August 13, 2026.
+      93 responsible disclosure reports submitted across OSS and bug bounty programs from
+      March 22 to September 2, 2026.
     </p>
   </section>
 
@@ -67,7 +67,7 @@ description: Security researcher and Computer Engineering student at SeoulTech f
           <a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-66082">CVE-2026-66082</a> · Apache DolphinScheduler
         </p>
         <h3><a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-57590">Two separately confirmed authorization boundary findings</a></h3>
-        <p>Vendor confirmed with reporter credit · Severity, remediation, and advisory details pending</p>
+        <p>CVE-2026-57590 published · Vendor-rated Low · CVE-2026-66082 advisory pending</p>
       </article>
       <article class="work-item">
         <p class="item-kicker">Conference paper · 2026</p>

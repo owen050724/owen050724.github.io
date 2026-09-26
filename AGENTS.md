@@ -33,23 +33,23 @@ Homepage Selected Work entries deep-link to stable detail anchors. Preserve the 
 
 Treat `vulnerabilities.md` as the current public source of truth. At this handoff, the public summary is:
 
-- 92 submitted reports between March 22 and August 13, 2026
-- 13 vendor-confirmed outcomes
-- 5 CVE identifiers
+- 93 submitted reports between March 22 and September 2, 2026
+- 14 vendor-confirmed outcomes
+- 6 CVE identifiers
 - 40 researched products/workspaces
 - 1 conference paper award on the homepage outcome strip
 
-The thirteen outcomes are eight identified representative outcomes plus five anonymous coordinated outcomes. Current representative wording must remain conservative:
+The fourteen outcomes are eight identified representative outcomes plus six anonymous coordinated outcomes. Current representative wording must remain conservative:
 
 - Dify, CVE-2026-59210: Accepted; fix shipped since 1.16.0 and remains in 1.17.0 based on release-lineage review and focused local verification; CVE reserved; advisory/CVE publication pending; Medium 6.3.
-- Apache DolphinScheduler, CVE-2026-57590 and CVE-2026-66082: Vendor confirmed with reporter credit; CVEs reserved; severity, remediation, and advisory details pending.
+- Apache DolphinScheduler, CVE-2026-57590: Vendor confirmed with reporter credit; advisory and CVE published September 24 with Finder credit and vendor-rated Low severity without a numeric score. Apache lists 3.4.3 as fixed; attribute the release claim to the vendor and keep independent remediation verification unresolved. CVE-2026-66082 remains vendor confirmed with reporter credit, reserved, with severity, remediation, and advisory details pending.
 - ToolJet, CVE-2026-82872 / GHSA-2jhv-482p-4php: Accepted and published; CVE published August 31 by VulnCheck CNA with Finder credit and a CVSS 4.0 High 7.1 rating; the vendor advisory's original Moderate 6.8 rating remains public. The fix commit is absent from `v3.20.206-lts` and present in the official August 4 `v3.20.207-lts` release, so remediation may be described as source-verified and released in `v3.20.207-lts`; patched-release runtime verification has not been repeated. Link the public record to NVD, while retaining the legacy GHSA anchor for inbound links. Do not present GHSA as a separate summary metric.
 - ToolJet, separate CVE-pending outcome: Accepted September 2 with reporter credit; remediation, CVE assignment, public severity, and advisory publication pending. Do not expose the private advisory identifier, technical title, draft score, endpoints, or affected versions.
 - Grafana via Intigriti: Accepted; vendor-final Medium 4.3; $656 bounty; CVE, remediation, and advisory coordination pending.
-- authentik: Vendor validated on August 28 after a July 29 report; consolidated into a canonical draft advisory; patched releases identified but not independently verified; reporter credit accepted with public attribution pending; the canonical draft severity is displayed publicly as High 8.8/10 and must remain labeled draft/non-final; advisory publication and CVE assignment remain pending. Do not expose the private advisory identifiers, technical title, or affected versions.
+- authentik, CVE-2026-94609 / GHSA-h6c5-mpvq-j4jc: Vendor validated on August 28 after a July 29 report and consolidated it into the canonical advisory, published September 9. The public advisory gives High 8.8 (CVSS 3.1), lists 2026.2.7, 2026.5.7, and 2026.8.2 as patched, and credits @owen050724 as Reporter. Independent patched-release verification has not been recorded. The original private report is not a separate CVE or additional vendor-confirmed outcome. Do not expose private advisory identifiers or unpublished report details.
 - Jenkins, CVE-2026-84677: Published in the September 2 Jenkins security advisory as a stored XSS vulnerability in update-center2; affects 3.18.3 and earlier and is fixed in 3.18.4; public Medium 5.4; reporter credit published. Its official title, affected range, fixed release, and reporter attribution may be shown because the vendor advisory is public. Keep non-public report and patch details withheld.
 
-For the five anonymous coordinated outcomes, expose only the aggregate ratings already published: High 7.1, Medium 6.1, Medium 5.7, Moderate without a numeric score, and one vendor rating pending. In the timeline, keep each date's event type explicit: Jenkins is a September 2 advisory-publication date; the separate ToolJet outcome is a September 2 acceptance date; Dify has a September 2 fix-release verification; ToolJet's CVE publication is dated August 31, its GHSA publication August 7, and its source-verified fix release August 4; authentik is a vendor-validation date; Grafana is an acceptance date; and the DolphinScheduler/Dify original entries are report-submission dates. Keep current status in the separate detail text.
+For the six anonymous coordinated outcomes, expose only these aggregate ratings: High 7.1, Medium 6.1, Medium 5.7, Moderate without a numeric score, and two vendor ratings pending. The additional outcome was recognized by its vendor as a valid first submission with a bounty decision by September 13; severity, CVE, and advisory remain pending under coordinated disclosure. Do not identify its vendor or product publicly. A separate report submitted September 2 remains under vendor review and changes only the aggregate submission count; do not identify it or infer vendor confirmation. In the timeline, keep each date's event type explicit: DolphinScheduler CVE-2026-57590 is a September 24 advisory-publication date; authentik is a September 9 advisory-publication date and August 28 vendor-validation date; Jenkins is a September 2 advisory-publication date; the separate ToolJet outcome is a September 2 acceptance date; Dify has a September 2 fix-release verification; ToolJet's CVE publication is dated August 31, its GHSA publication August 7, and its source-verified fix release August 4; Grafana is an acceptance date; and the DolphinScheduler/Dify original entries are report-submission dates. Keep current status in the separate detail text.
 
 If any metric changes, audit every occurrence across the homepage and vulnerability page so totals remain consistent.
 
@@ -58,7 +58,7 @@ Never:
 - strengthen `Confirmed` into `Accepted`, `Fix recorded` into `Fixed`, or `Reserved` into `Published` without explicit newer vendor or publication evidence;
 - convert pending status into confirmed status;
 - invent CVSS scores, titles, affected endpoints, report IDs, exploit chains, PoC details, or release metadata;
-- identify vendors or products behind the five anonymous coordinated outcomes;
+- identify vendors or products behind the six anonymous coordinated outcomes;
 - treat researcher-proposed severity as vendor-final severity.
 - infer validation, acceptance, a fix, or a CVE decision from private tracker assignment, sprint, priority, review, or credit-field metadata alone.
 
@@ -70,7 +70,8 @@ If a separate local `Vuln-analysis` repository is available, it is a read-only f
 - Do not restore the separate award-announcement link unless explicitly requested.
 - Certificate source: `assets/documents/2026-kdcs-gold-prize-certificate.pdf`.
 - The 2022 Busan Future Scientist Award links to its official Hall of Fame record at `https://www.fobst.org/kor/Ability/Ability0403.php?years=2022&idx=15305`.
-- Preserve GitHub, LinkedIn, email, ToolJet NVD, Discord, and Instagram links. Keep Discord and Instagram secondary to professional contact channels.
+- Preserve GitHub, LinkedIn, email, ToolJet NVD, authentik advisory, DolphinScheduler CVE/NVD, Discord, and Instagram links. Keep Discord and Instagram secondary to professional contact channels.
+- On the vulnerability page, keep record titles as text. For each published CVE, place links in the `entry-links` row below its metadata in this order: NVD, CVE, then Vendor advisory when public. Do not add fix-release links or links to reserved or private records.
 - External links opened in a new tab must use `target="_blank" rel="noopener noreferrer"`.
 - Use Liquid `relative_url` for internal routes and assets. Encode `&` as `&amp;` in HTML query strings.
 - Do not invent a direct paper PDF or proceedings item URL. The current conference page is a proceedings/program-book landing page.
