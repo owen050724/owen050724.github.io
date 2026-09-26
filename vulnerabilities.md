@@ -36,7 +36,7 @@ permalink: /vulnerabilities/
         <dd>40</dd>
       </div>
     </dl>
-    <p class="summary-period">Report activity recorded from March 22 through September 2, 2026. The 14 outcomes comprise eight identified cases and six additional vendor-confirmed cases under coordinated disclosure. Each finding is counted once, regardless of CVE assignment, cross-referenced identifiers, or timeline milestones.</p>
+    <p class="summary-period">Report activity recorded from March 22 through September 2, 2026. The 14 outcomes comprise eight identified cases and six additional vendor-confirmed cases under coordinated disclosure. Each finding is counted once, regardless of CVE assignment or timeline milestones.</p>
   </section>
 
   <section class="selected-vulnerabilities" aria-labelledby="selected-vulnerabilities-title">
@@ -81,7 +81,6 @@ permalink: /vulnerabilities/
           <div><dt>CVE</dt><dd>Published</dd></div>
           <div><dt>Disclosure</dt><dd>Published</dd></div>
           <div><dt>Severity</dt><dd>Apache: Low (no numeric score) · CISA-ADP: High 8.1 (CVSS 3.1)</dd></div>
-          <div><dt>Public credit</dt><dd>Yeonoh Park (Finder)</dd></div>
         </dl>
         <nav class="entry-links" aria-label="Public records for CVE-2026-57590">
           <a href="https://nvd.nist.gov/vuln/detail/cve-2026-57590" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
@@ -124,9 +123,8 @@ permalink: /vulnerabilities/
           <div><dt>CVE</dt><dd>GHSA lists 73068</dd></div>
           <div><dt>Disclosure</dt><dd>Published</dd></div>
           <div><dt>Severity</dt><dd>ToolJet GHSA: Moderate 6.8 (CVSS 3.1)</dd></div>
-          <div><dt>Report credit</dt><dd>@owen050724 (Finder, GHSA-2jhv-482p-4php)</dd></div>
         </dl>
-        <p class="record-source-note">ToolJet's GHSA lists CVE-2026-73068, but that CVE record cites a different ToolJet advisory. A separate <a href="https://www.cve.org/CVERecord?id=CVE-2026-82872" target="_blank" rel="noopener noreferrer">VulnCheck CNA record, CVE-2026-82872 <span aria-hidden="true">↗</span></a>, cites this GHSA. This report is counted once.</p>
+        <p class="record-source-note">CVE-2026-73068 is listed by this ToolJet report; its CVE record currently cites a different ToolJet advisory. The severity above follows the linked report.</p>
         <nav class="entry-links" aria-label="Public records for the ToolJet report">
           <a href="https://nvd.nist.gov/vuln/detail/cve-2026-73068" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
           <a href="https://www.cve.org/CVERecord?id=CVE-2026-73068" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
@@ -188,7 +186,6 @@ permalink: /vulnerabilities/
           <div><dt>CVE</dt><dd>Published</dd></div>
           <div><dt>Disclosure</dt><dd>Published</dd></div>
           <div><dt>Severity</dt><dd>High / 8.8 (CVSS 3.1)</dd></div>
-          <div><dt>Public credit</dt><dd>@owen050724 (Reporter)</dd></div>
         </dl>
         <nav class="entry-links" aria-label="Public records for CVE-2026-94609">
           <a href="https://nvd.nist.gov/vuln/detail/cve-2026-94609" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
@@ -213,7 +210,6 @@ permalink: /vulnerabilities/
           <div><dt>CVE</dt><dd>Published</dd></div>
           <div><dt>Disclosure</dt><dd>Published</dd></div>
           <div><dt>Severity</dt><dd>Medium / 5.4</dd></div>
-          <div><dt>Public credit</dt><dd>Yeonoh Park, SeoulTech CIS Lab (@owen050724) · Reporter</dd></div>
         </dl>
         <nav class="entry-links" aria-label="Public records for CVE-2026-84677">
           <a href="https://nvd.nist.gov/vuln/detail/cve-2026-84677" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
@@ -267,7 +263,7 @@ permalink: /vulnerabilities/
         </div>
         <div>
           <h3>authentik</h3>
-          <p>CVE-2026-94609 · High 8.8 · Public Reporter credit</p>
+          <p>CVE-2026-94609 · High 8.8</p>
         </div>
       </li>
       <li class="timeline-entry">
@@ -298,16 +294,6 @@ permalink: /vulnerabilities/
         <div>
           <h3>Dify</h3>
           <p>CVE-2026-59210 · Shipped since 1.16.0 · Advisory pending</p>
-        </div>
-      </li>
-      <li class="timeline-entry">
-        <div class="timeline-date">
-          <time datetime="2026-08-31">August 31</time>
-          <span>CVE published</span>
-        </div>
-        <div>
-          <h3>ToolJet</h3>
-          <p>CVE-2026-82872 · VulnCheck CNA record citing the ToolJet report</p>
         </div>
       </li>
       <li class="timeline-entry">

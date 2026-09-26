@@ -50,7 +50,7 @@ description: Security researcher and Computer Engineering student at SeoulTech f
       <article class="work-item">
         <p class="item-kicker"><a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-84677">CVE-2026-84677</a> · Jenkins</p>
         <h3><a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-84677">Stored XSS vulnerability in update-center2</a></h3>
-        <p>Published · Fixed in 3.18.4 · Medium 5.4 · Reporter credit</p>
+        <p>Published · Fixed in 3.18.4 · Medium 5.4</p>
       </article>
       <article class="work-item">
         <p class="item-kicker">
