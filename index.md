@@ -28,7 +28,7 @@ description: Security researcher and Computer Engineering student at SeoulTech f
     </div>
     <dl class="metric-strip">
       <div>
-        <dt>CVEs</dt>
+        <dt>CVE identifiers</dt>
         <dd>6</dd>
       </div>
       <div>
@@ -36,18 +36,10 @@ description: Security researcher and Computer Engineering student at SeoulTech f
         <dd>14</dd>
       </div>
       <div>
-        <dt>Products / workspaces</dt>
-        <dd>40</dd>
-      </div>
-      <div>
         <dt>Conference paper award</dt>
         <dd>1</dd>
       </div>
     </dl>
-    <p class="metric-note">
-      93 responsible disclosure reports submitted across OSS and bug bounty programs from
-      March 22 to September 2, 2026.
-    </p>
   </section>
 
   <section class="home-section" aria-labelledby="selected-work-title">
@@ -63,11 +55,10 @@ description: Security researcher and Computer Engineering student at SeoulTech f
       </article>
       <article class="work-item">
         <p class="item-kicker">
-          <a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-57590">CVE-2026-57590</a> /
-          <a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-66082">CVE-2026-66082</a> · Apache DolphinScheduler
+          <a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-57590">CVE-2026-57590</a> · Apache DolphinScheduler
         </p>
-        <h3><a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-57590">Two separately confirmed authorization boundary findings</a></h3>
-        <p>CVE-2026-57590 published · CISA-ADP: High 8.1(CVSS 3.1) · CVE-2026-66082 advisory pending</p>
+        <h3><a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-57590">Missing project authorization in Task Group APIs</a></h3>
+        <p>Published · CISA-ADP: High 8.1(CVSS 3.1). Separate finding: <a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-66082">CVE-2026-66082</a> (vendor-confirmed; advisory pending).</p>
       </article>
       <article class="work-item">
         <p class="item-kicker">Conference paper · 2026</p>

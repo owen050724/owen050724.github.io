@@ -42,7 +42,7 @@ permalink: /vulnerabilities/
   <section class="selected-vulnerabilities" aria-labelledby="selected-vulnerabilities-title">
     <header class="section-introduction">
       <h2 id="selected-vulnerabilities-title">Selected Vulnerability Research</h2>
-      <p>Representative outcomes limited to public or approved status-level information.</p>
+      <p>Published findings describe publicly disclosed causes and impact. Cases still under coordinated disclosure show only disclosure-safe status information.</p>
     </header>
 
     <div class="vulnerability-record-list">
