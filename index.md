@@ -67,7 +67,7 @@ description: Security researcher and Computer Engineering student at SeoulTech f
           <a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-66082">CVE-2026-66082</a> · Apache DolphinScheduler
         </p>
         <h3><a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-57590">Two separately confirmed authorization boundary findings</a></h3>
-        <p>CVE-2026-57590 published · Vendor-rated Low · CVE-2026-66082 advisory pending</p>
+        <p>CVE-2026-57590 published · CISA-ADP: High 8.1(CVSS 3.1) · CVE-2026-66082 advisory pending</p>
       </article>
       <article class="work-item">
         <p class="item-kicker">Conference paper · 2026</p>

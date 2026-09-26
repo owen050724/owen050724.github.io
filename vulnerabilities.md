@@ -72,7 +72,7 @@ permalink: /vulnerabilities/
         </header>
         <p>
           Reported June 29, 2026. Apache published the security advisory on September 24 with
-          Yeonoh Park credited as a finder and a vendor-rated Low severity without a numeric score.
+          Yeonoh Park credited as a finder.
           Apache lists 3.4.3 as the fixed release; independent remediation verification remains
           unresolved.
         </p>
@@ -81,7 +81,7 @@ permalink: /vulnerabilities/
           <div><dt>Remediation</dt><dd>Vendor lists 3.4.3; verification unresolved</dd></div>
           <div><dt>CVE</dt><dd>Published</dd></div>
           <div><dt>Disclosure</dt><dd>Published</dd></div>
-          <div><dt>Severity</dt><dd>Low / no numeric vendor score</dd></div>
+          <div><dt>Severity</dt><dd>CISA-ADP: High 8.1(CVSS 3.1)</dd></div>
         </dl>
         <nav class="entry-links" aria-label="Public records for CVE-2026-57590">
           <a href="https://nvd.nist.gov/vuln/detail/cve-2026-57590" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
@@ -260,7 +260,7 @@ permalink: /vulnerabilities/
         </div>
         <div>
           <h3>Apache DolphinScheduler</h3>
-          <p>CVE-2026-57590 · Vendor-rated Low · Remediation verification unresolved</p>
+          <p>CVE-2026-57590 · CISA-ADP: High 8.1(CVSS 3.1) · Remediation verification unresolved</p>
         </div>
       </li>
       <li class="timeline-entry">
@@ -360,7 +360,7 @@ permalink: /vulnerabilities/
         </div>
         <div>
           <h3>Apache DolphinScheduler</h3>
-          <p>CVE-2026-57590 · Current status: Published · Vendor-rated Low</p>
+          <p>CVE-2026-57590 · Current status: Published · CISA-ADP: High 8.1(CVSS 3.1)</p>
         </div>
       </li>
       <li class="timeline-entry">
