@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<article class="detail-page writeup-page" aria-labelledby="writeup-title">
+  <nav class="writeup-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ '/vulnerabilities/' | relative_url }}">Vulnerability Research</a>
+    <span aria-hidden="true">/</span>
+    <span aria-current="page">{{ page.cve | escape }}</span>
+  </nav>
+
+  <header class="detail-header">
+    <p class="eyebrow">Technical write-up · {{ page.product | escape }}</p>
+    <h1 id="writeup-title">{{ page.title | escape }}</h1>
+    <p>{{ page.description | escape }}</p>
+  </header>
+
+  <dl class="writeup-metadata">
+    <div>
+      <dt>Advisory published</dt>
+      <dd>{{ page.disclosure_date | escape }}</dd>
+    </div>
+    <div>
+      <dt>Severity</dt>
+      <dd>{{ page.severity | escape }}</dd>
+    </div>
+  </dl>
+
+  <div class="writeup-body">
+    {{ content }}
+  </div>
+
+  <nav class="writeup-return entry-links" aria-label="Return to vulnerability record">
+    <a href="{{ '/vulnerabilities/' | relative_url }}#{{ page.record_anchor | escape }}"><span aria-hidden="true">←</span> Back to {{ page.product | escape }} research record</a>
+  </nav>
+</article>

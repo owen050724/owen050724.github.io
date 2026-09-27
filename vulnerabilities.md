@@ -20,10 +20,6 @@ permalink: /vulnerabilities/
     <h2 id="vulnerability-summary-title">Research Summary</h2>
     <dl class="vulnerability-summary-list">
       <div class="summary-metric">
-        <dt>Submitted reports</dt>
-        <dd>93</dd>
-      </div>
-      <div class="summary-metric">
         <dt>Vendor-confirmed outcomes</dt>
         <dd>14</dd>
       </div>
@@ -77,12 +73,13 @@ permalink: /vulnerabilities/
         </p>
         <dl class="vulnerability-metadata">
           <div><dt>Vendor</dt><dd>Confirmed</dd></div>
-          <div><dt>Remediation</dt><dd>Vendor lists 3.4.3; verification unresolved</dd></div>
+          <div><dt>Remediation</dt><dd>Vendor-reported fixed in 3.4.3</dd></div>
           <div><dt>CVE</dt><dd>Published</dd></div>
           <div><dt>Disclosure</dt><dd>Published</dd></div>
           <div><dt>Severity</dt><dd>Apache: Low (no numeric score) · CISA-ADP: High 8.1 (CVSS 3.1)</dd></div>
         </dl>
         <nav class="entry-links" aria-label="Public records for CVE-2026-57590">
+          <a href="{{ '/vulnerabilities/cve-2026-57590/' | relative_url }}">Technical write-up</a>
           <a href="https://nvd.nist.gov/vuln/detail/cve-2026-57590" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
           <a href="https://www.cve.org/CVERecord?id=CVE-2026-57590" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
           <a href="https://www.openwall.com/lists/oss-security/2026/09/24/3" target="_blank" rel="noopener noreferrer">Vendor advisory <span aria-hidden="true">↗</span></a>
@@ -124,8 +121,8 @@ permalink: /vulnerabilities/
           <div><dt>Disclosure</dt><dd>Published</dd></div>
           <div><dt>Severity</dt><dd>ToolJet GHSA: Moderate 6.8 (CVSS 3.1)</dd></div>
         </dl>
-        <p class="record-source-note">CVE-2026-73068 is listed by this ToolJet report; its CVE record currently cites a different ToolJet advisory. The severity above follows the linked report.</p>
         <nav class="entry-links" aria-label="Public records for the ToolJet report">
+          <a href="{{ '/vulnerabilities/cve-2026-73068/' | relative_url }}">Technical write-up</a>
           <a href="https://nvd.nist.gov/vuln/detail/cve-2026-73068" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
           <a href="https://www.cve.org/CVERecord?id=CVE-2026-73068" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
           <a href="https://github.com/ToolJet/ToolJet/security/advisories/GHSA-2jhv-482p-4php" target="_blank" rel="noopener noreferrer">Report (GHSA-2jhv-482p-4php) <span aria-hidden="true">↗</span></a>
@@ -188,6 +185,7 @@ permalink: /vulnerabilities/
           <div><dt>Severity</dt><dd>High / 8.8 (CVSS 3.1)</dd></div>
         </dl>
         <nav class="entry-links" aria-label="Public records for CVE-2026-94609">
+          <a href="{{ '/vulnerabilities/cve-2026-94609/' | relative_url }}">Technical write-up</a>
           <a href="https://nvd.nist.gov/vuln/detail/cve-2026-94609" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
           <a href="https://www.cve.org/CVERecord?id=CVE-2026-94609" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
           <a href="https://github.com/goauthentik/authentik/security/advisories/GHSA-h6c5-mpvq-j4jc" target="_blank" rel="noopener noreferrer">Vendor advisory <span aria-hidden="true">↗</span></a>
@@ -212,6 +210,7 @@ permalink: /vulnerabilities/
           <div><dt>Severity</dt><dd>Medium / 5.4</dd></div>
         </dl>
         <nav class="entry-links" aria-label="Public records for CVE-2026-84677">
+          <a href="{{ '/vulnerabilities/cve-2026-84677/' | relative_url }}">Technical write-up</a>
           <a href="https://nvd.nist.gov/vuln/detail/cve-2026-84677" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
           <a href="https://www.cve.org/CVERecord?id=CVE-2026-84677" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
           <a href="https://www.jenkins.io/security/advisory/2026-09-02/#SECURITY-4038" target="_blank" rel="noopener noreferrer">Vendor advisory <span aria-hidden="true">↗</span></a>

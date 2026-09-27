@@ -12,7 +12,7 @@
 
   <nav class="sidebar-nav" aria-label="Primary">
     <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="is-active" aria-current="page"{% endif %}>Home</a>
-    <a href="{{ '/vulnerabilities/' | relative_url }}"{% if page.url == '/vulnerabilities/' %} class="is-active" aria-current="page"{% endif %}>Vulnerability Research</a>
+    <a href="{{ '/vulnerabilities/' | relative_url }}"{% if page.url == '/vulnerabilities/' %} class="is-active" aria-current="page"{% elsif page.url contains '/vulnerabilities/' %} class="is-active" aria-current="location"{% endif %}>Vulnerability Research</a>
     <a href="{{ '/publications/' | relative_url }}"{% if page.url == '/publications/' %} class="is-active" aria-current="page"{% endif %}>Publications</a>
     <a href="{{ '/research/' | relative_url }}"{% if page.url == '/research/' %} class="is-active" aria-current="page"{% endif %}>Research</a>
     <a href="{{ '/honors/' | relative_url }}"{% if page.url == '/honors/' %} class="is-active" aria-current="page"{% endif %}>Honors</a>

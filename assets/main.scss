@@ -402,14 +402,10 @@ code {
 .metric-strip,
 .vulnerability-summary-list {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   margin: 0;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-}
-
-.metric-strip {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .metric-strip > div,
@@ -754,9 +750,76 @@ code {
   font-weight: 690;
 }
 
-.vulnerability-record > .record-source-note {
+.writeup-page {
   max-width: var(--reading-width);
-  font-size: 0.88rem;
+}
+
+.writeup-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2rem 0.65rem;
+  margin-bottom: 1.6rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.writeup-breadcrumb a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+}
+
+.writeup-metadata {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1rem 2rem;
+  margin: 1.4rem 0 2.75rem;
+}
+
+.writeup-metadata dt {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.writeup-metadata dd {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+}
+
+.writeup-body {
+  max-width: 44rem;
+  line-height: 1.75;
+}
+
+.writeup-body h2 {
+  margin: 2.5rem 0 1rem;
+  scroll-margin-top: 5rem;
+}
+
+.writeup-body h2:first-child {
+  margin-top: 0;
+}
+
+.writeup-body h3 {
+  margin: 1.6rem 0 0.7rem;
+}
+
+.writeup-body p,
+.writeup-body ul,
+.writeup-body ol {
+  margin-bottom: 1.15rem;
+}
+
+.writeup-body a {
+  overflow-wrap: anywhere;
+  text-underline-offset: 0.18em;
+}
+
+.writeup-return {
+  margin-top: 2.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
 }
 
 .aggregate-severity-list {
