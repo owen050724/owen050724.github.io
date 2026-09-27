@@ -816,6 +816,75 @@ code {
   text-underline-offset: 0.18em;
 }
 
+.writeup-body code {
+  overflow-wrap: anywhere;
+}
+
+.writeup-body pre,
+.writeup-body .highlight {
+  color: var(--text);
+  background: var(--sidebar);
+}
+
+.writeup-body pre {
+  padding: 1rem;
+  border-color: var(--border);
+  line-height: 1.6;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.writeup-body pre code {
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  font-size: 0.84rem;
+}
+
+.writeup-body .highlight {
+  .k, .kd, .kt, .kr, .nb, .nc, .nf, .nn, .nv {
+    color: var(--link);
+  }
+
+  .gd, .gd .x {
+    color: var(--high);
+    background: transparent;
+  }
+
+  .gi, .gi .x {
+    color: var(--low);
+    background: transparent;
+  }
+}
+
+.writeup-body table {
+  table-layout: fixed;
+  color: var(--text);
+  font-size: 0.86rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  border: 0;
+}
+
+.writeup-body table th,
+.writeup-body table td {
+  padding: 0.75rem 0.6rem;
+  vertical-align: top;
+  border: 0;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.writeup-body table th {
+  color: var(--heading);
+  border-bottom-color: var(--border);
+}
+
+.writeup-body table th,
+.writeup-body table tr:nth-child(even) {
+  background: transparent;
+}
+
 .writeup-return {
   margin-top: 2.75rem;
   padding-top: 1rem;

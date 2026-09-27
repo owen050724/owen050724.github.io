@@ -26,7 +26,7 @@ permalink: /research/
   <section class="detail-section" aria-labelledby="research-method">
     <header class="section-intro">
       <h2 id="research-method">Research Method</h2>
-      <p>An evidence-first process for evaluating security boundaries. Operational heuristics and target-specific techniques are intentionally omitted.</p>
+      <p>An evidence-first process for evaluating security boundaries. <a href="{{ '/vulnerabilities/' | relative_url }}">Public write-ups</a> present source-level analysis and validation evidence for disclosed findings. Unpublished technical details, confidential materials, and internal discovery methods remain private.</p>
     </header>
 
     <ol class="process-list">
