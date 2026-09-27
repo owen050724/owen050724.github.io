@@ -7,6 +7,7 @@ This repository is the source for Yeonoh Park's public academic security researc
 - The site uses Jekyll, the Minima theme, Markdown/HTML, custom SCSS, and minimal vanilla JavaScript.
 - Global metadata and theme configuration live in `_config.yml`.
 - `_layouts/default.html` is the shared page shell.
+- `_includes/head.html` preserves Minima metadata/assets and adds same-page language alternates; it owns the single HTML `head` element.
 - `_includes/sidebar.html` owns desktop and mobile navigation markup.
 - `assets/main.scss` owns the visual system and responsive behavior.
 - `assets/site.js` owns progressive enhancement for the mobile drawer and the short hero typing effect.
@@ -26,6 +27,12 @@ This repository is the source for Yeonoh Park's public academic security researc
 | `/honors/` | `honors.md` | Chronological awards and honors |
 | `/about/` | `about.md` | Education, affiliations, and interests |
 | `/contact/` | `contact.md` | Professional contact links and secondary social profiles |
+
+Each of these routes has a Korean counterpart under `/ko/`, with source in the matching `ko/` path (for example, `ko/about.md` and `ko/vulnerabilities/<cve-id>/index.md`). Keep the existing English routes stable. Korean pages declare `lang: ko`, `locale: ko_KR`, and an explicit `/ko/` permalink.
+
+Shared interface labels and navigation live in `_data/locales.yml`; the layouts derive same-page language links and localized route prefixes. The sidebar footer's KO/EN links must work without JavaScript, including on all four write-ups. Keep localized navigation, breadcrumbs, return links, accessibility labels, and `hreflang` alternate links in sync. Do not auto-redirect visitors based on browser language.
+
+When changing public content, update both language versions together. Preserve source snippets, external source URLs, IDs, metrics, severity attribution, and the distinctions between vendor claims, original observations, source review, and unexecuted tests. Korean internal content links should remain under `/ko/`; shared assets such as the certificate PDF retain their existing paths.
 
 When adding or changing a route, update the shared sidebar once instead of copying navigation into pages. Preserve each page's explicit permalink and active-page `aria-current` behavior.
 
@@ -103,7 +110,7 @@ If a separate local `Vuln-analysis` repository is available, it is a read-only f
    bundle exec jekyll build
    ```
 
-5. Verify all seven main routes and the four write-up routes, internal links, the certificate PDF, page titles, active navigation, and mobile drawer behavior.
+5. Verify all seven main routes and the four write-up routes in both languages (22 routes), same-page KO/EN switching, internal links, the certificate PDF, page titles, active navigation, and mobile drawer behavior, including without JavaScript.
 6. Run at minimum:
 
    ```sh

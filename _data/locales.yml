@@ -1,0 +1,54 @@
+en:
+  name: Yeonoh Park
+  role: Security Researcher
+  skip: Skip to main content
+  open_navigation: Open navigation
+  close_navigation: Close navigation
+  site_navigation: Site navigation
+  primary_navigation: Primary
+  profiles: Professional profiles
+  email: Email
+  language: Language
+  breadcrumb: Breadcrumb
+  vulnerability_research: Vulnerability Research
+  technical_writeup: Technical write-up
+  advisory_published: Advisory published
+  severity: Severity
+  return_label: Return to vulnerability record
+  return_prefix: Back to
+  return_suffix: research record
+  navigation:
+    - { path: '/', label: Home }
+    - { path: '/vulnerabilities/', label: Vulnerability Research }
+    - { path: '/publications/', label: Publications }
+    - { path: '/research/', label: Research }
+    - { path: '/honors/', label: Honors }
+    - { path: '/about/', label: About }
+    - { path: '/contact/', label: Contact }
+ko:
+  name: 박연오
+  role: 보안 연구자
+  skip: 본문으로 바로가기
+  open_navigation: 메뉴 열기
+  close_navigation: 메뉴 닫기
+  site_navigation: 사이트 메뉴
+  primary_navigation: 주요 메뉴
+  profiles: 연구·업무 프로필
+  email: 이메일
+  language: 언어
+  breadcrumb: 현재 위치
+  vulnerability_research: 취약점 연구
+  technical_writeup: 기술 분석
+  advisory_published: 보안 권고 공개일
+  severity: 심각도
+  return_label: 취약점 연구 기록으로 돌아가기
+  return_prefix: ''
+  return_suffix: 연구 기록으로 돌아가기
+  navigation:
+    - { path: '/', label: 홈 }
+    - { path: '/vulnerabilities/', label: 취약점 연구 }
+    - { path: '/publications/', label: 논문 }
+    - { path: '/research/', label: 연구 }
+    - { path: '/honors/', label: 수상 }
+    - { path: '/about/', label: 소개 }
+    - { path: '/contact/', label: 연락처 }

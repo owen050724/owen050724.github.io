@@ -1,7 +1,19 @@
 title: Yeonoh Park
+url: https://owen050724.github.io
 tagline: Security Researcher
 description: Security researcher and Computer Engineering student at SeoulTech focusing on vulnerability research and system security.
 lang: en
+defaults:
+  - scope:
+      path: ''
+    values:
+      lang: en
+      locale: en_US
+  - scope:
+      path: ko
+    values:
+      lang: ko
+      locale: ko_KR
 theme: minima
 plugins:
   - jekyll-feed

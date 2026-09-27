@@ -1,17 +1,25 @@
+{%- assign page_language = page.lang | default: site.lang | default: 'en' -%}
+{%- assign ui = site.data.locales[page_language] -%}
+{%- assign language_prefix = '' -%}
+{%- assign english_url = page.url -%}
+{%- if page_language == 'ko' -%}
+  {%- assign language_prefix = '/ko' -%}
+  {%- assign english_url = page.url | remove_first: '/ko' -%}
+{%- endif -%}
+{%- assign korean_url = english_url | prepend: '/ko' -%}
+{%- assign localized_home = '/' | prepend: language_prefix -%}
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}" class="no-js">
-  <head>
-    {%- include head.html -%}
-  </head>
+<html lang="{{ page_language }}" class="no-js">
+  {%- include head.html -%}
   <body class="site-body">
-    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <a class="skip-link" href="#main-content">{{ ui.skip }}</a>
 
     <header class="mobile-header">
-      <button class="nav-toggle" type="button" aria-controls="site-sidebar" aria-expanded="false" data-nav-toggle>
+      <button class="nav-toggle" type="button" aria-controls="site-sidebar" aria-expanded="false" data-nav-toggle data-open-label="{{ ui.open_navigation }}" data-close-label="{{ ui.close_navigation }}">
         <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
-        <span class="visually-hidden">Open navigation</span>
+        <span class="visually-hidden">{{ ui.open_navigation }}</span>
       </button>
-      <a class="mobile-identity" href="{{ '/' | relative_url }}">Yeonoh Park</a>
+      <a class="mobile-identity" href="{{ localized_home | relative_url }}">{{ ui.name }}</a>
     </header>
 
     {%- include sidebar.html -%}
@@ -21,7 +29,7 @@
       <div class="content-shell">
         {{ content }}
         <footer class="content-footer">
-          <p>Yeonoh Park · Security Researcher</p>
+          <p>{{ ui.name }} · {{ ui.role }}</p>
         </footer>
       </div>
     </main>

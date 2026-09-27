@@ -242,6 +242,38 @@ code {
   font-size: 0.82rem;
 }
 
+.language-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.language-switch a,
+.language-switch a:visited {
+  display: inline-flex;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.language-switch a:hover,
+.language-switch a[aria-current] {
+  color: var(--heading);
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+html[lang="ko"] .content-shell {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
 .nav-close,
 .mobile-header,
 .drawer-backdrop {

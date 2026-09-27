@@ -3,6 +3,8 @@
   const sidebar = document.querySelector("#site-sidebar");
   const toggle = document.querySelector("[data-nav-toggle]");
   const toggleLabel = toggle ? toggle.querySelector(".visually-hidden") : null;
+  const openLabel = toggle?.dataset.openLabel || "Open navigation";
+  const closeLabel = toggle?.dataset.closeLabel || "Close navigation";
   const closeControls = Array.from(document.querySelectorAll("[data-nav-close]"));
   const backgroundElements = [
     document.querySelector(".skip-link"),
@@ -55,7 +57,7 @@
         sidebar.removeAttribute("aria-hidden");
         sidebar.inert = false;
         toggle.setAttribute("aria-expanded", "false");
-        if (toggleLabel) toggleLabel.textContent = "Open navigation";
+        if (toggleLabel) toggleLabel.textContent = openLabel;
         restoreTabOrder();
         if (wasOpen && sidebar.contains(document.activeElement)) {
           const currentLink = sidebar.querySelector('a[aria-current="page"]') || sidebar.querySelector("a[href]");
@@ -68,7 +70,7 @@
       sidebar.setAttribute("aria-hidden", String(!open));
       sidebar.inert = !open;
       toggle.setAttribute("aria-expanded", String(open));
-      if (toggleLabel) toggleLabel.textContent = open ? "Close navigation" : "Open navigation";
+      if (toggleLabel) toggleLabel.textContent = open ? closeLabel : openLabel;
       body.classList.toggle("nav-scroll-lock", open);
       setBackgroundInactive(open);
       if (open) {
