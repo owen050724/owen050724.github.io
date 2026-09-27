@@ -843,8 +843,16 @@ code {
 }
 
 .writeup-body .highlight {
-  .k, .kd, .kt, .kr, .nb, .nc, .nf, .nn, .nv {
+  .k, .kd, .kt, .kr, .na, .nb, .nc, .ne, .nf, .nn, .no, .nt, .nv {
     color: var(--link);
+  }
+
+  .s, .s1, .s2, .sb {
+    color: #f2b8d6;
+  }
+
+  .c, .c1, .cm {
+    color: var(--muted);
   }
 
   .gd, .gd .x {
