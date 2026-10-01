@@ -27,7 +27,7 @@ permalink: /ko/vulnerabilities/
       </div>
       <div class="summary-metric">
         <dt>CVE ID가 부여된 취약점</dt>
-        <dd>6</dd>
+        <dd>7</dd>
       </div>
       <div class="summary-metric">
         <dt>제품 / 워크스페이스</dt>
@@ -153,23 +153,30 @@ permalink: /ko/vulnerabilities/
       </article>
 
       <article class="vulnerability-record" id="grafana">
-        <header class="vulnerability-record-header">
-          <p class="vulnerability-identifier">CVE 대기 중 · Grafana</p>
-          <h3>벤더가 인정한 권한 경계 취약점</h3>
+        <header class="vulnerability-record-header" id="cve-2026-81841">
+          <p class="vulnerability-identifier">CVE-2026-81841 · Grafana</p>
+          <h3>일시 중지한 공유 대시보드의 접근 토큰을 통한 데이터 소스 설정 노출</h3>
         </header>
         <p>
-          2026년 3월 22일 보고했습니다. 2026년 8월 26일 제보가 인정되었고,
-          벤더 최종 평가는 Medium 4.3, 보상금은 $656입니다.
-          CVE, 수정, 권고문 관련 조율은 대기 중입니다.
+          Grafana는 프런트엔드 설정을 반환할 때 공유 대시보드의 일시 중지 상태를
+          일관되게 검사하지 않았습니다. 이전에 유효했던 공유 링크를 가진 사람은
+          일반적인 대시보드 접근이 차단된 뒤에도 로그인 없이 참조된 데이터 소스 설정을
+          계속 읽을 수 있었습니다.
         </p>
         <dl class="vulnerability-metadata">
           <div><dt>벤더</dt><dd>제보 인정</dd></div>
-          <div><dt>수정</dt><dd>대기 중</dd></div>
-          <div><dt>CVE</dt><dd>대기 중</dd></div>
-          <div><dt>공개</dt><dd>권고문 공개 대기 중</dd></div>
-          <div><dt>심각도</dt><dd>Medium / 4.3</dd></div>
+          <div><dt>수정</dt><dd>벤더 명시 수정 버전: 12.4.12, 13.0.10, 13.1.7, 13.2.3</dd></div>
+          <div><dt>CVE</dt><dd>공개</dd></div>
+          <div><dt>공개</dt><dd>공개</dd></div>
+          <div><dt>심각도</dt><dd>Grafana 권고문: Medium 5.3 (CVSS 3.1)</dd></div>
           <div><dt>보상금</dt><dd>$656</dd></div>
         </dl>
+        <nav class="entry-links" aria-label="CVE-2026-81841 공개 기록">
+          <a href="{{ '/ko/vulnerabilities/cve-2026-81841/' | relative_url }}">기술 분석</a>
+          <a href="https://nvd.nist.gov/vuln/detail/cve-2026-81841" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2026-81841" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
+          <a href="https://grafana.com/security/security-advisories/cve-2026-81841/" target="_blank" rel="noopener noreferrer">벤더 권고문 <span aria-hidden="true">↗</span></a>
+        </nav>
       </article>
 
       <article class="vulnerability-record" id="authentik">
@@ -252,6 +259,16 @@ permalink: /ko/vulnerabilities/
     <ol class="timeline-list">
       <li class="timeline-entry">
         <div class="timeline-date">
+          <time datetime="2026-09-29">9월 29일</time>
+          <span>권고문 공개</span>
+        </div>
+        <div>
+          <h3>Grafana</h3>
+          <p>CVE-2026-81841 · 수정 릴리스 배포 · Grafana 권고문: Medium 5.3 (CVSS 3.1)</p>
+        </div>
+      </li>
+      <li class="timeline-entry">
+        <div class="timeline-date">
           <time datetime="2026-09-24">9월 24일</time>
           <span>권고문 공개</span>
         </div>
@@ -317,7 +334,7 @@ permalink: /ko/vulnerabilities/
         </div>
         <div>
           <h3>Grafana</h3>
-          <p>CVE 대기 중 · Medium 4.3 · 보상금 $656</p>
+          <p>Intigriti: Medium 4.3 · 보상금 $656</p>
         </div>
       </li>
       <li class="timeline-entry">

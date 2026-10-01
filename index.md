@@ -28,7 +28,7 @@ description: Security researcher and Computer Engineering student at SeoulTech f
     <dl class="metric-strip">
       <div>
         <dt>Findings with CVE IDs</dt>
-        <dd>6</dd>
+        <dd>7</dd>
       </div>
       <div>
         <dt>Vendor-confirmed outcomes</dt>

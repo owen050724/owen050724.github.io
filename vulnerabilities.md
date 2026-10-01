@@ -25,7 +25,7 @@ permalink: /vulnerabilities/
       </div>
       <div class="summary-metric">
         <dt>Findings with CVE IDs</dt>
-        <dd>6</dd>
+        <dd>7</dd>
       </div>
       <div class="summary-metric">
         <dt>Products / workspaces</dt>
@@ -149,22 +149,29 @@ permalink: /vulnerabilities/
       </article>
 
       <article class="vulnerability-record" id="grafana">
-        <header class="vulnerability-record-header">
-          <p class="vulnerability-identifier">CVE pending · Grafana</p>
-          <h3>Vendor-accepted authorization boundary vulnerability</h3>
+        <header class="vulnerability-record-header" id="cve-2026-81841">
+          <p class="vulnerability-identifier">CVE-2026-81841 · Grafana</p>
+          <h3>Paused shared dashboard access tokens still expose data source configuration</h3>
         </header>
         <p>
-          Reported March 22, 2026. Accepted August 26, 2026, with a vendor-final Medium 4.3 rating
-          and a $656 bounty; CVE, remediation, and advisory coordination remain pending.
+          Grafana did not consistently enforce shared-dashboard pause state when returning frontend
+          configuration. A holder of a previously valid shared link could continue reading referenced
+          data source configuration without signing in, despite normal dashboard access being blocked.
         </p>
         <dl class="vulnerability-metadata">
           <div><dt>Vendor</dt><dd>Accepted</dd></div>
-          <div><dt>Remediation</dt><dd>Pending</dd></div>
-          <div><dt>CVE</dt><dd>Pending</dd></div>
-          <div><dt>Disclosure</dt><dd>Advisory pending</dd></div>
-          <div><dt>Severity</dt><dd>Medium / 4.3</dd></div>
+          <div><dt>Remediation</dt><dd>Vendor-listed fixes: 12.4.12, 13.0.10, 13.1.7, 13.2.3</dd></div>
+          <div><dt>CVE</dt><dd>Published</dd></div>
+          <div><dt>Disclosure</dt><dd>Published</dd></div>
+          <div><dt>Severity</dt><dd>Grafana advisory: Medium 5.3 (CVSS 3.1)</dd></div>
           <div><dt>Bounty</dt><dd>$656</dd></div>
         </dl>
+        <nav class="entry-links" aria-label="Public records for CVE-2026-81841">
+          <a href="{{ '/vulnerabilities/cve-2026-81841/' | relative_url }}">Technical write-up</a>
+          <a href="https://nvd.nist.gov/vuln/detail/cve-2026-81841" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2026-81841" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
+          <a href="https://grafana.com/security/security-advisories/cve-2026-81841/" target="_blank" rel="noopener noreferrer">Vendor advisory <span aria-hidden="true">↗</span></a>
+        </nav>
       </article>
 
       <article class="vulnerability-record" id="authentik">
@@ -247,6 +254,16 @@ permalink: /vulnerabilities/
     <ol class="timeline-list">
       <li class="timeline-entry">
         <div class="timeline-date">
+          <time datetime="2026-09-29">September 29</time>
+          <span>Advisory published</span>
+        </div>
+        <div>
+          <h3>Grafana</h3>
+          <p>CVE-2026-81841 · Fixes released · Grafana advisory: Medium 5.3 (CVSS 3.1)</p>
+        </div>
+      </li>
+      <li class="timeline-entry">
+        <div class="timeline-date">
           <time datetime="2026-09-24">September 24</time>
           <span>Advisory published</span>
         </div>
@@ -312,7 +329,7 @@ permalink: /vulnerabilities/
         </div>
         <div>
           <h3>Grafana</h3>
-          <p>CVE pending · Medium 4.3 · $656 bounty</p>
+          <p>Intigriti: Medium 4.3 · $656 bounty</p>
         </div>
       </li>
       <li class="timeline-entry">

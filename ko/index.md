@@ -32,7 +32,7 @@ permalink: /ko/
     <dl class="metric-strip">
       <div>
         <dt>CVE ID가 부여된 취약점</dt>
-        <dd>6</dd>
+        <dd>7</dd>
       </div>
       <div>
         <dt>벤더가 확인한 성과</dt>
