@@ -32,11 +32,11 @@ permalink: /ko/
     <dl class="metric-strip">
       <div>
         <dt>CVE ID가 부여된 취약점</dt>
-        <dd>7</dd>
+        <dd>8</dd>
       </div>
       <div>
         <dt>벤더가 확인한 성과</dt>
-        <dd>14</dd>
+        <dd>15</dd>
       </div>
       <div>
         <dt>학술대회 논문 수상</dt>
@@ -61,7 +61,7 @@ permalink: /ko/
           <a href="{{ '/ko/vulnerabilities/' | relative_url }}#cve-2026-57590">CVE-2026-57590</a> · Apache DolphinScheduler
         </p>
         <h3><a href="{{ '/ko/vulnerabilities/' | relative_url }}#cve-2026-57590">Task Group API의 프로젝트 권한 검사 누락</a></h3>
-        <p>공개 완료 · Apache: Low (수치 점수 없음) · CISA-ADP: High 8.1 (CVSS 3.1). 별도 취약점: <a href="{{ '/ko/vulnerabilities/' | relative_url }}#cve-2026-66082">CVE-2026-66082</a> (벤더 확인 완료, 권고문 공개 대기 중).</p>
+        <p>공개 완료 · Apache: Low (수치 점수 없음) · CISA-ADP: High 8.1 (CVSS 3.1). 별도 취약점: <a href="{{ '/ko/vulnerabilities/' | relative_url }}#cve-2026-71897">CVE-2026-71897</a> (공개 완료), <a href="{{ '/ko/vulnerabilities/' | relative_url }}#cve-2026-66082">CVE-2026-66082</a> (벤더 확인 완료, 권고문 공개 대기 중).</p>
       </article>
       <article class="work-item">
         <p class="item-kicker">학술대회 논문 · 2026</p>

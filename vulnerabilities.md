@@ -21,18 +21,18 @@ permalink: /vulnerabilities/
     <dl class="vulnerability-summary-list">
       <div class="summary-metric">
         <dt>Vendor-confirmed outcomes</dt>
-        <dd>14</dd>
+        <dd>15</dd>
       </div>
       <div class="summary-metric">
         <dt>Findings with CVE IDs</dt>
-        <dd>7</dd>
+        <dd>8</dd>
       </div>
       <div class="summary-metric">
         <dt>Products / workspaces</dt>
         <dd>40</dd>
       </div>
     </dl>
-    <p class="summary-period">Report activity recorded from March 22 through September 2, 2026. The 14 outcomes comprise eight identified cases and six additional vendor-confirmed cases under coordinated disclosure. Each finding is counted once, regardless of CVE assignment or timeline milestones.</p>
+    <p class="summary-period">Report activity recorded from March 22 through September 2, 2026. The 15 outcomes comprise nine identified cases and six additional vendor-confirmed cases under coordinated disclosure. Each finding is counted once, regardless of CVE assignment or timeline milestones.</p>
   </section>
 
   <section class="selected-vulnerabilities" aria-labelledby="selected-vulnerabilities-title">
@@ -83,6 +83,31 @@ permalink: /vulnerabilities/
           <a href="https://nvd.nist.gov/vuln/detail/cve-2026-57590" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
           <a href="https://www.cve.org/CVERecord?id=CVE-2026-57590" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
           <a href="https://www.openwall.com/lists/oss-security/2026/09/24/3" target="_blank" rel="noopener noreferrer">Vendor advisory <span aria-hidden="true">↗</span></a>
+        </nav>
+      </article>
+
+      <article class="vulnerability-record" id="cve-2026-71897">
+        <header class="vulnerability-record-header">
+          <p class="vulnerability-identifier">CVE-2026-71897 · Apache DolphinScheduler</p>
+          <h3>Cross-project authorization bypass in workflow batch copy and move</h3>
+        </header>
+        <p>
+          DolphinScheduler's batch copy and move operations did not correctly enforce project
+          authorization for the workflows being operated on. An authenticated user could copy or
+          move workflows from projects they were not permitted to access.
+        </p>
+        <dl class="vulnerability-metadata">
+          <div><dt>Vendor</dt><dd>Confirmed</dd></div>
+          <div><dt>Remediation</dt><dd>Vendor-reported fixed in 3.4.3</dd></div>
+          <div><dt>CVE</dt><dd>Published</dd></div>
+          <div><dt>Disclosure</dt><dd>Published</dd></div>
+          <div><dt>Severity</dt><dd>Apache: Moderate (no numeric score) · CISA-ADP: Medium 4.3 (CVSS 3.1)</dd></div>
+        </dl>
+        <nav class="entry-links" aria-label="Public records for CVE-2026-71897">
+          <a href="{{ '/vulnerabilities/cve-2026-71897/' | relative_url }}">Technical write-up</a>
+          <a href="https://nvd.nist.gov/vuln/detail/cve-2026-71897" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2026-71897" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
+          <a href="https://www.openwall.com/lists/oss-security/2026/09/29/20" target="_blank" rel="noopener noreferrer">Vendor advisory <span aria-hidden="true">↗</span></a>
         </nav>
       </article>
 
@@ -252,6 +277,16 @@ permalink: /vulnerabilities/
       <p>Selected safely identifiable milestones from 2026, shown in reverse chronological order.</p>
     </header>
     <ol class="timeline-list">
+      <li class="timeline-entry">
+        <div class="timeline-date">
+          <time datetime="2026-09-29">September 29</time>
+          <span>Advisory published</span>
+        </div>
+        <div>
+          <h3>Apache DolphinScheduler</h3>
+          <p>CVE-2026-71897 · Apache: Moderate · CISA-ADP: Medium 4.3 (CVSS 3.1)</p>
+        </div>
+      </li>
       <li class="timeline-entry">
         <div class="timeline-date">
           <time datetime="2026-09-29">September 29</time>

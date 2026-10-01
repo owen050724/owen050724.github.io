@@ -23,18 +23,18 @@ permalink: /ko/vulnerabilities/
     <dl class="vulnerability-summary-list">
       <div class="summary-metric">
         <dt>벤더가 확인한 성과</dt>
-        <dd>14</dd>
+        <dd>15</dd>
       </div>
       <div class="summary-metric">
         <dt>CVE ID가 부여된 취약점</dt>
-        <dd>7</dd>
+        <dd>8</dd>
       </div>
       <div class="summary-metric">
         <dt>제품 / 워크스페이스</dt>
         <dd>40</dd>
       </div>
     </dl>
-    <p class="summary-period">2026년 3월 22일부터 9월 2일까지의 보고 활동을 기록했습니다. 14건의 성과는 제품을 명시한 8건과 공개를 조율 중인 벤더 확인 사례 6건으로 구성됩니다. 각 취약점은 CVE 부여 여부나 공개 일정상의 개별 이력과 관계없이 한 번만 집계합니다.</p>
+    <p class="summary-period">2026년 3월 22일부터 9월 2일까지의 보고 활동을 기록했습니다. 15건의 성과는 제품을 명시한 9건과 공개를 조율 중인 벤더 확인 사례 6건으로 구성됩니다. 각 취약점은 CVE 부여 여부나 공개 일정상의 개별 이력과 관계없이 한 번만 집계합니다.</p>
   </section>
 
   <section class="selected-vulnerabilities" aria-labelledby="selected-vulnerabilities-title">
@@ -86,6 +86,31 @@ permalink: /ko/vulnerabilities/
           <a href="https://nvd.nist.gov/vuln/detail/cve-2026-57590" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
           <a href="https://www.cve.org/CVERecord?id=CVE-2026-57590" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
           <a href="https://www.openwall.com/lists/oss-security/2026/09/24/3" target="_blank" rel="noopener noreferrer">벤더 권고문 <span aria-hidden="true">↗</span></a>
+        </nav>
+      </article>
+
+      <article class="vulnerability-record" id="cve-2026-71897">
+        <header class="vulnerability-record-header">
+          <p class="vulnerability-identifier">CVE-2026-71897 · Apache DolphinScheduler</p>
+          <h3>워크플로 일괄 복사·이동의 프로젝트 간 권한 검사 우회</h3>
+        </header>
+        <p>
+          DolphinScheduler의 일괄 복사·이동 작업은 대상 워크플로의 프로젝트 권한을
+          올바르게 검사하지 않았습니다. 인증된 사용자가 접근 권한이 없는 프로젝트의
+          워크플로를 복사하거나 이동할 수 있었습니다.
+        </p>
+        <dl class="vulnerability-metadata">
+          <div><dt>벤더</dt><dd>확인</dd></div>
+          <div><dt>수정</dt><dd>벤더 발표 기준 3.4.3에서 수정</dd></div>
+          <div><dt>CVE</dt><dd>공개됨</dd></div>
+          <div><dt>공개</dt><dd>공개됨</dd></div>
+          <div><dt>심각도</dt><dd>Apache: Moderate (수치 점수 없음) · CISA-ADP: Medium 4.3 (CVSS 3.1)</dd></div>
+        </dl>
+        <nav class="entry-links" aria-label="CVE-2026-71897 공개 기록">
+          <a href="{{ '/ko/vulnerabilities/cve-2026-71897/' | relative_url }}">기술 분석</a>
+          <a href="https://nvd.nist.gov/vuln/detail/cve-2026-71897" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2026-71897" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
+          <a href="https://www.openwall.com/lists/oss-security/2026/09/29/20" target="_blank" rel="noopener noreferrer">벤더 권고문 <span aria-hidden="true">↗</span></a>
         </nav>
       </article>
 
@@ -257,6 +282,16 @@ permalink: /ko/vulnerabilities/
       <p>2026년의 주요 이력 중 공개 가능한 항목을 최신순으로 정리했습니다.</p>
     </header>
     <ol class="timeline-list">
+      <li class="timeline-entry">
+        <div class="timeline-date">
+          <time datetime="2026-09-29">9월 29일</time>
+          <span>권고문 공개</span>
+        </div>
+        <div>
+          <h3>Apache DolphinScheduler</h3>
+          <p>CVE-2026-71897 · Apache: Moderate · CISA-ADP: Medium 4.3 (CVSS 3.1)</p>
+        </div>
+      </li>
       <li class="timeline-entry">
         <div class="timeline-date">
           <time datetime="2026-09-29">9월 29일</time>
