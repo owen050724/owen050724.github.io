@@ -23,18 +23,18 @@ permalink: /ko/vulnerabilities/
     <dl class="vulnerability-summary-list">
       <div class="summary-metric">
         <dt>벤더가 확인한 성과</dt>
-        <dd>15</dd>
+        <dd>16</dd>
       </div>
       <div class="summary-metric">
         <dt>CVE ID가 부여된 취약점</dt>
-        <dd>8</dd>
+        <dd>9</dd>
       </div>
       <div class="summary-metric">
         <dt>제품 / 워크스페이스</dt>
         <dd>40</dd>
       </div>
     </dl>
-    <p class="summary-period">2026년 3월 22일부터 9월 2일까지의 보고 활동을 기록했습니다. 15건의 성과는 제품을 명시한 9건과 공개를 조율 중인 벤더 확인 사례 6건으로 구성됩니다. 각 취약점은 CVE 부여 여부나 공개 일정상의 개별 이력과 관계없이 한 번만 집계합니다.</p>
+    <p class="summary-period">2026년 3월 22일부터 9월 2일까지의 보고 활동을 기록했습니다. 16건의 성과는 제품을 명시한 10건과 공개를 조율 중인 벤더 확인 사례 6건으로 구성됩니다. 각 취약점은 CVE 부여 여부나 공개 일정상의 개별 이력과 관계없이 한 번만 집계합니다.</p>
   </section>
 
   <section class="selected-vulnerabilities" aria-labelledby="selected-vulnerabilities-title">
@@ -117,19 +117,53 @@ permalink: /ko/vulnerabilities/
       <article class="vulnerability-record" id="cve-2026-66082">
         <header class="vulnerability-record-header">
           <p class="vulnerability-identifier">CVE-2026-66082 · Apache DolphinScheduler</p>
-          <h3>벤더가 확인한 권한 경계 취약점</h3>
+          <h3>워크플로 릴리스·스케줄의 프로젝트 간 권한 검사 우회</h3>
         </header>
         <p>
-          2026년 6월 29일 보고했습니다. 벤더가 취약점과 제보자 크레딧을 확인했습니다.
-          수정 세부사항, 수정 릴리스 정보, 권고문 공개는 대기 중입니다.
+          DolphinScheduler는 요청에 지정된 프로젝트의 권한을 검사했지만,
+          대상 워크플로나 스케줄이 그 프로젝트에 속하는지는 확인하지 않았습니다.
+          한 프로젝트에서 필요한 권한을 가진 인증된 사용자가 다른 프로젝트의
+          워크플로 릴리스 상태와 스케줄 상태를 변경할 수 있었습니다.
         </p>
         <dl class="vulnerability-metadata">
           <div><dt>벤더</dt><dd>확인</dd></div>
-          <div><dt>수정</dt><dd>대기 중</dd></div>
-          <div><dt>CVE</dt><dd>예약됨</dd></div>
-          <div><dt>공개</dt><dd>권고문 공개 대기 중</dd></div>
-          <div><dt>심각도</dt><dd>대기 중</dd></div>
+          <div><dt>수정</dt><dd>벤더 발표 기준 3.4.3에서 수정</dd></div>
+          <div><dt>CVE</dt><dd>공개됨</dd></div>
+          <div><dt>공개</dt><dd>공개됨</dd></div>
+          <div><dt>심각도</dt><dd>Apache: Moderate (수치 점수 없음) · CISA-ADP: Medium 6.5 (CVSS 3.1)</dd></div>
         </dl>
+        <nav class="entry-links" aria-label="CVE-2026-66082 공개 기록">
+          <a href="{{ '/ko/vulnerabilities/cve-2026-66082/' | relative_url }}">기술 분석</a>
+          <a href="https://nvd.nist.gov/vuln/detail/cve-2026-66082" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2026-66082" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
+          <a href="https://www.openwall.com/lists/oss-security/2026/10/08/1" target="_blank" rel="noopener noreferrer">벤더 권고문 <span aria-hidden="true">↗</span></a>
+        </nav>
+      </article>
+
+      <article class="vulnerability-record" id="cve-2026-66084">
+        <header class="vulnerability-record-header">
+          <p class="vulnerability-identifier">CVE-2026-66084 · Apache DolphinScheduler</p>
+          <h3>작업 정의 수정의 프로젝트 간 권한 검사 우회</h3>
+        </header>
+        <p>
+          DolphinScheduler의 작업 정의 update-with-upstream 기능은 요청에 지정된
+          프로젝트의 쓰기 권한을 검사했지만, 대상 작업 정의가 그 프로젝트에 속하는지는
+          확인하지 않았습니다. 인증된 사용자가 접근 권한이 없는 프로젝트의
+          작업 정의와 선행 작업 의존성을 수정할 수 있었습니다.
+        </p>
+        <dl class="vulnerability-metadata">
+          <div><dt>벤더</dt><dd>확인</dd></div>
+          <div><dt>수정</dt><dd>벤더 발표 기준 3.4.3에서 수정</dd></div>
+          <div><dt>CVE</dt><dd>공개됨</dd></div>
+          <div><dt>공개</dt><dd>공개됨</dd></div>
+          <div><dt>심각도</dt><dd>Apache: Moderate (수치 점수 없음) · CISA-ADP: High 8.1 (CVSS 3.1)</dd></div>
+        </dl>
+        <nav class="entry-links" aria-label="CVE-2026-66084 공개 기록">
+          <a href="{{ '/ko/vulnerabilities/cve-2026-66084/' | relative_url }}">기술 분석</a>
+          <a href="https://nvd.nist.gov/vuln/detail/cve-2026-66084" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2026-66084" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
+          <a href="https://www.openwall.com/lists/oss-security/2026/10/08/2" target="_blank" rel="noopener noreferrer">벤더 권고문 <span aria-hidden="true">↗</span></a>
+        </nav>
       </article>
 
       <article class="vulnerability-record" id="ghsa-2jhv-482p-4php">
@@ -284,6 +318,26 @@ permalink: /ko/vulnerabilities/
     <ol class="timeline-list">
       <li class="timeline-entry">
         <div class="timeline-date">
+          <time datetime="2026-10-08">10월 8일</time>
+          <span>권고문 공개</span>
+        </div>
+        <div>
+          <h3>Apache DolphinScheduler</h3>
+          <p>CVE-2026-66084 · Apache: Moderate · CISA-ADP: High 8.1 (CVSS 3.1)</p>
+        </div>
+      </li>
+      <li class="timeline-entry">
+        <div class="timeline-date">
+          <time datetime="2026-10-08">10월 8일</time>
+          <span>권고문 공개</span>
+        </div>
+        <div>
+          <h3>Apache DolphinScheduler</h3>
+          <p>CVE-2026-66082 · Apache: Moderate · CISA-ADP: Medium 6.5 (CVSS 3.1)</p>
+        </div>
+      </li>
+      <li class="timeline-entry">
+        <div class="timeline-date">
           <time datetime="2026-09-29">9월 29일</time>
           <span>권고문 공개</span>
         </div>
@@ -409,7 +463,7 @@ permalink: /ko/vulnerabilities/
         </div>
         <div>
           <h3>Apache DolphinScheduler</h3>
-          <p>CVE-2026-66082 · 현재 상태: 벤더 확인</p>
+          <p>CVE-2026-66082 · 현재 상태: 공개됨</p>
         </div>
       </li>
       <li class="timeline-entry">

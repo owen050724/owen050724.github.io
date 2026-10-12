@@ -28,11 +28,11 @@ description: Security researcher and Computer Engineering student at SeoulTech f
     <dl class="metric-strip">
       <div>
         <dt>Findings with CVE IDs</dt>
-        <dd>8</dd>
+        <dd>9</dd>
       </div>
       <div>
         <dt>Vendor-confirmed outcomes</dt>
-        <dd>15</dd>
+        <dd>16</dd>
       </div>
       <div>
         <dt>Conference paper award</dt>
@@ -57,7 +57,7 @@ description: Security researcher and Computer Engineering student at SeoulTech f
           <a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-57590">CVE-2026-57590</a> · Apache DolphinScheduler
         </p>
         <h3><a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-57590">Missing project authorization in Task Group APIs</a></h3>
-        <p>Published · Apache: Low (no numeric score) · CISA-ADP: High 8.1 (CVSS 3.1). Additional findings: <a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-71897">CVE-2026-71897</a> (published); <a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-66082">CVE-2026-66082</a> (vendor-confirmed; advisory pending).</p>
+        <p>Published · Apache: Low (no numeric score) · CISA-ADP: High 8.1 (CVSS 3.1). Additional published findings: <a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-71897">CVE-2026-71897</a>, <a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-66082">CVE-2026-66082</a>, and <a href="{{ '/vulnerabilities/' | relative_url }}#cve-2026-66084">CVE-2026-66084</a>.</p>
       </article>
       <article class="work-item">
         <p class="item-kicker">Conference paper · 2026</p>

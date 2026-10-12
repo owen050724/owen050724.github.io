@@ -21,18 +21,18 @@ permalink: /vulnerabilities/
     <dl class="vulnerability-summary-list">
       <div class="summary-metric">
         <dt>Vendor-confirmed outcomes</dt>
-        <dd>15</dd>
+        <dd>16</dd>
       </div>
       <div class="summary-metric">
         <dt>Findings with CVE IDs</dt>
-        <dd>8</dd>
+        <dd>9</dd>
       </div>
       <div class="summary-metric">
         <dt>Products / workspaces</dt>
         <dd>40</dd>
       </div>
     </dl>
-    <p class="summary-period">Report activity recorded from March 22 through September 2, 2026. The 15 outcomes comprise nine identified cases and six additional vendor-confirmed cases under coordinated disclosure. Each finding is counted once, regardless of CVE assignment or timeline milestones.</p>
+    <p class="summary-period">Report activity recorded from March 22 through September 2, 2026. The 16 outcomes comprise ten identified cases and six additional vendor-confirmed cases under coordinated disclosure. Each finding is counted once, regardless of CVE assignment or timeline milestones.</p>
   </section>
 
   <section class="selected-vulnerabilities" aria-labelledby="selected-vulnerabilities-title">
@@ -114,19 +114,52 @@ permalink: /vulnerabilities/
       <article class="vulnerability-record" id="cve-2026-66082">
         <header class="vulnerability-record-header">
           <p class="vulnerability-identifier">CVE-2026-66082 · Apache DolphinScheduler</p>
-          <h3>Vendor-confirmed authorization boundary vulnerability</h3>
+          <h3>Cross-project authorization bypass in workflow release and schedules</h3>
         </header>
         <p>
-          Reported June 29, 2026. Vendor-confirmed with reporter credit; remediation details,
-          fixed-release metadata, and advisory publication remain pending.
+          DolphinScheduler checked permissions for the supplied project but did not verify that
+          the target workflow or schedule belonged to it. An authenticated user with the required
+          permissions in one project could change workflow release and schedule states in another.
         </p>
         <dl class="vulnerability-metadata">
           <div><dt>Vendor</dt><dd>Confirmed</dd></div>
-          <div><dt>Remediation</dt><dd>Pending</dd></div>
-          <div><dt>CVE</dt><dd>Reserved</dd></div>
-          <div><dt>Disclosure</dt><dd>Advisory pending</dd></div>
-          <div><dt>Severity</dt><dd>Pending</dd></div>
+          <div><dt>Remediation</dt><dd>Vendor-reported fixed in 3.4.3</dd></div>
+          <div><dt>CVE</dt><dd>Published</dd></div>
+          <div><dt>Disclosure</dt><dd>Published</dd></div>
+          <div><dt>Severity</dt><dd>Apache: Moderate (no numeric score) · CISA-ADP: Medium 6.5 (CVSS 3.1)</dd></div>
         </dl>
+        <nav class="entry-links" aria-label="Public records for CVE-2026-66082">
+          <a href="{{ '/vulnerabilities/cve-2026-66082/' | relative_url }}">Technical write-up</a>
+          <a href="https://nvd.nist.gov/vuln/detail/cve-2026-66082" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2026-66082" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
+          <a href="https://www.openwall.com/lists/oss-security/2026/10/08/1" target="_blank" rel="noopener noreferrer">Vendor advisory <span aria-hidden="true">↗</span></a>
+        </nav>
+      </article>
+
+      <article class="vulnerability-record" id="cve-2026-66084">
+        <header class="vulnerability-record-header">
+          <p class="vulnerability-identifier">CVE-2026-66084 · Apache DolphinScheduler</p>
+          <h3>Cross-project task definition update authorization bypass</h3>
+        </header>
+        <p>
+          DolphinScheduler's task definition update-with-upstream operation checked write permission
+          on the supplied project without verifying that the target task definition belonged to it.
+          An authenticated user could modify task definitions and upstream dependencies in a project
+          they were not authorized to access.
+        </p>
+        <dl class="vulnerability-metadata">
+          <div><dt>Vendor</dt><dd>Confirmed</dd></div>
+          <div><dt>Remediation</dt><dd>Vendor-reported fixed in 3.4.3</dd></div>
+          <div><dt>CVE</dt><dd>Published</dd></div>
+          <div><dt>Disclosure</dt><dd>Published</dd></div>
+          <div><dt>Severity</dt><dd>Apache: Moderate (no numeric score) · CISA-ADP: High 8.1 (CVSS 3.1)</dd></div>
+        </dl>
+        <nav class="entry-links" aria-label="Public records for CVE-2026-66084">
+          <a href="{{ '/vulnerabilities/cve-2026-66084/' | relative_url }}">Technical write-up</a>
+          <a href="https://nvd.nist.gov/vuln/detail/cve-2026-66084" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2026-66084" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
+          <a href="https://www.openwall.com/lists/oss-security/2026/10/08/2" target="_blank" rel="noopener noreferrer">Vendor advisory <span aria-hidden="true">↗</span></a>
+        </nav>
       </article>
 
       <article class="vulnerability-record" id="ghsa-2jhv-482p-4php">
@@ -279,6 +312,26 @@ permalink: /vulnerabilities/
     <ol class="timeline-list">
       <li class="timeline-entry">
         <div class="timeline-date">
+          <time datetime="2026-10-08">October 8</time>
+          <span>Advisory published</span>
+        </div>
+        <div>
+          <h3>Apache DolphinScheduler</h3>
+          <p>CVE-2026-66084 · Apache: Moderate · CISA-ADP: High 8.1 (CVSS 3.1)</p>
+        </div>
+      </li>
+      <li class="timeline-entry">
+        <div class="timeline-date">
+          <time datetime="2026-10-08">October 8</time>
+          <span>Advisory published</span>
+        </div>
+        <div>
+          <h3>Apache DolphinScheduler</h3>
+          <p>CVE-2026-66082 · Apache: Moderate · CISA-ADP: Medium 6.5 (CVSS 3.1)</p>
+        </div>
+      </li>
+      <li class="timeline-entry">
+        <div class="timeline-date">
           <time datetime="2026-09-29">September 29</time>
           <span>Advisory published</span>
         </div>
@@ -404,7 +457,7 @@ permalink: /vulnerabilities/
         </div>
         <div>
           <h3>Apache DolphinScheduler</h3>
-          <p>CVE-2026-66082 · Current status: Vendor confirmed</p>
+          <p>CVE-2026-66082 · Current status: Published</p>
         </div>
       </li>
       <li class="timeline-entry">
