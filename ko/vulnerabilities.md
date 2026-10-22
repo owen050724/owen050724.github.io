@@ -34,7 +34,7 @@ permalink: /ko/vulnerabilities/
         <dd>40</dd>
       </div>
     </dl>
-    <p class="summary-period">2026년 3월 22일부터 9월 2일까지의 보고 활동을 기록했습니다. 16건의 성과는 제품을 명시한 10건과 공개를 조율 중인 벤더 확인 사례 6건으로 구성됩니다. 각 취약점은 CVE 부여 여부나 공개 일정상의 개별 이력과 관계없이 한 번만 집계합니다.</p>
+    <p class="summary-period">2026년 3월 22일부터 9월 2일까지의 보고 활동을 기록했습니다. 16건의 성과는 벤더 또는 제품을 명시한 11건과 공개를 조율 중인 익명 벤더 확인 사례 5건으로 구성됩니다. 각 취약점은 CVE 부여 여부나 공개 일정상의 개별 이력과 관계없이 한 번만 집계합니다.</p>
   </section>
 
   <section class="selected-vulnerabilities" aria-labelledby="selected-vulnerabilities-title">
@@ -287,6 +287,24 @@ permalink: /ko/vulnerabilities/
           <a href="https://www.jenkins.io/security/advisory/2026-09-02/#SECURITY-4038" target="_blank" rel="noopener noreferrer">벤더 권고문 <span aria-hidden="true">↗</span></a>
         </nav>
       </article>
+
+      <article class="vulnerability-record" id="proton">
+        <header class="vulnerability-record-header">
+          <p class="vulnerability-identifier">Proton</p>
+          <h3>벤더가 인정한 취약점 제보</h3>
+        </header>
+        <p>
+          Proton에 취약점을 보고했으며 공식 Security Contributors 명단에 등재되었습니다.
+          기술적 세부사항은 비공개로 유지합니다.
+        </p>
+        <dl class="vulnerability-metadata">
+          <div><dt>벤더</dt><dd>제보 인정</dd></div>
+          <div><dt>보상금</dt><dd>미화 200달러 수령</dd></div>
+        </dl>
+        <nav class="entry-links" aria-label="Proton 공식 기여자 등재">
+          <a href="https://proton.me/blog/protonmail-security-contributors" target="_blank" rel="noopener noreferrer">Security Contributors <span aria-hidden="true">↗</span></a>
+        </nav>
+      </article>
     </div>
   </section>
 
@@ -294,10 +312,10 @@ permalink: /ko/vulnerabilities/
     <header class="section-introduction">
       <h2 id="coordinated-outcomes-title">그 밖의 공개 조율 중인 성과</h2>
       <p>
-        추가로 6건의 보고가 벤더의 제보 인정 또는 다른 형태의 확인을 받았습니다.
+        추가로 5건의 보고가 벤더의 제보 인정 또는 다른 형태의 확인을 받았습니다.
         이 중 3건에는 보고되었거나 벤더가 확인한 수치 점수가 있고,
         1건은 벤더가 수치 점수 없이 Moderate로 평가했으며,
-        2건은 벤더의 최종 평가를 기다리고 있습니다.
+        1건은 벤더의 최종 평가를 기다리고 있습니다.
         수정과 공개를 조율하는 동안 제품 정보와 기술적 세부사항은 비공개로 유지합니다.
       </p>
     </header>
@@ -306,7 +324,7 @@ permalink: /ko/vulnerabilities/
       <li><span>Medium</span> <span>6.1</span></li>
       <li><span>Medium</span> <span>5.7</span></li>
       <li><span>Moderate</span> <span>점수 미공개</span></li>
-      <li><span>벤더 평가</span> <span>2건 대기 중</span></li>
+      <li><span>벤더 평가</span> <span>1건 대기 중</span></li>
     </ul>
   </section>
 

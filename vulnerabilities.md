@@ -32,7 +32,7 @@ permalink: /vulnerabilities/
         <dd>40</dd>
       </div>
     </dl>
-    <p class="summary-period">Report activity recorded from March 22 through September 2, 2026. The 16 outcomes comprise ten identified cases and six additional vendor-confirmed cases under coordinated disclosure. Each finding is counted once, regardless of CVE assignment or timeline milestones.</p>
+    <p class="summary-period">Report activity recorded from March 22 through September 2, 2026. The 16 outcomes comprise eleven identified cases and five additional vendor-confirmed cases under coordinated disclosure. Each finding is counted once, regardless of CVE assignment or timeline milestones.</p>
   </section>
 
   <section class="selected-vulnerabilities" aria-labelledby="selected-vulnerabilities-title">
@@ -281,6 +281,24 @@ permalink: /vulnerabilities/
           <a href="https://www.jenkins.io/security/advisory/2026-09-02/#SECURITY-4038" target="_blank" rel="noopener noreferrer">Vendor advisory <span aria-hidden="true">↗</span></a>
         </nav>
       </article>
+
+      <article class="vulnerability-record" id="proton">
+        <header class="vulnerability-record-header">
+          <p class="vulnerability-identifier">Proton</p>
+          <h3>Vendor-recognized vulnerability report</h3>
+        </header>
+        <p>
+          Reported a vulnerability to Proton and was listed on its official Security Contributors
+          page. Technical details remain private.
+        </p>
+        <dl class="vulnerability-metadata">
+          <div><dt>Vendor</dt><dd>Accepted</dd></div>
+          <div><dt>Bounty</dt><dd>USD 200 received</dd></div>
+        </dl>
+        <nav class="entry-links" aria-label="Proton contributor recognition">
+          <a href="https://proton.me/blog/protonmail-security-contributors" target="_blank" rel="noopener noreferrer">Security Contributors <span aria-hidden="true">↗</span></a>
+        </nav>
+      </article>
     </div>
   </section>
 
@@ -288,10 +306,10 @@ permalink: /vulnerabilities/
     <header class="section-introduction">
       <h2 id="coordinated-outcomes-title">Other Coordinated Outcomes</h2>
       <p>
-        Six additional reports were accepted or otherwise confirmed by their vendors. Three have
+        Five additional reports were accepted or otherwise confirmed by their vendors. Three have
         numeric reported or vendor-confirmed scores, one
-        has a vendor-rated Moderate severity without a numeric score, and two await final vendor
-        ratings. Product and technical details remain private during coordinated remediation and
+        has a vendor-rated Moderate severity without a numeric score, and one awaits a final vendor
+        rating. Product and technical details remain private during coordinated remediation and
         publication.
       </p>
     </header>
@@ -300,7 +318,7 @@ permalink: /vulnerabilities/
       <li><span>Medium</span> <span>6.1</span></li>
       <li><span>Medium</span> <span>5.7</span></li>
       <li><span>Moderate</span> <span>Score not published</span></li>
-      <li><span>Vendor rating</span> <span>Pending for two outcomes</span></li>
+      <li><span>Vendor rating</span> <span>Pending for one outcome</span></li>
     </ul>
   </section>
 
