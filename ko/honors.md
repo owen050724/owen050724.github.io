@@ -36,7 +36,6 @@ permalink: /ko/honors/
     <h2 id="honors-2023">2023</h2>
     <ul class="honors-list">
       <li><h3>부산 SW·AI 교육 해커톤 대상</h3></li>
-      <li><h3>부산과학전람회 장려상</h3></li>
     </ul>
   </section>
 
@@ -50,8 +49,6 @@ permalink: /ko/honors/
           </a>
         </h3>
       </li>
-      <li><h3>전국 고등학교 동아리 SW·AI 경진대회 장려상</h3></li>
-      <li><h3>부산과학전람회 장려상</h3></li>
     </ul>
   </section>
 </article>

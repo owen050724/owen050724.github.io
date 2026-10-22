@@ -34,7 +34,6 @@ permalink: /honors/
     <h2 id="honors-2023">2023</h2>
     <ul class="honors-list">
       <li><h3>Busan SW/AI Education Hackathon Grand Prize</h3></li>
-      <li><h3>Busan Science Exhibition Encouragement Prize</h3></li>
     </ul>
   </section>
 
@@ -48,8 +47,6 @@ permalink: /honors/
           </a>
         </h3>
       </li>
-      <li><h3>National High School Club SW/AI Contest Encouragement Prize</h3></li>
-      <li><h3>Busan Science Exhibition Encouragement Prize</h3></li>
     </ul>
   </section>
 </article>
