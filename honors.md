@@ -16,6 +16,10 @@ permalink: /honors/
     <h2 id="honors-2026">2026</h2>
     <ul class="honors-list">
       <li>
+        <h3>KDFS Challenge 2026</h3>
+        <p>Second Place Overall · Excellence Award from the Commissioner General of the Korean National Police Agency</p>
+      </li>
+      <li>
         <h3>Gold Prize</h3>
         <p>2026 Summer Conference of the Korea Digital Contents Society · Undergraduate Paper Competition</p>
       </li>

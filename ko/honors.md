@@ -18,6 +18,10 @@ permalink: /ko/honors/
     <h2 id="honors-2026">2026</h2>
     <ul class="honors-list">
       <li>
+        <h3>KDFS Challenge 2026</h3>
+        <p>종합 2위 · 경찰청장상(우수상)</p>
+      </li>
+      <li>
         <h3>금상</h3>
         <p>2026년 한국디지털콘텐츠학회 하계학술대회 · 학부생 논문경진대회</p>
       </li>
