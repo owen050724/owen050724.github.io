@@ -168,7 +168,7 @@ permalink: /ko/vulnerabilities/
 
       <article class="vulnerability-record" id="ghsa-2jhv-482p-4php">
         <header class="vulnerability-record-header" id="cve-2026-82872">
-          <p class="vulnerability-identifier" id="cve-2026-73068">CVE-2026-82872 · ToolJet</p>
+          <p class="vulnerability-identifier">CVE-2026-82872 · ToolJet</p>
           <h3>워크스페이스 간 ToolJet DB 권한 검사 우회</h3>
         </header>
         <p>
@@ -185,13 +185,13 @@ permalink: /ko/vulnerabilities/
           <div><dt>심각도</dt><dd>ToolJet GHSA: Moderate 6.8 (CVSS 3.1)</dd></div>
         </dl>
         <nav class="entry-links" aria-label="ToolJet 보고서 공개 기록">
-          <a href="{{ '/ko/vulnerabilities/cve-2026-73068/' | relative_url }}">기술 분석</a>
+          <a href="{{ '/ko/vulnerabilities/cve-2026-82872/' | relative_url }}">기술 분석</a>
           <a href="https://nvd.nist.gov/vuln/detail/cve-2026-82872" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
           <a href="https://www.cve.org/CVERecord?id=CVE-2026-82872" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
           <a href="https://github.com/ToolJet/ToolJet/security/advisories/GHSA-2jhv-482p-4php" target="_blank" rel="noopener noreferrer">보고서 (GHSA-2jhv-482p-4php) <span aria-hidden="true">↗</span></a>
           <a href="https://www.vulncheck.com/advisories/tooljet-before-3.16.208-cross-workspace-authorization-bypass" target="_blank" rel="noopener noreferrer">VulnCheck 권고문 <span aria-hidden="true">↗</span></a>
         </nav>
-        <p>CVE 번호는 공식 CVE 레코드를, 심각도는 ToolJet GHSA의 평가를 따릅니다. GitHub에 표시된 다른 번호는 기술 분석 글에서 출처를 구분해 설명합니다.</p>
+        <p>CVE 번호는 공식 CVE 레코드를, 심각도는 ToolJet GHSA의 평가를 따릅니다.</p>
       </article>
 
       <article class="vulnerability-record" id="tooljet-accepted-outcome">

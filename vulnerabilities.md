@@ -164,7 +164,7 @@ permalink: /vulnerabilities/
 
       <article class="vulnerability-record" id="ghsa-2jhv-482p-4php">
         <header class="vulnerability-record-header" id="cve-2026-82872">
-          <p class="vulnerability-identifier" id="cve-2026-73068">CVE-2026-82872 · ToolJet</p>
+          <p class="vulnerability-identifier">CVE-2026-82872 · ToolJet</p>
           <h3>Cross-workspace ToolJet DB authorization bypass</h3>
         </header>
         <p>
@@ -180,13 +180,13 @@ permalink: /vulnerabilities/
           <div><dt>Severity</dt><dd>ToolJet GHSA: Moderate 6.8 (CVSS 3.1)</dd></div>
         </dl>
         <nav class="entry-links" aria-label="Public records for the ToolJet report">
-          <a href="{{ '/vulnerabilities/cve-2026-73068/' | relative_url }}">Technical write-up</a>
+          <a href="{{ '/vulnerabilities/cve-2026-82872/' | relative_url }}">Technical write-up</a>
           <a href="https://nvd.nist.gov/vuln/detail/cve-2026-82872" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
           <a href="https://www.cve.org/CVERecord?id=CVE-2026-82872" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
           <a href="https://github.com/ToolJet/ToolJet/security/advisories/GHSA-2jhv-482p-4php" target="_blank" rel="noopener noreferrer">Report (GHSA-2jhv-482p-4php) <span aria-hidden="true">↗</span></a>
           <a href="https://www.vulncheck.com/advisories/tooljet-before-3.16.208-cross-workspace-authorization-bypass" target="_blank" rel="noopener noreferrer">VulnCheck advisory <span aria-hidden="true">↗</span></a>
         </nav>
-        <p>The CVE identifier follows the official CVE record; severity follows ToolJet's GHSA. The technical write-up explains the differing identifier shown by GitHub.</p>
+        <p>The CVE identifier follows the official CVE record; severity follows ToolJet's GHSA.</p>
       </article>
 
       <article class="vulnerability-record" id="tooljet-accepted-outcome">

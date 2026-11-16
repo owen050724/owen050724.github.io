@@ -19,7 +19,7 @@ permalink: /ko/honors/
     <ul class="honors-list">
       <li>
         <h3>KDFS Challenge 2026</h3>
-        <p>종합 2위 · 경찰청장상(우수상)</p>
+        <p>종합 2위 · 경찰청장상(최우수상)</p>
         <p>공식 결과: 어린이탐정단 · 학생 트랙 · 최우수상. 공지는 팀명과 수상 구분을 명시하며, 개인명이나 정확한 전체 순위는 기재하지 않습니다.</p>
         <nav class="entry-links" aria-label="KDFS Challenge 2026 공식 수상 결과">
           <a href="https://www.k-dfs.co.kr/notice/?bmode=view&amp;idx=175574567" target="_blank" rel="noopener noreferrer">공식 수상 결과 <span aria-hidden="true">↗</span></a>
