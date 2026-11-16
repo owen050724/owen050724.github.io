@@ -50,4 +50,13 @@ permalink: /ko/research/
       </li>
     </ol>
   </section>
+
+  <section class="detail-section" aria-labelledby="department-news">
+    <h2 id="department-news">학과 소식</h2>
+    <p>서울과학기술대학교 컴퓨터공학과 · <time datetime="2026-08-03">2026년 8월 3일</time></p>
+    <p>학과는 박연오·최도현 학생이 오픈소스 AI 애플리케이션 개발 플랫폼의 취약점을 분석하고, 영향을 검증하고, 재현 자료를 정리해 프로젝트 측에 제보한 활동을 소개했습니다.</p>
+    <nav class="entry-links" aria-label="학과 소식 출처">
+      <a href="https://computer.seoultech.ac.kr/notice/news?bidx=893457&amp;bnum=58475&amp;do=commonview" target="_blank" rel="noopener noreferrer">학과 공식 기사 <span aria-hidden="true">↗</span></a>
+    </nav>
+  </section>
 </article>

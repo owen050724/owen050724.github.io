@@ -48,4 +48,13 @@ permalink: /research/
       </li>
     </ol>
   </section>
+
+  <section class="detail-section" aria-labelledby="department-news">
+    <h2 id="department-news">Department News</h2>
+    <p>SeoulTech Department of Computer Engineering · <time datetime="2026-08-03">August 3, 2026</time></p>
+    <p>The department reported that Yeonoh Park and Dohyun Choi analyzed vulnerabilities in an open-source AI application development platform, verified their impact, prepared reproduction materials, and reported the findings to the project.</p>
+    <nav class="entry-links" aria-label="Department news source">
+      <a href="https://computer.seoultech.ac.kr/notice/news?bidx=893457&amp;bnum=58475&amp;do=commonview" target="_blank" rel="noopener noreferrer">Official department article <span aria-hidden="true">↗</span></a>
+    </nav>
+  </section>
 </article>

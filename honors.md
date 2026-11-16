@@ -18,6 +18,10 @@ permalink: /honors/
       <li>
         <h3>KDFS Challenge 2026</h3>
         <p>Second Place Overall · Excellence Award from the Commissioner General of the Korean National Police Agency</p>
+        <p>Official result: 어린이탐정단 · Student track · 최우수상. The notice lists the team and award category, not individual names or an overall ranking.</p>
+        <nav class="entry-links" aria-label="KDFS Challenge 2026 official results">
+          <a href="https://www.k-dfs.co.kr/notice/?bmode=view&amp;idx=175574567" target="_blank" rel="noopener noreferrer">Official award results <span aria-hidden="true">↗</span></a>
+        </nav>
       </li>
       <li>
         <h3>Gold Prize</h3>

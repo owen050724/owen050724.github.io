@@ -32,7 +32,7 @@ permalink: /ko/about/
     <h2 id="affiliations">소속 및 활동</h2>
     <ul class="background-list">
       <li>Cryptography Information Security Laboratory · 학부연구생</li>
-      <li>TCP (컴퓨터과학·정보기술 동아리) · 리더</li>
+      <li>TCP (Team Crazy Performance) · 리더</li>
       <li>STCE (SeoulTech Crypto Engine) · 회원</li>
     </ul>
   </section>

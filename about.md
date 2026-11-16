@@ -30,7 +30,7 @@ permalink: /about/
     <h2 id="affiliations">Affiliations</h2>
     <ul class="background-list">
       <li>Cryptography Information Security Laboratory · Undergraduate Researcher</li>
-      <li>TCP (Computer Science and Information Technology Club) · Leader</li>
+      <li>TCP (Team Crazy Performance) · Leader</li>
       <li>STCE (SeoulTech Crypto Engine) · Member</li>
     </ul>
   </section>

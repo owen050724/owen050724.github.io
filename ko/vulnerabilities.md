@@ -34,7 +34,7 @@ permalink: /ko/vulnerabilities/
         <dd>40</dd>
       </div>
     </dl>
-    <p class="summary-period">2026년 3월 22일부터 9월 2일까지의 보고 활동을 기록했습니다. 16건의 성과는 벤더 또는 제품을 명시한 11건과 공개를 조율 중인 익명 벤더 확인 사례 5건으로 구성됩니다. 각 취약점은 CVE 부여 여부나 공개 일정상의 개별 이력과 관계없이 한 번만 집계합니다.</p>
+    <p class="summary-period">2026년 3월 22일부터 9월 2일까지의 보고 활동을 기록했습니다. 기존 집계 16건은 벤더 또는 제품을 명시한 11건과 공개를 조율 중인 익명 벤더 확인 사례 5건으로 구성됩니다. 아래에 새로 연결한 ToolJet 권고문 3건은 기존 집계와의 대응이 아직 확인되지 않아 총계를 유지했습니다. 각 취약점은 CVE 부여 여부나 공개 일정상의 개별 이력과 관계없이 한 번만 집계합니다.</p>
   </section>
 
   <section class="selected-vulnerabilities" aria-labelledby="selected-vulnerabilities-title">
@@ -168,7 +168,7 @@ permalink: /ko/vulnerabilities/
 
       <article class="vulnerability-record" id="ghsa-2jhv-482p-4php">
         <header class="vulnerability-record-header" id="cve-2026-82872">
-          <p class="vulnerability-identifier" id="cve-2026-73068">CVE-2026-73068 (ToolJet GHSA에 기재) · ToolJet</p>
+          <p class="vulnerability-identifier" id="cve-2026-73068">CVE-2026-82872 · ToolJet</p>
           <h3>워크스페이스 간 ToolJet DB 권한 검사 우회</h3>
         </header>
         <p>
@@ -180,16 +180,18 @@ permalink: /ko/vulnerabilities/
         <dl class="vulnerability-metadata">
           <div><dt>벤더</dt><dd>제보 인정</dd></div>
           <div><dt>수정</dt><dd>v3.20.207-lts의 소스에서 확인</dd></div>
-          <div><dt>CVE</dt><dd>GHSA에 73068 기재</dd></div>
+          <div><dt>CVE</dt><dd>공개됨 · VulnCheck CNA</dd></div>
           <div><dt>공개</dt><dd>공개됨</dd></div>
           <div><dt>심각도</dt><dd>ToolJet GHSA: Moderate 6.8 (CVSS 3.1)</dd></div>
         </dl>
         <nav class="entry-links" aria-label="ToolJet 보고서 공개 기록">
           <a href="{{ '/ko/vulnerabilities/cve-2026-73068/' | relative_url }}">기술 분석</a>
-          <a href="https://nvd.nist.gov/vuln/detail/cve-2026-73068" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
-          <a href="https://www.cve.org/CVERecord?id=CVE-2026-73068" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
+          <a href="https://nvd.nist.gov/vuln/detail/cve-2026-82872" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2026-82872" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
           <a href="https://github.com/ToolJet/ToolJet/security/advisories/GHSA-2jhv-482p-4php" target="_blank" rel="noopener noreferrer">보고서 (GHSA-2jhv-482p-4php) <span aria-hidden="true">↗</span></a>
+          <a href="https://www.vulncheck.com/advisories/tooljet-before-3.16.208-cross-workspace-authorization-bypass" target="_blank" rel="noopener noreferrer">VulnCheck 권고문 <span aria-hidden="true">↗</span></a>
         </nav>
+        <p>CVE 번호는 공식 CVE 레코드를, 심각도는 ToolJet GHSA의 평가를 따릅니다. GitHub에 표시된 다른 번호는 기술 분석 글에서 출처를 구분해 설명합니다.</p>
       </article>
 
       <article class="vulnerability-record" id="tooljet-accepted-outcome">
@@ -235,6 +237,7 @@ permalink: /ko/vulnerabilities/
           <a href="https://nvd.nist.gov/vuln/detail/cve-2026-81841" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
           <a href="https://www.cve.org/CVERecord?id=CVE-2026-81841" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
           <a href="https://grafana.com/security/security-advisories/cve-2026-81841/" target="_blank" rel="noopener noreferrer">벤더 권고문 <span aria-hidden="true">↗</span></a>
+          <a href="https://grafana.com/security/hall-of-fame/" target="_blank" rel="noopener noreferrer">Security Hall of Fame <span aria-hidden="true">↗</span></a>
         </nav>
       </article>
 
@@ -303,6 +306,45 @@ permalink: /ko/vulnerabilities/
         </dl>
         <nav class="entry-links" aria-label="Proton 공식 기여자 등재">
           <a href="https://proton.me/blog/protonmail-security-contributors" target="_blank" rel="noopener noreferrer">Security Contributors <span aria-hidden="true">↗</span></a>
+        </nav>
+      </article>
+    </div>
+  </section>
+
+  <section class="selected-vulnerabilities" aria-labelledby="tooljet-public-advisories-title">
+    <header class="section-introduction">
+      <h2 id="tooljet-public-advisories-title">추가 공개된 ToolJet 권고문</h2>
+      <p>2026년 11월 9일 공개되었습니다. 세 권고문 모두 <code>owen050724</code>를 Reporter로 명시하며, 2026년 11월 16일 확인 기준 CVE 번호는 기재되어 있지 않습니다. 기존 성과 집계에 포함되었는지는 아직 확인되지 않았습니다.</p>
+    </header>
+    <div class="vulnerability-record-list">
+      <article class="vulnerability-record" id="ghsa-69p8-5h7m-23cm">
+        <header class="vulnerability-record-header">
+          <p class="vulnerability-identifier">GHSA-69p8-5h7m-23cm · ToolJet</p>
+          <h3>워크스페이스 간 파일 노출</h3>
+        </header>
+        <p>인증된 사용자가 대상 파일의 UUID를 알고 있으면 다른 워크스페이스에 저장된 파일 내용을 읽을 수 있었습니다.</p>
+        <nav class="entry-links" aria-label="GHSA-69p8-5h7m-23cm 원문">
+          <a href="https://github.com/ToolJet/ToolJet/security/advisories/GHSA-69p8-5h7m-23cm" target="_blank" rel="noopener noreferrer">벤더 권고문 <span aria-hidden="true">↗</span></a>
+        </nav>
+      </article>
+      <article class="vulnerability-record" id="ghsa-fh59-qrp9-3r65">
+        <header class="vulnerability-record-header">
+          <p class="vulnerability-identifier">GHSA-fh59-qrp9-3r65 · ToolJet</p>
+          <h3>REST 쿼리 메타데이터를 통한 워크스페이스 시크릿 노출</h3>
+        </header>
+        <p>영향받는 REST 쿼리를 실행할 수 있는 저권한 사용자가 반환된 요청 메타데이터에서 평문 워크스페이스 시크릿을 받을 수 있었습니다.</p>
+        <nav class="entry-links" aria-label="GHSA-fh59-qrp9-3r65 원문">
+          <a href="https://github.com/ToolJet/ToolJet/security/advisories/GHSA-fh59-qrp9-3r65" target="_blank" rel="noopener noreferrer">벤더 권고문 <span aria-hidden="true">↗</span></a>
+        </nav>
+      </article>
+      <article class="vulnerability-record" id="ghsa-6c72-fxvv-xp9f">
+        <header class="vulnerability-record-header">
+          <p class="vulnerability-identifier">GHSA-6c72-fxvv-xp9f · ToolJet</p>
+          <h3>OAuth URL 생성 과정의 워크스페이스 간 시크릿 노출</h3>
+        </header>
+        <p>인증된 사용자가 대상 워크스페이스·환경 ID와 시크릿 이름을 알고 있으면 생성된 OAuth URL을 통해 다른 워크스페이스의 평문 시크릿을 얻을 수 있었습니다.</p>
+        <nav class="entry-links" aria-label="GHSA-6c72-fxvv-xp9f 원문">
+          <a href="https://github.com/ToolJet/ToolJet/security/advisories/GHSA-6c72-fxvv-xp9f" target="_blank" rel="noopener noreferrer">벤더 권고문 <span aria-hidden="true">↗</span></a>
         </nav>
       </article>
     </div>

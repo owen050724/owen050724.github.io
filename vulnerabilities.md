@@ -32,7 +32,7 @@ permalink: /vulnerabilities/
         <dd>40</dd>
       </div>
     </dl>
-    <p class="summary-period">Report activity recorded from March 22 through September 2, 2026. The 16 outcomes comprise eleven identified cases and five additional vendor-confirmed cases under coordinated disclosure. Each finding is counted once, regardless of CVE assignment or timeline milestones.</p>
+    <p class="summary-period">Report activity recorded from March 22 through September 2, 2026. The retained tally of 16 outcomes comprises eleven identified cases and five additional vendor-confirmed cases under coordinated disclosure. The three newly linked ToolJet advisories below have not yet been reconciled with this tally; totals remain unchanged. Each finding is counted once, regardless of CVE assignment or timeline milestones.</p>
   </section>
 
   <section class="selected-vulnerabilities" aria-labelledby="selected-vulnerabilities-title">
@@ -164,7 +164,7 @@ permalink: /vulnerabilities/
 
       <article class="vulnerability-record" id="ghsa-2jhv-482p-4php">
         <header class="vulnerability-record-header" id="cve-2026-82872">
-          <p class="vulnerability-identifier" id="cve-2026-73068">CVE-2026-73068 (listed by ToolJet GHSA) · ToolJet</p>
+          <p class="vulnerability-identifier" id="cve-2026-73068">CVE-2026-82872 · ToolJet</p>
           <h3>Cross-workspace ToolJet DB authorization bypass</h3>
         </header>
         <p>
@@ -175,16 +175,18 @@ permalink: /vulnerabilities/
         <dl class="vulnerability-metadata">
           <div><dt>Vendor</dt><dd>Accepted</dd></div>
           <div><dt>Remediation</dt><dd>Source-verified in v3.20.207-lts</dd></div>
-          <div><dt>CVE</dt><dd>GHSA lists 73068</dd></div>
+          <div><dt>CVE</dt><dd>Published · VulnCheck CNA</dd></div>
           <div><dt>Disclosure</dt><dd>Published</dd></div>
           <div><dt>Severity</dt><dd>ToolJet GHSA: Moderate 6.8 (CVSS 3.1)</dd></div>
         </dl>
         <nav class="entry-links" aria-label="Public records for the ToolJet report">
           <a href="{{ '/vulnerabilities/cve-2026-73068/' | relative_url }}">Technical write-up</a>
-          <a href="https://nvd.nist.gov/vuln/detail/cve-2026-73068" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
-          <a href="https://www.cve.org/CVERecord?id=CVE-2026-73068" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
+          <a href="https://nvd.nist.gov/vuln/detail/cve-2026-82872" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
+          <a href="https://www.cve.org/CVERecord?id=CVE-2026-82872" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
           <a href="https://github.com/ToolJet/ToolJet/security/advisories/GHSA-2jhv-482p-4php" target="_blank" rel="noopener noreferrer">Report (GHSA-2jhv-482p-4php) <span aria-hidden="true">↗</span></a>
+          <a href="https://www.vulncheck.com/advisories/tooljet-before-3.16.208-cross-workspace-authorization-bypass" target="_blank" rel="noopener noreferrer">VulnCheck advisory <span aria-hidden="true">↗</span></a>
         </nav>
+        <p>The CVE identifier follows the official CVE record; severity follows ToolJet's GHSA. The technical write-up explains the differing identifier shown by GitHub.</p>
       </article>
 
       <article class="vulnerability-record" id="tooljet-accepted-outcome">
@@ -229,6 +231,7 @@ permalink: /vulnerabilities/
           <a href="https://nvd.nist.gov/vuln/detail/cve-2026-81841" target="_blank" rel="noopener noreferrer">NVD <span aria-hidden="true">↗</span></a>
           <a href="https://www.cve.org/CVERecord?id=CVE-2026-81841" target="_blank" rel="noopener noreferrer">CVE <span aria-hidden="true">↗</span></a>
           <a href="https://grafana.com/security/security-advisories/cve-2026-81841/" target="_blank" rel="noopener noreferrer">Vendor advisory <span aria-hidden="true">↗</span></a>
+          <a href="https://grafana.com/security/hall-of-fame/" target="_blank" rel="noopener noreferrer">Security Hall of Fame <span aria-hidden="true">↗</span></a>
         </nav>
       </article>
 
@@ -297,6 +300,45 @@ permalink: /vulnerabilities/
         </dl>
         <nav class="entry-links" aria-label="Proton contributor recognition">
           <a href="https://proton.me/blog/protonmail-security-contributors" target="_blank" rel="noopener noreferrer">Security Contributors <span aria-hidden="true">↗</span></a>
+        </nav>
+      </article>
+    </div>
+  </section>
+
+  <section class="selected-vulnerabilities" aria-labelledby="tooljet-public-advisories-title">
+    <header class="section-introduction">
+      <h2 id="tooljet-public-advisories-title">Additional Published ToolJet Advisories</h2>
+      <p>Published November 9, 2026. All three advisories credit <code>owen050724</code> as Reporter and list no CVE identifier as of November 16, 2026. Their inclusion in the existing outcome tally remains unconfirmed.</p>
+    </header>
+    <div class="vulnerability-record-list">
+      <article class="vulnerability-record" id="ghsa-69p8-5h7m-23cm">
+        <header class="vulnerability-record-header">
+          <p class="vulnerability-identifier">GHSA-69p8-5h7m-23cm · ToolJet</p>
+          <h3>Cross-workspace file disclosure</h3>
+        </header>
+        <p>An authenticated user who knew a target file UUID could read stored file contents from another workspace.</p>
+        <nav class="entry-links" aria-label="Source for GHSA-69p8-5h7m-23cm">
+          <a href="https://github.com/ToolJet/ToolJet/security/advisories/GHSA-69p8-5h7m-23cm" target="_blank" rel="noopener noreferrer">Vendor advisory <span aria-hidden="true">↗</span></a>
+        </nav>
+      </article>
+      <article class="vulnerability-record" id="ghsa-fh59-qrp9-3r65">
+        <header class="vulnerability-record-header">
+          <p class="vulnerability-identifier">GHSA-fh59-qrp9-3r65 · ToolJet</p>
+          <h3>Workspace secrets exposed through REST query metadata</h3>
+        </header>
+        <p>A low-privilege user allowed to run an affected REST query could receive plaintext workspace secrets in returned request metadata.</p>
+        <nav class="entry-links" aria-label="Source for GHSA-fh59-qrp9-3r65">
+          <a href="https://github.com/ToolJet/ToolJet/security/advisories/GHSA-fh59-qrp9-3r65" target="_blank" rel="noopener noreferrer">Vendor advisory <span aria-hidden="true">↗</span></a>
+        </nav>
+      </article>
+      <article class="vulnerability-record" id="ghsa-6c72-fxvv-xp9f">
+        <header class="vulnerability-record-header">
+          <p class="vulnerability-identifier">GHSA-6c72-fxvv-xp9f · ToolJet</p>
+          <h3>Cross-workspace secret disclosure during OAuth URL generation</h3>
+        </header>
+        <p>An authenticated user who knew the target workspace/environment IDs and secret name could obtain another workspace's plaintext secret through a generated OAuth URL.</p>
+        <nav class="entry-links" aria-label="Source for GHSA-6c72-fxvv-xp9f">
+          <a href="https://github.com/ToolJet/ToolJet/security/advisories/GHSA-6c72-fxvv-xp9f" target="_blank" rel="noopener noreferrer">Vendor advisory <span aria-hidden="true">↗</span></a>
         </nav>
       </article>
     </div>
